@@ -1,13 +1,13 @@
-import Layout from '../components/Layout'
+import Layout from '../components/Layout';
 
 const Ressources = () => (
-    <div>
-        <Layout>
-        <h1>
-            Ceci est la page : Ressources 
-        </h1>
-        </Layout>
-    </div>
-)
+  <div>
+    <Layout>
+      <article>
+        <h1>Ceci est la page : Ressources</h1>
+      </article>
+    </Layout>
+  </div>
+);
 
 export default Ressources;
