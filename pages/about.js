@@ -1,13 +1,13 @@
 import Layout from '../components/Layout'
 
-const Home = () => (
+const AboutUs = () => (
     <div>
         <Layout>
         <h1>
-            Bienvenue sur La Sauce Numérique !
+            Ceci est la page : À propos
         </h1>
         </Layout>
     </div>
 )
 
-export default Home;
+export default AboutUs;
