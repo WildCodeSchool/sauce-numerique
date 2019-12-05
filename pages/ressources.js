@@ -1,13 +1,13 @@
 import Layout from '../components/Layout';
 
-const Home = () => (
+const Ressources = () => (
   <div>
     <Layout>
       <article>
-        <h1>Bienvenue sur La Sauce Numérique !</h1>
+        <h1>Ceci est la page : Ressources</h1>
       </article>
     </Layout>
   </div>
 );
 
-export default Home;
+export default Ressources;

@@ -1,13 +1,14 @@
 import Layout from '../components/Layout';
 
-const Home = () => (
+const Events = () => (
   <div>
     <Layout>
       <article>
-        <h1>Bienvenue sur La Sauce Numérique !</h1>
+        <h1>Ceci est la page : Événements</h1>
       </article>
     </Layout>
   </div>
 );
 
-export default Home;
+
+export default Events;
