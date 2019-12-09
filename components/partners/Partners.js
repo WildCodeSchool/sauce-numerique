@@ -1,9 +1,9 @@
 import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
-import './Partenaire.css';
+import './Partners.css';
 
-function Partenaire() {
+function Partners() {
   const settings = {
     dots: true,
     infinite: true,
@@ -15,13 +15,13 @@ function Partenaire() {
     // eslint-disable-next-line react/jsx-props-no-spreading
     <Slider {...settings}>
       <div>
-        <img className="partenaires" src="https://i.imgur.com/W5Ardip.png" alt="Mame" />
+        <img className="partners" src="https://i.imgur.com/W5Ardip.png" alt="Mame" />
       </div>
       <div>
         <img className="partenaires" src="https://i.imgur.com/7iXYgAI.png" alt="Wild Code School" />
       </div>
       <div>
-        <img className="partenaires" src="https://i.imgur.com/U14pobP.png" alt="Tours" />
+        <img className="partenaires" src="https://i.imgur.com/iRZyUyX.jpg" alt="Tours" />
       </div>
       <div>
         <img className="partenaires" src="https://i.imgur.com/ykblB26.jpg" alt="Région Centre" />
@@ -29,4 +29,4 @@ function Partenaire() {
     </Slider>
   );
 }
-export default Partenaire;
+export default Partners;
