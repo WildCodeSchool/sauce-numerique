@@ -13,6 +13,7 @@ const Home = ({test}) => (
         <div key={y.id}>
           <a href={y.url}> clique me</a>
           <li>{y.name.text}</li>
+        <li>{y.id}</li>
         </div>
           )
         }
@@ -24,7 +25,6 @@ const Home = ({test}) => (
 Home.getInitialProps = async function() {
   const res = await fetch('https://www.eventbriteapi.com/v3/users/me/events/?token=J3HV53T7XHQQQ5KWAMHT');
   const data = await res.json();
-
   console.log(data);
 
   return {
