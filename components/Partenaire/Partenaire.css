@@ -10,3 +10,10 @@
 body {
     background-color: #F76C6C;
 }
+
+@media (max-width: 568px){
+    .partenaires{
+        width:50px;
+        height:50px;
+    }
+}
