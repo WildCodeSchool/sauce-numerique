@@ -1,0 +1,12 @@
+.partenaires{
+    overflow:hidden;
+    -webkit-border-radius:50px;
+    -moz-border-radius:50px;
+    border-radius:50px;
+    width:200px;
+    height:200px;
+}
+
+body {
+    background-color: #F76C6C;
+}
