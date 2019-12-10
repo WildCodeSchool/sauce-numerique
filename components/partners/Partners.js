@@ -18,13 +18,13 @@ function Partners() {
         <img className="partners" src="https://i.imgur.com/W5Ardip.png" alt="Mame" />
       </div>
       <div>
-        <img className="partenaires" src="https://i.imgur.com/7iXYgAI.png" alt="Wild Code School" />
+        <img className="partners" src="https://i.imgur.com/7iXYgAI.png" alt="Wild Code School" />
       </div>
       <div>
-        <img className="partenaires" src="https://i.imgur.com/iRZyUyX.jpg" alt="Tours" />
+        <img className="partners" src="https://i.imgur.com/iRZyUyX.jpg" alt="Tours" />
       </div>
       <div>
-        <img className="partenaires" src="https://i.imgur.com/ykblB26.jpg" alt="Région Centre" />
+        <img className="partners" src="https://i.imgur.com/ykblB26.jpg" alt="Région Centre" />
       </div>
     </Slider>
   );

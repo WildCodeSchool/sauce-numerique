@@ -5,3 +5,23 @@
 ul{
     height: 30rem;
 }
+
+.question >h1{
+    position: absolute;
+    color: #fff;
+    margin-left: 0rem;
+    margin-top: -45rem;
+    font-size: 4rem;
+}
+
+.button_question{
+    position: relative;
+    left: -3rem;
+    top: -35rem;
+    margin: 1rem;
+}
+
+p.carousel-status {
+    display: none;
+}
+

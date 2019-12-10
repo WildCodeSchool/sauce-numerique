@@ -1,7 +1,7 @@
 import Layout from '../components/Layout';
 import Carousel from '../components/Carousel/Carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import Partenaire from '../components/Partenaire/Partenaire';
+import Partners from '../components/partners/Partners';
 
 const Home = () => (
   <div>
@@ -11,7 +11,7 @@ const Home = () => (
         <Carousel />
       </article>
       <h1>Nos Partenaires</h1>
-      <Partenaire />
+      <Partners />
     </Layout>
   </div>
 );
