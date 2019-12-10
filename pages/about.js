@@ -1,14 +1,21 @@
+import React from 'react';
+import Head from 'next/head';
 import Layout from '../components/Layout';
+
 
 
 const AboutUs = () => (
   <div>
+    <Head>
+      <title>My styled page</title>
+      <link href="/styles/about.css" rel="stylesheet" />
+    </Head>
     <Layout>
       <article>
         <h1>Qui sommes-nous ?</h1>
         <section>
           <div>
-          <img src="http://genie-civil.insa-strasbourg.fr/wp-content/uploads/2019/02/dc66f5dd88cce481d512376d40570d87.jpg"
+          <img width="100%" src="http://genie-civil.insa-strasbourg.fr/wp-content/uploads/2019/02/dc66f5dd88cce481d512376d40570d87.jpg"
           alt="team-picture" id="team-picture"/>
           </div>
         </section>
@@ -45,6 +52,7 @@ const AboutUs = () => (
         </section>
       </article>
     </Layout>
+    
   </div>
 );
 
