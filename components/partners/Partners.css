@@ -7,6 +7,11 @@
     height:200px;
 }
 
+ul.slick-dots {
+    margin: -30rem;
+    margin-left: 0rem;
+}
+
 
 
 
