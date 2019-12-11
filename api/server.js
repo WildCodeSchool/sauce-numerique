@@ -27,21 +27,6 @@ app.get('/', (req, res) => {
         }
     });
 })
-
-app.post('/', (req, res) => {
-    const formData = req.body;
-    connection.query('INSERT INTO partenaire SET ?', formData, ( err, results) => {
-        if (err)
-        {
-            console.log(err)
-            res.status(500).send("Erreur lors de la sauvegarde du user")
-        }
-        else 
-        {
-            res.sendStatus(200);
-        }
-    })
-})
 const port = 5000;
 
 app.listen(port, () => console.log(`Serveur up and running on port ${port}!`));
