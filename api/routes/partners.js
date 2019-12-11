@@ -15,18 +15,5 @@ Router.get("/", (req, res) => {
         }
     })
 });
-Router.post("/partners", (req, res) => {
-    mysqlConnection.query('INSERT INTO partenaire SET ?',(err, rows,fields) => {
-        if (!err)
-        {
-            res.send(rows) 
-        }
-        else
-        {
-            console.log(err);
-        }
-       
-    })
-})
 
 module.exports = Router;

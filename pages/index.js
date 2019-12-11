@@ -11,9 +11,12 @@ const Home = ({test}) => (
       
         {test.map (y => 
         <div key={y.id}>
-          <a href={y.url}> clique me</a>
-          <li>{y.name.text}</li>
-        <li>{y.id}</li>
+            <a href={y.logo}> clique me</a>
+            <div>
+              <img src={y.logo}></img>
+            </div>
+          <li>{y.name}</li>
+          <li>{y.id}</li>
         </div>
           )
         }
@@ -21,14 +24,14 @@ const Home = ({test}) => (
     </Layout>
   </div>
 );
-
+//https://www.eventbriteapi.com/v3/users/me/events/?token=J3HV53T7XHQQQ5KWAMHT
 Home.getInitialProps = async function() {
-  const res = await fetch('https://www.eventbriteapi.com/v3/users/me/events/?token=J3HV53T7XHQQQ5KWAMHT');
+  const res = await fetch('http://localhost:5000');
   const data = await res.json();
   console.log(data);
 
   return {
-    test : data.events
+    test : data
   };
 };
 
