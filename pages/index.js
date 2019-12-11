@@ -10,7 +10,9 @@ const Home = () => (
         <h1>Bienvenue sur La Sauce Numérique !</h1>
         <Carousel />
       </article>
-      <h1>Nos Partenaires</h1>
+      <div className="h1-partner">
+        <h1>Nos Partenaires</h1>
+      </div>
       <Partners />
     </Layout>
   </div>
