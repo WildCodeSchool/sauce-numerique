@@ -1,6 +1,6 @@
 // eslint-disable-next-line import/no-unresolved
 import Head from 'next/Head';
-import Header from './Header';
+import Menu from './Navbar/Menu';
 
 const layoutStyle = {
   margin: 20,
@@ -12,8 +12,9 @@ const Layout = ({ children }) => (
   <div style={layoutStyle}>
     <Head>
       <title>La Sauce Numérique</title>
+      <meta charset="UTF-8" />
     </Head>
-    <Header />
+    <Menu />
     {children}
   </div>
 );

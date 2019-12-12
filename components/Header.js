@@ -5,24 +5,30 @@ const linkStyle = {
 };
 
 const Header = () => (
-  <div>
-    <Link href="/">
-      <a style={linkStyle}>Accueil</a>
-    </Link>
-    <Link href="/events">
-      <a style={linkStyle}>Événements</a>
-    </Link>
-    <Link href="/ressources">
-      <a style={linkStyle}>Ressources</a>
-    </Link>
-    <Link href="/about">
-      <a style={linkStyle}>Qui sommes-nous ?</a>
-    </Link>
-    <Link href="/faq">
-      <a style={linkStyle}>FAQ</a>
-    </Link>
-    <a style={linkStyle}>Contact</a>
-  </div>
+  <header className="navbar">
+    <nav className="navbar__navigation">
+      <div />
+      <div className="navbar__logo"><a href="/">LOGO</a></div>
+      <div className="navbar__navigation-items">
+        <Link href="/">
+          <a style={linkStyle}>Accueil</a>
+        </Link>
+        <Link href="/events">
+          <a style={linkStyle}>Événements</a>
+        </Link>
+        <Link href="/ressources">
+          <a style={linkStyle}>Ressources</a>
+        </Link>
+        <Link href="/about">
+          <a style={linkStyle}>Qui sommes-nous ?</a>
+        </Link>
+        <Link href="/faq">
+          <a style={linkStyle}>FAQ</a>
+        </Link>
+        <a style={linkStyle}>Contact</a>
+      </div>
+    </nav>
+  </header>
 );
 
 export default Header;
