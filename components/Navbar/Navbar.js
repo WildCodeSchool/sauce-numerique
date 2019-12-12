@@ -1,10 +1,10 @@
 import React from 'react';
 import { animated, useSpring, config } from 'react-spring';
+import styled from 'styled-components';
+import Header from '../Header';
 import Brand from './Brand';
 import CollapseMenu from './CollapseMenu';
-import Header from '../Header';
 import Burgermenu from './BurgerMenu';
-import styled from 'styled-components';
 
 const NavLinks = styled(animated.ul)`
   justify-self: end;
@@ -60,45 +60,40 @@ const BurgerWrapper = styled.div`
 `;
 
 const Navbar = (props) => {
-    const barAnimation = useSpring({
-        from: { transform: 'translate3d(0, -10rem, 0)' },
-        transform: 'translate3d(0, 0, 0)',
-    });
+  const barAnimation = useSpring({
+    from: { transform: 'translate3d(0, -10rem, 0)' },
+    transform: 'translate3d(0, 0, 0)',
+  });
 
-    const linkAnimation = useSpring({
-        from: { transform: 'translate3d(0, 30px, 0)', opacity: 0 },
-        to: { transform: 'translate3d(0, 0, 0)', opacity: 1 },
-        delay: 800,
-        config: config.wobbly,
-    });
+  const linkAnimation = useSpring({
+    from: { transform: 'translate3d(0, 30px, 0)', opacity: 0 },
+    to: { transform: 'translate3d(0, 0, 0)', opacity: 1 },
+    delay: 800,
+    config: config.wobbly,
+  });
 
-    return (
-        <>
-            <NavBar style={barAnimation}>
-                <FlexContainer>
-                    <Brand />
-                    <NavLinks style={linkAnimation}>
-                        <a href="/">Accueil</a>
-                        <a href="/">Événements</a>
-                        <a href="/">Ressources</a>
-                        <a href="/">Qui sommes-nous ?</a>
-                        <a href="/">FAQ</a>
-                        <a href="/">Contact</a>
-                    </NavLinks>
-                    <BurgerWrapper>
-                        <Burgermenu
-                            navbarState={props.navbarState}
-                            handleNavbar={props.handleNavbar}
-                        />    
-                    </BurgerWrapper>
-                </FlexContainer>
-            </NavBar>
-            <CollapseMenu
-                navbarState={props.navbarState}
-                handleNavbar={props.handleNavbar}
+  return (
+    <>
+      <NavBar style={barAnimation}>
+        <FlexContainer>
+          <Brand />
+          <NavLinks style={linkAnimation}>
+          <Header />
+          </NavLinks>
+          <BurgerWrapper>
+            <Burgermenu
+              navbarState={props.navbarState}
+              handleNavbar={props.handleNavbar}
             />
-        </>        
-    )
-}
+          </BurgerWrapper>
+        </FlexContainer>
+      </NavBar>
+      <CollapseMenu
+        navbarState={props.navbarState}
+        handleNavbar={props.handleNavbar}
+      />
+    </>
+  );
+};
 
 export default Navbar;

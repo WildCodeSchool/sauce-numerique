@@ -8,13 +8,12 @@ const Header = () => (
   <header className="navbar">
     <nav className="navbar__navigation">
       <div />
-      <div className="navbar__logo"><a href="/">LOGO</a></div>
       <div className="navbar__navigation-items">
         <Link href="/">
           <a style={linkStyle}>Accueil</a>
         </Link>
         <Link href="/events">
-          <a style={linkStyle}>Événements</a>
+          <a style={linkStyle}>Événenents</a>
         </Link>
         <Link href="/ressources">
           <a style={linkStyle}>Ressources</a>

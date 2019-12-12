@@ -35,7 +35,7 @@ const Wrapper = styled.div`
 
 const Burgermenu = (props) => {
     return (
-        <Wrapper onClick={props.handleNavbar}>
+        <Wrapper onClick={ props.handleNavbar }>
             <div className={ props.navbarState ? "open" : ""}>
                 <span>&nbsp;</span>
                 <span>&nbsp;</span>

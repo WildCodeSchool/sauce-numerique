@@ -2,14 +2,8 @@
 import Head from 'next/Head';
 import Menu from './Navbar/Menu';
 
-const layoutStyle = {
-  margin: 20,
-  padding: 20,
-  border: '1px solid #DDD',
-};
-
 const Layout = ({ children }) => (
-  <div style={layoutStyle}>
+  <div>
     <Head>
       <title>La Sauce Numérique</title>
       <meta charset="UTF-8" />
