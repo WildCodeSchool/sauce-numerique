@@ -14,7 +14,7 @@ const CollapseWrapper = styled(animated.div)`
 
 const NavLinks = styled.ul`
   list-style-type: none;
-  padding: 2rem 1rem 50rem 2rem;
+  padding: 2rem 1rem 35rem 2rem;
   text-align: center;
 
   & li {
@@ -34,13 +34,25 @@ const NavLinks = styled.ul`
     &:hover {
       color: #fdcb6e;
       border-bottom: 1px solid #fdcb6e;
+       
+      &:p {
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 50rem;
+        text-align: center;
+        width: 100%;
+        color: #000;
+      }
     }
   }
 
-  & p {
-    text-align: center;
-    
+  & logo-collapsemenu {
+    display: inline;
+    line-height: 2.5;
+    width: 100%;
   }
+}
+
 `;
 
 const CollapseMenu = (props) => {
@@ -57,7 +69,12 @@ const CollapseMenu = (props) => {
       >
         <NavLinks>
             <Header />
-            <p>Prout</p>
+            <div className="logo-menu">
+              <img src="../uploads/fb.png" width="70"></img>
+              <img src="../uploads/eventbrite.png" width="70"></img>
+              <img src="../uploads/helloasso.png" width="70"></img>
+            </div>
+            <p>Crédits: Wild Code School - Alex' LE COQ - Stan Vega - Bwouno - Jean Marmain</p>
         </NavLinks>
       </CollapseWrapper>
     );
