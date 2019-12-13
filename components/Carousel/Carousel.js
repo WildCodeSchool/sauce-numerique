@@ -1,6 +1,6 @@
-import React from './node_modules/react';
+import React from 'react';
 import './Carousel.css';
-import { Carousel as ResponsiveCarousel } from './node_modules/react-responsive-carousel';
+import { Carousel as ResponsiveCarousel } from 'react-responsive-carousel';
 
 class Carousel extends React.Component {
 
