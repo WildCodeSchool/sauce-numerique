@@ -1,16 +1,11 @@
 
 import React from 'react';
-import Head from 'next/head';
 import Layout from '../components/Layout';
 
 
 
 const AboutUs = () => (
   <div>
-    <Head>
-      <title>My styled page</title>
-      <link href="/styles/about.css" rel="stylesheet" />
-    </Head>
     <Layout>
       <article>
         <h1>Qui sommes-nous ?</h1>
@@ -49,11 +44,9 @@ const AboutUs = () => (
               esse cillum dolore eu fugiat nulla pariatur. 
               Excepteur sint occaecat cupidatat non proident, sunt in 
               culpa qui officia deserunt mollit anim id est laborum.</p>
-
         </section>
       </article>
     </Layout>
-    
   </div>
 );
 
