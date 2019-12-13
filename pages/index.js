@@ -15,7 +15,7 @@ const Home = ({ test }) => (
       <div className="h1-partner">
         <h1>Nos Partenaires</h1>
       </div>
-      <Partners partners={test}/>
+      <Partners partners={test} />
     </Layout>
   </div>
 );

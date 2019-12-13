@@ -4,7 +4,7 @@ import 'slick-carousel/slick/slick.css';
 import './Partners.css';
 
 function Partners({ partners }) {
-  console.log({ partners })
+  console.log({ partners });
 
   const settings = {
     dots: true,
@@ -17,7 +17,7 @@ function Partners({ partners }) {
     // eslint-disable-next-line react/jsx-props-no-spreading
     <Slider {...settings} autoplay>
       {partners.map((y) => (
-        <div className="logo-partners" key={y.id}> 
+        <div className="logo-partners" key={y.id}>
           <img className="partners" src={y.logo} alt={y.id} />
         </div>
       ))}
