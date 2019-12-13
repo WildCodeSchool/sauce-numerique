@@ -1,10 +1,10 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const connection = require('./connection');
+const connection = require('./api/connection');
 
 const app = express();
 
-const PartnersRoutes = require('./routes/partners');
+const PartnersRoutes = require('./api/routes/partners');
 
 app.use(
   bodyParser.urlencoded({

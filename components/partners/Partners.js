@@ -3,7 +3,9 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import './Partners.css';
 
-function Partners() {
+function Partners({ partners }) {
+  console.log({ partners })
+
   const settings = {
     dots: true,
     infinite: true,
@@ -13,20 +15,14 @@ function Partners() {
   };
   return (
     // eslint-disable-next-line react/jsx-props-no-spreading
-    <Slider {...settings}>
-      <div>
-        <img className="partners" src="https://i.imgur.com/W5Ardip.png" alt="Mame" />
-      </div>
-      <div>
-        <img className="partners" src="https://i.imgur.com/7iXYgAI.png" alt="Wild Code School" />
-      </div>
-      <div>
-        <img className="partners" src="https://i.imgur.com/iRZyUyX.jpg" alt="Tours" />
-      </div>
-      <div>
-        <img className="partners" src="https://i.imgur.com/ykblB26.jpg" alt="Région Centre" />
-      </div>
+    <Slider {...settings} autoplay>
+      {partners.map((y) => (
+        <div className="logo-partners" key={y.id}> 
+          <img className="partners" src={y.logo} alt={y.id} />
+        </div>
+      ))}
     </Slider>
   );
 }
+
 export default Partners;

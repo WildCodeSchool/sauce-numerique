@@ -6,6 +6,11 @@
     width:200px;
     height:200px;
 }
+.logo-partners{
+    display: flex !important;
+    justify-content: center;
+}
+
 
 ul.slick-dots {
     margin: -30rem;

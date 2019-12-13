@@ -15,19 +15,7 @@ const Home = ({ test }) => (
       <div className="h1-partner">
         <h1>Nos Partenaires</h1>
       </div>
-      <Partners />
-
-      {test.map((y) => (
-        <div key={y.id}>
-          <a href={y.logo}> clique me</a>
-          <div>
-            <img alt="" src={y.logo} />
-          </div>
-          <li>{y.name}</li>
-          <li>{y.id}</li>
-        </div>
-      ))}
-
+      <Partners partners={test}/>
     </Layout>
   </div>
 );
