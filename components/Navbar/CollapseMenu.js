@@ -4,6 +4,7 @@ import { useSpring, animated } from 'react-spring';
 import Header from '../Header';
 
 
+
 const CollapseWrapper = styled(animated.div)`
   background: #2d3436;
   position: fixed;
@@ -44,13 +45,13 @@ const NavLinks = styled.ul`
         color: #000;
       }
     }
+    & logo-collapsemenu {
+      display: block;
+      width: 100%;
+      
+    }
   }
 
-  & logo-collapsemenu {
-    display: inline;
-    line-height: 2.5;
-    width: 100%;
-  }
 }
 
 `;
@@ -70,9 +71,9 @@ const CollapseMenu = (props) => {
         <NavLinks>
             <Header />
             <div className="logo-menu">
-              <img src="../uploads/fb.png" width="70"></img>
-              <img src="../uploads/eventbrite.png" width="70"></img>
-              <img src="../uploads/helloasso.png" width="70"></img>
+              <img src="https://i.imgur.com/HOLM9VN.png" width="70" alt="Facebook"></img>
+              <img src="https://i.imgur.com/8pSf4Kh.png" width="70" alt="Eventbrite"></img>
+              <img src="https://i.imgur.com/SvjyzIR.png" width="70" alt="Helloasso"></img>
             </div>
             <p>Crédits: Wild Code School - Alex' LE COQ - Stan Vega - Bwouno - Jean Marmain</p>
         </NavLinks>
