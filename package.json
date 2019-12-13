@@ -21,7 +21,7 @@
     "react-slick": "^0.25.2",
     "slick": "^1.12.2",
     "slick-carousel": "^1.8.1",
-    "webpack": "^4.41.2",
+    "webpack": "2.3.1",
     "webpack-loader": "0.0.1",
     "isomorphic-unfetch": "^3.0.0",
     "serverless-mysql": "^1.5.1",
