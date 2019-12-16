@@ -3,14 +3,16 @@ import styled from 'styled-components';
 import { useSpring, animated } from 'react-spring';
 import Header from '../Header';
 
-
-
 const CollapseWrapper = styled(animated.div)`
   background: #2d3436;
   position: fixed;
   top: 4.5rem;
   left: 0;
   right: 0;
+
+  & img {
+    display: inline-grid;
+  }
 `;
 
 const NavLinks = styled.ul`
@@ -45,13 +47,7 @@ const NavLinks = styled.ul`
         color: #000;
       }
     }
-    & logo-collapsemenu {
-      display: block;
-      width: 100%;
-      
-    }
   }
-
 }
 
 `;
@@ -70,7 +66,7 @@ const CollapseMenu = (props) => {
       >
         <NavLinks>
             <Header />
-            <div className="logo-menu">
+            <div className=''>
               <img src="https://i.imgur.com/HOLM9VN.png" width="70" alt="Facebook"></img>
               <img src="https://i.imgur.com/8pSf4Kh.png" width="70" alt="Eventbrite"></img>
               <img src="https://i.imgur.com/SvjyzIR.png" width="70" alt="Helloasso"></img>
