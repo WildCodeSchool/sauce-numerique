@@ -5,6 +5,7 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import Partners from '../components/partners/Partners';
 
 
+
 const Home = ({ test }) => (
   <div>
     <Layout>
