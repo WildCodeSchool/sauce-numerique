@@ -3,7 +3,8 @@ import styled from 'styled-components';
 
 const Brand = () => {
   return (
-  <Image src={'https://via.placeholder.com/130'} alt="Logo" />
+    <Image src='https://via.placeholder.com/130.png'>
+    </Image>
 );
 }
 

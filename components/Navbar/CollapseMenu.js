@@ -49,7 +49,13 @@ const NavLinks = styled.ul`
     }
   }
 }
+`;
 
+const Image = styled.img`
+    display:inline-grid;
+    width: 20%;
+    margin: auto 0;
+    position: relative;
 `;
 
 const CollapseMenu = (props) => {
@@ -66,10 +72,10 @@ const CollapseMenu = (props) => {
       >
         <NavLinks>
             <Header />
-            <div className=''>
-              <img src="https://i.imgur.com/HOLM9VN.png" width="70" alt="Facebook"></img>
-              <img src="https://i.imgur.com/8pSf4Kh.png" width="70" alt="Eventbrite"></img>
-              <img src="https://i.imgur.com/SvjyzIR.png" width="70" alt="Helloasso"></img>
+            <div>
+              <Image src={'https://i.imgur.com/HOLM9VN.png'}lt="Facebook" />
+              <Image src={'https://i.imgur.com/8pSf4Kh.png'} alt="Eventbrite" />
+              <Image src={'https://i.imgur.com/SvjyzIR.png'} alt="Helloasso" />
             </div>
             <p>Crédits: Wild Code School - Alex' LE COQ - Stan Vega - Bwouno - Jean Marmain</p>
         </NavLinks>
