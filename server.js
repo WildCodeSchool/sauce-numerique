@@ -12,19 +12,15 @@ app.use(
   }),
 );
 
-app.use(bodyParser.json());
-app.use('/partners', PartnersRoutes);
-
-app.get('/', (req, res) => {
-  connection.query('SELECT * FROM partenaire', (err, results) => {
-    if (err) {
-      console.log(err);
-      res.status(500).send('Erreur lors de la récupeération des données');
-    } else {
-      res.json(results);
-    }
-  });
-});
+require('dotenv').config();
+const cors = require('cors');
 const port = 5000;
 
-app.listen(port, () => console.log(`Serveur up and running on port ${port}!`));
+app.use(cors())
+app.use(bodyParser.json());
+app.use('/', PartnersRoutes);
+
+app.listen(port, () => 
+  // eslint-disable-next-line no-console
+  console.log(`Serveur up and running on port ${port}!`)
+);
