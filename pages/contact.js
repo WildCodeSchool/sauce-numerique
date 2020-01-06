@@ -1,11 +1,12 @@
 import Layout from "../components/Layout"
+import ContactMail from "../components/Contact/contact-mail"
+import ContactSponsor from "../components/Contact/contact-sponso"
 
 const Contact = () => (
     <div>
       <Layout>
-        <article>
-          <h1>Ceci est la page : Contact</h1>
-        </article>
+      <ContactMail />
+      <ContactSponsor />
       </Layout>
     </div>
   );
