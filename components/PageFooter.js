@@ -5,7 +5,7 @@ import Link from 'next/link';
 const PageFooter = () => (
     <div /*style={styledPageFooter}*/>
         <h1>Retrouvez-nous</h1>
-        <button classname="Footer-network">FACEBOOK</button>
+        <button className="Footer-network">FACEBOOK</button>
         <button className="Footer-network">EVENTBRIDE</button>
         <button className="Footer-network">HELLO ASSO</button>
         <section>
