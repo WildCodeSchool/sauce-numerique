@@ -9,7 +9,7 @@ const ContactSponsor = () => {
             </p>
             <div className="button-container">
                 <button className="contact-button">
-                    TELECHARGER PDF
+                    TÉLÉCHARGER PDF
                 </button>
                 <button className="contact-button">
                     CONTACT
