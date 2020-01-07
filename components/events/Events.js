@@ -1,9 +1,9 @@
 import React from 'react';
 
 
-const Events = ({ eve })=>(
+const Events = ({ events })=>(
     <div>
-        {eve.events.map((y) => (
+        {events.events.map((y) => (
             <div className="" key={y.id}>
               <h2> {y.name.text}</h2>
               <p>{y.description.text}</p>

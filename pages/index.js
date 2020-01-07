@@ -5,7 +5,7 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import Partners from '../components/partners/Partners';
 import Events from '../components/events/Events';
 
-const Home = ({ test }) => (
+const Home = ({ test, eve }) => (
   <div>
     <Layout>
       <article>
@@ -16,18 +16,21 @@ const Home = ({ test }) => (
         <h1>Nos Partenaires</h1>
       </div>
       <Partners partners={test} />
-      {/* <Events HommeEvents={events}/> */}
+      <Events events={eve}/>
     </Layout>
   </div>
 );
 // https://www.eventbriteapi.com/v3/users/me/events/?token=J3HV53T7XHQQQ5KWAMHT
 Home.getInitialProps = async  () => {
-  const res = await fetch('http://localhost:5000/api/v1/partners');
-  const data = await res.json();
-  console.log(data);
+  const resPartners = await fetch('http://localhost:5000/api/v1/partners');
+  const dataPartners = await resPartners.json();
+  const resEvents = await fetch('https://www.eventbriteapi.com/v3/users/me/events/?token=EQCXFCP563PTYQ5DE2TD');
+  const dataEvents = await resEvents.json();
+  console.log(dataPartners,dataEvents);
 
   return {
-    test: data,
+    test: dataPartners,
+    eve: dataEvents,
   };
 };
 
