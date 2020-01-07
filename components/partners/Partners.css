@@ -21,9 +21,6 @@ body{
     background-color: lightgray;
 }
 
-
-
-
 @media (max-width: 568px){
     .partners{
         width:50px;
