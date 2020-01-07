@@ -47,6 +47,7 @@ const ContactPartner = () => {
                     font-size: 20px;
                     font-weight: Roboto;
                     cursor: pointer;
+                    z-index: -1;
                 }
             
                 .contact-button::after {
