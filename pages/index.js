@@ -24,7 +24,7 @@ const Home = ({ test, eve }) => (
 Home.getInitialProps = async  () => {
   const resPartners = await fetch('http://localhost:5000/api/v1/partners');
   const dataPartners = await resPartners.json();
-  const resEvents = await fetch('https://www.eventbriteapi.com/v3/users/me/events/?token=EQCXFCP563PTYQ5DE2TD');
+  const resEvents = await fetch('https://www.eventbriteapi.com/v3/users/me/events/?token=EQCXFCP563PTYQ5DE2TD&page_size=2&order_by=start_desc');
   const dataEvents = await resEvents.json();
   console.log(dataPartners,dataEvents);
 
