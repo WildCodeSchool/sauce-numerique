@@ -15,6 +15,7 @@ const ContactPartner = () => {
             <style jsx>{`
                 .contact-container {
                     margin-top: 80px;
+                    z-index: -1;
                 }
                 .contact-title {
                     margin: 0 auto;
@@ -47,7 +48,6 @@ const ContactPartner = () => {
                     font-size: 20px;
                     font-weight: Roboto;
                     cursor: pointer;
-                    z-index: 0;
                 }
             
                 .contact-button::after {
