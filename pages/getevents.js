@@ -1,9 +1,10 @@
 import React from 'react';
+import fetch from 'isomorphic-unfetch';
 import Layout from '../components/Layout';
 import Events from '../components/events/Events';
 
 
-const getevents = ( { eve }) => (
+const getEvents = ({ eve }) => (
   <div>
     <Layout>
       <article>
@@ -14,7 +15,7 @@ const getevents = ( { eve }) => (
   </div>
 );
 
-getevents.getInitialProps= async function () {
+getEvents.getInitialProps= async () => {
   const res = await fetch('https://www.eventbriteapi.com/v3/users/me/events/?token=EQCXFCP563PTYQ5DE2TD');
   const data = await res.json();
  
@@ -23,4 +24,4 @@ getevents.getInitialProps= async function () {
     eve: data,
   };
 };
-export default getevents;
+export default getEvents;
