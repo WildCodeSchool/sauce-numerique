@@ -3,7 +3,7 @@ import Layout from '../components/Layout';
 import Carousel from '../components/Carousel/Carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import Partners from '../components/partners/Partners';
-
+import Events from '../components/events/Events';
 
 const Home = ({ test }) => (
   <div>
@@ -16,12 +16,13 @@ const Home = ({ test }) => (
         <h1>Nos Partenaires</h1>
       </div>
       <Partners partners={test} />
+      {/* <Events HommeEvents={events}/> */}
     </Layout>
   </div>
 );
 // https://www.eventbriteapi.com/v3/users/me/events/?token=J3HV53T7XHQQQ5KWAMHT
-Home.getInitialProps = async function () {
-  const res = await fetch('http://localhost:5000');
+Home.getInitialProps = async  () => {
+  const res = await fetch('http://localhost:5000/api/v1/partners');
   const data = await res.json();
   console.log(data);
 
