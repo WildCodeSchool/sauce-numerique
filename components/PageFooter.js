@@ -2,12 +2,32 @@ import React from 'react';
 import Link from 'next/link';
 
 
-const PageFooter = () => (
+class PageFooter extends React.Component {
+    fClick = (e) => {
+    e.preventDefault();
+    location = 'https://www.facebook.com/';
+    };
+    evClick = (e) => {
+        e.preventDefault();
+        location = 'https://www.eventbrite.fr/';
+        };
+        haClick = (e) => {
+            e.preventDefault();
+            location = 'https://www.helloasso.com/';
+            };
+    render() {
+        return(
     <div>
-        <h2 className="footer-title">Retrouvez-nous</h2>
-        <button href="https://www.facebook.com/" className="footer-network-button">FACEBOOK</button>
-        <button className="footer-network-button">EVENTBRIDE</button>
-        <button className="footer-network-button">HELLO ASSO</button>
+        <h2 className="footer-title">Retrouvez-nous</h2>        
+            <div className="sharing-network">
+                <img src="https://img.icons8.com/color/000000/facebook.png" 
+                onClick={this.fClick} 
+                className="footer-network-button" />
+                <img src="https://www.mailerlite.com/assets/integration/eventbrite-icon.png" 
+                onClick={this.evClick}/>
+                <img src="http://www.e-works.fr/media/item/49800901457db5e4be296dc68e0fdbfc.png" 
+                onClick={this.haClick}/>
+            </div>
         <section>
             <aside className="sitemap">
                 <h3 className="footer-semi-title">SITEMAP</h3>
@@ -52,6 +72,27 @@ const PageFooter = () => (
                 }
 
                 .footer-semi-title{text-align: center;}
+
+                .sharing-network{
+                    border: 5px solid pink;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    margin: auto;
+                    width: 70%;
+                    height: 50%;
+                    // align-item: center;
+                    
+                }
+
+                .sharing-network > img{
+                    // object-fit: cover;
+                    align-item: center;
+                    width: 33%;
+                    height: 33%;
+                    margin: auto;
+                    
+                }
 
                 aside{
                     width: 40%;
@@ -121,7 +162,10 @@ const PageFooter = () => (
 
             `}</style>
     </div>
-);
+        );
+};
+}
+
 
 
 
