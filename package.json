@@ -30,9 +30,7 @@
     "serverless-mysql": "^1.5.1",
     "slick": "^1.12.2",
     "slick-carousel": "^1.8.1",
-    "sql-template-strings": "^2.2.2",
-    "webpack": "^4.41.2",
-    "webpack-loader": "0.0.1"
+    "sql-template-strings": "^2.2.2"
   },
   "proxy": "http://localhost:5000",
   "devDependencies": {
