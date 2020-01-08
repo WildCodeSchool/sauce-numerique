@@ -1,13 +1,14 @@
 import Layout from '../components/Layout';
 
-const Ressources = () => (
+const Events = () => (
   <div>
     <Layout>
       <article>
-        <h1>Ceci est la page : Ressources</h1>
+        <h1>Ceci est la page : Événements</h1>
       </article>
     </Layout>
   </div>
 );
 
-export default Ressources;
+
+export default Events;
