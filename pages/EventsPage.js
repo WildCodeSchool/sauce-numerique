@@ -4,12 +4,12 @@ import Layout from '../components/Layout';
 import Events from '../components/events/Events';
 
 
-const getEvents = ({ eve }) => (
+const EventsPage = ({ events }) => (
   <div>
     <Layout>
       <article>
         <h1>Ceci est la page : Événements</h1>
-        <Events events={eve}/>
+        <Events events={events}/>
       </article>
     </Layout>
   </div>
@@ -21,7 +21,7 @@ getEvents.getInitialProps= async () => {
  
 
   return {
-    eve: data,
+    events: data,
   };
 };
-export default getEvents;
+export default EventsPage;

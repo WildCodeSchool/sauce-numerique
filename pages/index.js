@@ -5,7 +5,7 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import Partners from '../components/partners/Partners';
 import Events from '../components/events/Events';
 
-const Home = ({ test, eve }) => (
+const Home = ({ partners, events }) => (
   <div>
     <Layout>
       <article>
@@ -15,8 +15,8 @@ const Home = ({ test, eve }) => (
       <div className="h1-partner">
         <h1>Nos Partenaires</h1>
       </div>
-      <Partners partners={test} />
-      <Events events={eve}/>
+      <Partners partners={partners} />
+      <Events events={events}/>
     </Layout>
   </div>
 );
@@ -29,8 +29,8 @@ Home.getInitialProps = async  () => {
   console.log(dataPartners,dataEvents);
 
   return {
-    test: dataPartners,
-    eve: dataEvents,
+    partner: dataPartners,
+    events: dataEvents,
   };
 };
 
