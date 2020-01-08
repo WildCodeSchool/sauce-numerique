@@ -13,7 +13,7 @@ const Header = () => (
           <a style={linkStyle}>Accueil</a>
         </Link>
         <Link href="/events">
-          <a style={linkStyle}>Événenents</a>
+          <a style={linkStyle}>Événements</a>
         </Link>
         <Link href="/ressources">
           <a style={linkStyle}>Ressources</a>
@@ -24,7 +24,9 @@ const Header = () => (
         <Link href="/faq">
           <a style={linkStyle}>FAQ</a>
         </Link>
+        <Link href="/contact">
         <a style={linkStyle}>Contact</a>
+        </Link>
       </div>
     </nav>
   </header>
