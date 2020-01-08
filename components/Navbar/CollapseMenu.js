@@ -66,7 +66,7 @@ const CollapseMenu = (props) => {
       >
         <NavLinks>
             <Header />
-            <div className=''>
+            <div>
               <img src="https://i.imgur.com/HOLM9VN.png" width="70" alt="Facebook"></img>
               <img src="https://i.imgur.com/8pSf4Kh.png" width="70" alt="Eventbrite"></img>
               <img src="https://i.imgur.com/SvjyzIR.png" width="70" alt="Helloasso"></img>
