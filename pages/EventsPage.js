@@ -15,7 +15,7 @@ const EventsPage = ({ events }) => (
   </div>
 );
 
-getEvents.getInitialProps= async () => {
+EventsPage.getInitialProps= async () => {
   const res = await fetch('https://www.eventbriteapi.com/v3/users/me/events/?token=EQCXFCP563PTYQ5DE2TD');
   const data = await res.json();
  
