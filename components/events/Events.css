@@ -1,0 +1,11 @@
+.events{
+    width: auto;
+    margin-top: 1em;
+}
+.events--logo{
+    width:15rem;
+}
+.events--text{
+    font-size: 1em;
+    text-align: center;
+}

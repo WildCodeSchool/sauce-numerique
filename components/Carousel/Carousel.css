@@ -1,0 +1,58 @@
+img.yours-custom-class {
+    width: 100%;
+    position: initial;
+    height: 35rem;
+    top: -9rem;
+  }
+  
+  p.alice-carousel__next-btn-item {
+    position: relative;
+    bottom: 36rem;
+    right: 11px;
+    opacity: 0;
+  }
+  
+  .alice-carousel__prev-btn {
+    text-align: right;
+    position: relative;
+    bottom: 17rem;
+    opacity: 0;
+  }
+  
+  .question{
+    position: relative;
+    bottom: 30rem;
+    left: 1rem;
+    font-size: 3rem;
+    color: #fff;
+  }
+  
+  button.button_question {
+    position: relative;
+    bottom: 29rem;
+    margin: 2rem;
+    left: 32rem;
+  }
+  
+  .alice-carousel__dots-item {
+    width: 8px;
+    height: 8px;
+    margin-left: -74px;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: #e0e4fb;
+    position: relative;
+    bottom: 244px;
+    left: 35px;
+    display: none;
+  }
+  
+  .h1-partner {
+    position: relative;
+    bottom: 19rem;
+  }
+  
+  .slick-slider.slick-initialized {
+    position: relative;
+    bottom: 19rem;
+  }
