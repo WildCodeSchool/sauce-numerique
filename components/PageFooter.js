@@ -3,14 +3,14 @@ import Link from 'next/link';
 
 
 const PageFooter = () => (
-    <div /*style={styledPageFooter}*/>
-        <h1>Retrouvez-nous</h1>
-        <button className="Footer-network">FACEBOOK</button>
-        <button className="Footer-network">EVENTBRIDE</button>
-        <button className="Footer-network">HELLO ASSO</button>
+    <div>
+        <h2 className="footer-title">Retrouvez-nous</h2>
+        <button className="footer-network-button">FACEBOOK</button>
+        <button className="footer-network-button">EVENTBRIDE</button>
+        <button className="footer-network-button">HELLO ASSO</button>
         <section>
             <aside className="sitemap">
-                <h2>SITEMAP</h2>
+                <h3 className="footer-semi-title">SITEMAP</h3>
                 <p>Lorem ipsum dolor sit amet, 
                     consectetur adipiscing elit, 
                     sed do eiusmod tempor incididunt ut labore et 
@@ -23,24 +23,39 @@ const PageFooter = () => (
                     non proident, sunt in culpa qui officia deserunt 
                     mollit anim id est laborum.</p>
             </aside>
-            <aside className="Mention-legale">
-                <h3>MENTION LEGALE</h3>
-                <button className="button"></button>
-                <button className="valider">VALIDER</button>
+            <aside className="Mentions-légales">
+                <h3 className="footer-semi-title">MENTION LEGALE</h3>
+                <button className="footer-button-newsletter" className="footer-mentions-légales-button">NEWSLETTER</button>
+                <button className="footer-button-empty" className="footer-mentions-légales-button"></button>
+                <button className="footer-button-valider" className="footer-mentions-légales-button">VALIDER</button>
             </aside>
         </section>
 
     {/* Style du component */}
             <style jsx>{`
-                .Footer-network{
-                    margin: 20px;
-                    // display: flex;
+                .footer-network{
                     flex-direction: rows;
                     flex-direction: space between;
                 }
+                .footer-network-button{
+                    margin: 20px;
+                }
+
+                .footer-mentions-légales-button{
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 100%;
+                }
+
+                .footer-title{
+                    text-align: center;
+                }
+
+                .footer-semi-title{text-align: center;}
 
                 aside{
                     width: 40%;
+                    margin: 40px;
                 }
 
                 .Mention-legale{
@@ -103,9 +118,6 @@ const PageFooter = () => (
                     right: -16px;
                     transition: right 0.2s;
                 }
-
-               
-
 
             `}</style>
     </div>
