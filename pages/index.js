@@ -37,7 +37,7 @@ Home.getInitialProps = async  () => {
 
 
   return {
-    partner: partnersData,
+    partners: partnersData,
     events: eventsData,
   };
 };

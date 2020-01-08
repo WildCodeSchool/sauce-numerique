@@ -9,7 +9,6 @@ const Events = ({ events })=>(
                 <div className="events--text">
                     <h2> {y.name.text}</h2>
                     <p>{y.description.text}</p>
-                    <div>{y.venue_id}</div>
                 </div>
             </div>
         ))}
