@@ -5,7 +5,7 @@ import Link from 'next/link';
 const PageFooter = () => (
     <div>
         <h2 className="footer-title">Retrouvez-nous</h2>
-        <button className="footer-network-button">FACEBOOK</button>
+        <button href="https://www.facebook.com/" className="footer-network-button">FACEBOOK</button>
         <button className="footer-network-button">EVENTBRIDE</button>
         <button className="footer-network-button">HELLO ASSO</button>
         <section>
@@ -25,9 +25,9 @@ const PageFooter = () => (
             </aside>
             <aside className="Mentions-légales">
                 <h3 className="footer-semi-title">MENTION LEGALE</h3>
-                <button className="footer-button-newsletter" className="footer-mentions-légales-button">NEWSLETTER</button>
-                <button className="footer-button-empty" className="footer-mentions-légales-button"></button>
-                <button className="footer-button-valider" className="footer-mentions-légales-button">VALIDER</button>
+                <button id="footer-button-newsletter" className="footer-mentions-légales-button">NEWSLETTER</button>
+                <button id="footer-button-mail" className="footer-mentions-légales-button">EMAIL</button>
+                <button id="footer-button-valider" className="footer-mentions-légales-button">VALIDER</button>
             </aside>
         </section>
 
