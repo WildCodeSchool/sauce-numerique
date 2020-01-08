@@ -25,7 +25,15 @@ const NavLinks = styled.ul`
     transition: all 300ms linear 0s;
   }
 
-  & a {
+  & p {
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    color: white;
+    margin-top: 20px;
+  }
+
+  & .navbar__link {
     display: block;
     font-size: 1.7rem;
     line-height: 2.5;
@@ -38,26 +46,25 @@ const NavLinks = styled.ul`
     &:hover {
       color: #fdcb6e;
       border-bottom: 1px solid #fdcb6e;
-       
-      &:p {
-        position: absolute;
-        bottom: 0;
-        margin-bottom: 50rem;
-        text-align: center;
-        width: 100%;
-        color: #000;
-      }
     }
   }
 }
 `;
 
 const Image = styled.img`
-    display:inline-grid;
-    width: 20%;
+    display:flex;
+    width: 100px;
     margin: auto 0;
-    position: relative;
+    margin-top: 20px;
 `;
+
+const ImageContainer = styled.div`
+    display: grid;
+    text-align: -webkit-center;
+    bottom: 0;
+    margin-top: 50px;
+`;
+
 
 const CollapseMenu = (props) => {
   const { open } = useSpring({ open: props.navbarState ? 0 : 1 });
@@ -73,12 +80,18 @@ const CollapseMenu = (props) => {
       >
         <NavLinks>
             <Header />
-            <div>
-              <Image src={'https://i.imgur.com/HOLM9VN.png'} alt="Facebook" />
-              <Image src={'https://i.imgur.com/8pSf4Kh.png'} alt="Eventbrite" />
-              <Image src={'https://i.imgur.com/SvjyzIR.png'} alt="Helloasso" />
-            </div>
-            <p>Crédits: Wild Code School - Alex' LE COQ - Stan Vega - Bwouno - Jean Marmain</p>
+            <ImageContainer>
+              <a href="https://www.facebook.com">
+                <Image src={'https://i.imgur.com/HOLM9VN.png'} alt="Facebook" />
+              </a>
+              <a href="https://www.eventbrite.com/o/nicolas-brondin-bernard-20254074974">
+                <Image src={'https://i.imgur.com/8pSf4Kh.png'} alt="Eventbrite" />
+              </a>
+              <a href="https://www.helloasso.com/associations/la-sauce-numerique">
+                <Image src={'https://i.imgur.com/SvjyzIR.png'} alt="Helloasso" />
+              </a>
+            </ImageContainer>
+            <p>Crédits: Wild Code School - Alex' LE COQ - Stan VEGA - Bwouno - Jean MARMAIN</p>
         </NavLinks>
       </CollapseWrapper>
     );
