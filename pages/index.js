@@ -10,18 +10,40 @@ import Ressources from '../components/ressources/Ressources';
 const Home = ({ partners, events, ressources }) => (
   <div>
     <Layout>
-      <article>
-        <h1>Bienvenue sur La Sauce Numérique !</h1>
         <Carousel />
-      </article>
       <Manifest />
-      <div className="h1-partner">
-        <h1>Nos Partenaires</h1>
-      </div>
+      <div className="partner-container">
+        <h1 className="title">
+          Nos Partenaires
+        </h1>
       <Partners partners={partners} />
+      </div>
+      <div className="event-container">
+        <h1 className="title">
+          Prochains Événements
+        </h1>
       <Events events={events} />
+      </div>
+      <div className="ressource-container">
+        <h1 className="title">
+          Ressources
+        </h1>
       <Ressources ressources={ressources}/>
+      </div>
     </Layout>
+    <style jsx>{`
+      .title {
+        margin: 0 auto;
+        text-align: center;
+        font-size: 3em;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: black;
+        text-shadow: 0 1px 2px rgba(black,.15);
+      }
+    `}
+    </style>
   </div>
 );
 // https:// www.eventbriteapi.com/v3/users/me/events/?token=J3HV53T7XHQQQ5KWAMHT

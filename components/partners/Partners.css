@@ -1,3 +1,8 @@
+.partner-slider {
+    margin-top: 24em;
+    margin-bottom: -12em;
+    border: 1px #000000;
+}
 .partners{
     overflow:hidden;
     -webkit-border-radius:50px;
@@ -11,16 +16,12 @@
     justify-content: center;
 }
 
-
 ul.slick-dots {
     margin: -30rem;
     margin-left: 0rem;
     bottom: 27rem;
 }
 
-body{
-    background-color: #ffffff;
-}
 
 @media (max-width: 568px){
     .partners{

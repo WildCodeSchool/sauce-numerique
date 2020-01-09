@@ -1,6 +1,6 @@
 const Manifest = () => {
     return (
-        <div>
+        <div className="manifeste-container">
             <h1 className="manifeste-title">
                 Manifeste
             </h1>
@@ -13,6 +13,9 @@ const Manifest = () => {
                 </button>
             </div>
             <style jsx>{`
+                .manifeste-container {
+                    margin-bottom: 5em;
+                }
                 .manifeste-title {
                     margin: 0 auto;
                     text-align: center;

@@ -15,6 +15,7 @@ function Partners({ partners }) {
   };
   return (
     // eslint-disable-next-line react/jsx-props-no-spreading
+    <div className="partner-slider">
     <Slider {...settings} autoplay>
       {partners.map((y) => (
         <div className="logo-partners" key={y.id}>
@@ -22,6 +23,7 @@ function Partners({ partners }) {
         </div>
       ))}
     </Slider>
+    </div>
   );
 }
 

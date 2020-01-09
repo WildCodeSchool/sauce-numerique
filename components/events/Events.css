@@ -1,11 +1,21 @@
+.events-container {
+    margin: 1em;
+}
+
 .events{
     width: auto;
     margin-top: 1em;
+    border: 3px solid #000000;
+    background-color: #e74c3c;
+    color: #FFFFFF;
+    display: flex;
 }
-.events--logo{
+.events-logo{
     width:15rem;
 }
-.events--text{
+
+.events-text{
     font-size: 1em;
-    text-align: center;
+    margin: 1em;
+    text-align: right;
 }
