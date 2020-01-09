@@ -2,13 +2,21 @@
     margin: 1em;
 }
 
+.events-title {
+    font-size: 3em;
+    align-items: center;
+}
+
 .events{
     width: auto;
     margin-top: 1em;
+    margin-left: 10em;
+    margin-right: 10em;
     border: 3px solid #000000;
     background-color: #e74c3c;
     color: #FFFFFF;
     display: flex;
+    text-align: right;
 }
 .events-logo{
     width:15rem;
@@ -17,5 +25,4 @@
 .events-text{
     font-size: 1em;
     margin: 1em;
-    text-align: right;
 }

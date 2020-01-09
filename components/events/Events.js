@@ -13,6 +13,9 @@ const Events = ({ events })=>(
                     <p className="event-description">
                         {y.description.text}
                     </p>
+                    <button className="events-button">
+                        S'inscrire
+                    </button>
                 </div>
             </div>
         ))}
