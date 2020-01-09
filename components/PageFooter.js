@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './assets/logo/eventbriteLogo.png';
 import Link from 'next/link';
 
 
@@ -21,10 +20,10 @@ class PageFooter extends React.Component {
     <div>
         <h2 className="footer-title">Retrouvez-nous</h2>        
             <div className="sharing-network">
-                <img className="footer-network-button" src={logo} onClick={this.fClick} />
+                <img className="footer-network-button" src="https://img.icons8.com/color/96/000000/facebook.png" onClick={this.fClick} />
                 <img className="footer-network-button" src="https://www.mailerlite.com/assets/integration/eventbrite-icon.png" 
                 onClick={this.evClick}/>
-                <img className="footer-network-button" src="http://www.e-works.fr/media/item/49800901457db5e4be296dc68e0fdbfc.png" 
+                <img className="footer-network-button" src="http://www.apajh64-40.com/wp-content/uploads/2018/05/helloasso.png" 
                 onClick={this.haClick}/>
             </div>
         <section>
@@ -74,7 +73,6 @@ class PageFooter extends React.Component {
                 .footer-semi-title{text-align: center;}
 
                 .sharing-network{
-                    border: 5px solid pink;
                     display: flex;
                     flex-direction: row;
                     justify-content: space-between;
@@ -88,7 +86,7 @@ class PageFooter extends React.Component {
                 .sharing-network > img{
                     // object-fit: cover;
                     align-item: center;
-                    width: 33%;
+                    width: 25%;
                     height: 33%;
                     margin: auto;
                     
