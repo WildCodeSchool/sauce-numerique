@@ -1,4 +1,5 @@
 import React from 'react';
+import logo from './assets/logo/eventbriteLogo.png';
 import Link from 'next/link';
 
 
@@ -20,12 +21,10 @@ class PageFooter extends React.Component {
     <div>
         <h2 className="footer-title">Retrouvez-nous</h2>        
             <div className="sharing-network">
-                <img src="https://img.icons8.com/color/000000/facebook.png" 
-                onClick={this.fClick} 
-                className="footer-network-button" />
-                <img src="https://www.mailerlite.com/assets/integration/eventbrite-icon.png" 
+                <img className="footer-network-button" src='./assets/logo/eventbriteLogo.png' onClick={this.fClick} />
+                <img className="footer-network-button" src="https://www.mailerlite.com/assets/integration/eventbrite-icon.png" 
                 onClick={this.evClick}/>
-                <img src="http://www.e-works.fr/media/item/49800901457db5e4be296dc68e0fdbfc.png" 
+                <img className="footer-network-button" src="http://www.e-works.fr/media/item/49800901457db5e4be296dc68e0fdbfc.png" 
                 onClick={this.haClick}/>
             </div>
         <section>
@@ -59,6 +58,7 @@ class PageFooter extends React.Component {
                 }
                 .footer-network-button{
                     margin: 20px;
+                    width: 50vh;
                 }
 
                 .footer-mentions-légales-button{
