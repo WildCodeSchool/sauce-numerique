@@ -1,0 +1,28 @@
+import React, { Component } from 'react';
+import Navbar from './Navbar';
+import GlobalStyles from './Global';
+
+class Menu extends Component {
+    state = {
+        navbarOpen: false
+    };
+
+    handleNavbar = () => {
+        this.setState({ navbarOpen: !this.state.navbarOpen });
+    };
+
+    render() {
+
+        return (
+            <>
+                <Navbar
+                    navbarState={this.state.navbarOpen}
+                    handleNavbar={this.handleNavbar}
+                />
+            <GlobalStyles />
+            </>
+        );
+    };
+};
+
+export default Menu;
