@@ -13,9 +13,9 @@ const Events = ({ events })=>(
                     <p className="event-description">
                         {y.description.text}
                     </p>
-                    <button className="events-button">
+                    <a className="events-button" href={y.url}>
                         S'inscrire
-                    </button>
+                    </a>
                 </div>
             </div>
         ))}
