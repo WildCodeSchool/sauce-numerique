@@ -11,16 +11,17 @@
     justify-content: center;
 }
 
-
 ul.slick-dots {
     margin: -30rem;
     margin-left: 0rem;
     bottom: 27rem;
 }
 
-body{
-    background-color: #ffffff;
+.slick-slider.slick-initialized{
+    top: 1em;
+    margin-bottom: 5em;
 }
+
 
 @media (max-width: 568px){
     .partners{
