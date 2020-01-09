@@ -21,7 +21,7 @@ class PageFooter extends React.Component {
     <div>
         <h2 className="footer-title">Retrouvez-nous</h2>        
             <div className="sharing-network">
-                <img className="footer-network-button" src='./assets/logo/eventbriteLogo.png' onClick={this.fClick} />
+                <img className="footer-network-button" src={logo} onClick={this.fClick} />
                 <img className="footer-network-button" src="https://www.mailerlite.com/assets/integration/eventbrite-icon.png" 
                 onClick={this.evClick}/>
                 <img className="footer-network-button" src="http://www.e-works.fr/media/item/49800901457db5e4be296dc68e0fdbfc.png" 
