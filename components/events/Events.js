@@ -9,6 +9,7 @@ const Events = ({ events })=>(
                 <div className="events--text">
                     <h2> {y.name.text}</h2>
                     <p>{y.description.text}</p>
+                    <a href={y.url}>clique là</a>
                 </div>
             </div>
         ))}
