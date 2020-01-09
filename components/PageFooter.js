@@ -68,6 +68,7 @@ class PageFooter extends React.Component {
 
                 .footer-title{
                     text-align: center;
+                    font-size: 20px;
                 }
 
                 .footer-semi-title{text-align: center;}
@@ -79,7 +80,7 @@ class PageFooter extends React.Component {
                     margin: auto;
                     width: 70%;
                     height: 50%;
-                    
+                    border: 5px solid red;   
                 }
 
                 .sharing-network > img{
@@ -88,15 +89,15 @@ class PageFooter extends React.Component {
                     width: 25%;
                     height: 33%;
                     margin: auto;
-                    margin-top: 10px;
+                    margin-top: 20px;
                     
                 }
 
                 #logo-facebook{ width: 96px; }
                 
                 #logo-eventbrite{ 
-                    width: 78px;
-                    // margin-top: 5px;
+                    width: 96px;
+                    padding 9px;
                 }
                 
 
@@ -109,6 +110,8 @@ class PageFooter extends React.Component {
                     width: 40%;
                     margin: 40px;
                 }
+
+                p{     font-size: 20px; }
 
                 .Mention-legale{
                     display: flex;
