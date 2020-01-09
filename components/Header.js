@@ -12,10 +12,10 @@ const Header = () => (
         <Link href="/">
           <a className="navbar__link" style={linkStyle}>Accueil</a>
         </Link>
-        <Link href="/events">
+        <Link href="/EventsPage">
           <a className="navbar__link" style={linkStyle}>Événements</a>
         </Link>
-        <Link href="/ressources">
+        <Link href="/RessourcesPage">
           <a className="navbar__link" style={linkStyle}>Ressources</a>
         </Link>
         <Link href="/about">
