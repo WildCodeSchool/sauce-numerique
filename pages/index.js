@@ -1,5 +1,6 @@
 import fetch from 'isomorphic-unfetch';
 import Layout from '../components/Layout';
+import Manifest from '../components/Manifeste-Home/Manifest'
 import Carousel from '../components/Carousel/Carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import Partners from '../components/partners/Partners';
@@ -13,6 +14,7 @@ const Home = ({ partners, events, ressources }) => (
         <h1>Bienvenue sur La Sauce Numérique !</h1>
         <Carousel />
       </article>
+      <Manifest />
       <div className="h1-partner">
         <h1>Nos Partenaires</h1>
       </div>
