@@ -1,5 +1,5 @@
 // eslint-disable-next-line import/no-unresolved
-import Head from 'next/Head';
+import Head from 'next/head';
 import Header from './Header';
 
 const layoutStyle = {
