@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Layout from '../components/Layout';
 
@@ -46,7 +45,7 @@ const AboutUs = () => (
               culpa qui officia deserunt mollit anim id est laborum.</p>
         </section>
       </article>
-    </Layout>
+    </Layout>    
   </div>
 );
 
