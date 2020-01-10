@@ -8,6 +8,7 @@ const PageFooter = () => (
                 a, .footer-title{ 
                     color: #e5e3e8;
                     text-align: center;
+                    background: blue;
                 }
             `}</style>     
     </div>
