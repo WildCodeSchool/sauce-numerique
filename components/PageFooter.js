@@ -4,10 +4,15 @@ import Link from 'next/link';
 
 const PageFooter = () => (
     <div>
-        <h5 className="footer-title"><a href="">Mention Légales</a> - Tous droit reservé</h5>       
+        <h5 className="footer-title"><a href="">Mention légales</a> - Sauce Numérique Tous droits réservés</h5>       
 
     {/* Style du component */}
-            <style jsx>{``}</style>
+            <style jsx>{`
+                a, .footer-title{ 
+                    color: #e5e3e8;
+                    text-align: center;
+                }
+            `}</style>
        
     </div>
 );
