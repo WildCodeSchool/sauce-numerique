@@ -15,7 +15,7 @@ const RessourcesPage = ({ ressources }) => (
 );
 
 RessourcesPage.getInitialProps= async () => {
-  const ressourcesRes = await fetch('http://localhost:5000/api/v1/ressources');
+  const ressourcesRes = await fetch('https://sauce-num-back.herokuapp.com/api/v1/ressources');
   const ressourcesData = await ressourcesRes.json();
  
 
