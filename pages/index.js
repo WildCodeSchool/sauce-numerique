@@ -48,15 +48,15 @@ const Home = ({ partners, events, ressources }) => (
 );
 // https:// www.eventbriteapi.com/v3/users/me/events/?token=J3HV53T7XHQQQ5KWAMHT
 Home.getInitialProps = async () => {
-  // const resPartners = await fetch('http://https://sauce-num-back.herokuapp.com/api/v1/partners');
+  // const resPartners = await fetch('https://sauce-num-back.herokuapp.com/api/v1/partners');
   // const dataPartners = await resPartners.json();
   // const resEvents = await fetch('https://www.eventbriteapi.com/v3/users/me/events/?token=EQCXFCP563PTYQ5DE2TD&page_size=2&order_by=start_desc');
   // const dataEvents = await resEvents.json();
   // console.log(dataPartners,dataEvents);
   const [partnersRes, eventsRes, ressourcesRes] = await Promise.all([
-    fetch('http://https://sauce-num-back.herokuapp.com/api/v1/partners'),
+    fetch('https://sauce-num-back.herokuapp.com/api/v1/partners'),
     fetch('https://www.eventbriteapi.com/v3/users/me/events/?token=EQCXFCP563PTYQ5DE2TD&page_size=3&order_by=start_desc'),
-    fetch('http://https://sauce-num-back.herokuapp.com/api/v1/ressources'),
+    fetch('https://sauce-num-back.herokuapp.com/api/v1/ressources'),
   ]);
   const partnersData = await partnersRes.json();
   const eventsData = await eventsRes.json();
