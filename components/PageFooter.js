@@ -11,6 +11,8 @@ const PageFooter = () => (
                 }
             `}</style>     
     </div>
-);
+        );
+
+
 
 export default PageFooter;

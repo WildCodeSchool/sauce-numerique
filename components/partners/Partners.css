@@ -1,0 +1,31 @@
+.partners{
+    overflow:hidden;
+    -webkit-border-radius:50px;
+    -moz-border-radius:50px;
+    border-radius:50px;
+    width:200px;
+    height:200px;
+}
+.logo-partners{
+    display: flex !important;
+    justify-content: center;
+}
+
+ul.slick-dots {
+    margin: -30rem;
+    margin-left: 0rem;
+    bottom: 27rem;
+}
+
+.slick-slider.slick-initialized{
+    top: 1em;
+    margin-bottom: 5em;
+}
+
+
+@media (max-width: 568px){
+    .partners{
+        width:50px;
+        height:50px;
+    }
+}
