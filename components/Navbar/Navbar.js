@@ -25,7 +25,6 @@ const NavLinks = styled(animated.ul)`
       color: #e74c3c;
       border-bottom: 1px solid #e74c3c;
     }
-    
 
     @media (max-width: 768px) {
       display: none;
