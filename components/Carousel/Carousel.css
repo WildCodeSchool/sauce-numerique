@@ -1,14 +1,25 @@
 img.imgcarousel {
   width: 100%;
   position: relative;
-  height: 90rem;
-  bottom: 38rem;
+  height: 64rem;
+  bottom: 37rem;
   object-fit: cover;
 }
 
+img.background {
+  position: relative;
+  top: 273px;
+  right: 38rem;
+  z-index: 1;
+  opacity: 0.8;
+}
+
+.alice-carousel {
+  bottom: 53rem;
+}
+
 .alice-carousel__wrapper {
-  top: 3rem;
-  margin-bottom: -46rem;
+  margin-bottom: -103rem;
 }
   
 p.alice-carousel__next-btn-item {
@@ -32,6 +43,7 @@ p.alice-carousel__next-btn-item {
   left: 6rem;
   font-size: 4rem;
   color: #fff;
+  z-index: 1;
 }
 
 .button {

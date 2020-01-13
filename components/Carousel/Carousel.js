@@ -19,7 +19,10 @@ class Carousel extends React.Component {
   return (
     <AliceCarousel mouseTrackingEnabled>
       <div>
-        <img src="https://i.imgur.com/KYgLhZ6.jpg" alt="ordi"  className="imgcarousel" />
+        <div>
+        <img src="https://i.imgur.com/dcqrhOZ.png" alt="personnes qui utilise un telephone"  className="background" />
+        </div>
+        <img src="https://i.imgur.com/uIVo5Ie.png" alt="personnes qui utilise un telephone"  className="imgcarousel" />
         <h1 className="question">Saviez-vous que les Français passe 8h/jour devant des écrans?</h1>
         <div className="button">
         <button className="button_question"  onClick={this.YesClick}>
@@ -31,8 +34,7 @@ class Carousel extends React.Component {
         </div>
       </div>
       <div>
-        <img src="https://i.imgur.com/JfnGK0j.jpg" alt="ordi"  className="imgcarousel" />
-        <h1 className="question">Saviez-vous que les Français passe 8h/jour devant des écrans?</h1>
+        <img src="https://i.imgur.com/uIVo5Ie.png" alt="personnes qui utilise un telephone"  className="imgcarousel" />        <h1 className="question">Saviez-vous que les Français passe 8h/jour devant des écrans?</h1>
         <div className="button">
         <button className="button_question" onClick={this.YesClick}>
           OUI
@@ -43,8 +45,7 @@ class Carousel extends React.Component {
         </div>
       </div>
       <div>
-        <img src="https://i.imgur.com/au1L4wj.jpg" alt="ordi"  className="imgcarousel" />
-        <h1 className="question">Saviez-vous que les Français passe 8h/jour devant des écrans?</h1>
+        <img src="https://i.imgur.com/uIVo5Ie.png" alt="personnes qui utilise un telephone"  className="imgcarousel" />        <h1 className="question">Saviez-vous que les Français passe 8h/jour devant des écrans?</h1>
         <div className="button">
         <button className="button_question" onClick={this.YesClick}>
           OUI
