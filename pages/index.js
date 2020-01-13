@@ -16,32 +16,63 @@ const Home = ({ partners, events, ressources }) => (
         <h1 className="title">
           Nos Partenaires
         </h1>
+        <hr className="barre"/>
+        <p className="text-container">Privée ou Public, ils nous soutiennent dans notre action pour promouvoir la culture du numérique, l’accès<br/>à ce formidable outil pour toutes et tous. Vous souhaitez nous accompagner dans notre action ?</p>
+        <a className="contact-container" href="/contact">Contactez nous dès maintenant</a>
       <Partners partners={partners} />
       </div>
       <div className="event-container">
-        <h1 className="title">
+        <h1 className="title2">
           Prochains Événements
         </h1>
       <Events events={events} />
       </div>
       <div className="ressource-container">
-        <h1 className="title">
+        <h1 className="title2">
           Ressources
         </h1>
       <Ressources ressources={ressources}/>
       </div>
     </Layout>
     <style jsx>{`
-      .title {
+      .title2 {
         margin: 0 auto;
         text-align: center;
-        font-size: 3em;
+        font-size: 6em;
         margin-bottom: 10px;
-        text-transform: uppercase;
-        font-weight: bold;
-        color: black;
+        font-family: 'Dosis',sans-serif;
+        font-weight: 900;
+        color: #1F2040;
         text-shadow: 0 1px 2px rgba(black,.15);
       }
+      .title{
+        margin: 0 auto;
+        text-align: center;
+        font-size: 6em;
+        margin-bottom: 10px;
+        font-family: 'Dosis',sans-serif;
+        font-weight: 900;
+        color: #fff;
+        text-shadow: 0 1px 2px rgba(black,.15);
+      }
+      hr.barre {
+        width: 3%;
+        height: 4px;
+        background-color: #fff;
+        margin-left: 67rem;
+      }
+      .text-container{
+        color: #fff;
+        font-size: 2rem;
+        margin-left: 26rem;
+        padding: 5rem;
+      }
+      .contact-container{
+        color: #fff;
+        font-size: 12px;
+        margin-left: 62rem;
+        margin-bottom: 2rem;
+      }  
     `}
     </style>
   </div>

@@ -19,9 +19,7 @@ class Carousel extends React.Component {
   return (
     <AliceCarousel mouseTrackingEnabled>
       <div>
-        <div>
         <img src="https://i.imgur.com/dcqrhOZ.png" alt="personnes qui utilise un telephone"  className="background" />
-        </div>
         <img src="https://i.imgur.com/uIVo5Ie.png" alt="personnes qui utilise un telephone"  className="imgcarousel" />
         <h1 className="question">En moyenne et par jour, combien de temps passons-nous devant des écrans ?</h1>
         <div className="button">
