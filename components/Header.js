@@ -27,9 +27,6 @@ const Header = () => (
         <Link href="/contact">
         <a className="navbar__link" style={linkStyle}>Contact</a>
         </Link>
-        <Link href="/MentionsLegales">
-          <a className="navbar__link" style={linkStyle}>Mentions Légales</a>
-        </Link>
       </div>
     </nav>
   </header>
