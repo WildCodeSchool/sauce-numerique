@@ -13,6 +13,7 @@ const Home = ({ partners, events, ressources }) => (
         <Carousel />
       <Manifest />
       <div className="partner-container">
+        <img className="img-container" src="https://i.imgur.com/o2qSbpI.png" alt="border to pixel"/>
         <h1 className="title">
           Nos Partenaires
         </h1>
@@ -20,6 +21,7 @@ const Home = ({ partners, events, ressources }) => (
         <p className="text-container">Privée ou Public, ils nous soutiennent dans notre action pour promouvoir la culture du numérique, l’accès<br/>à ce formidable outil pour toutes et tous. Vous souhaitez nous accompagner dans notre action ?</p>
         <a className="contact-container" href="/contact">Contactez nous dès maintenant</a>
       <Partners partners={partners} />
+      <img className="img2-container" src="https://i.imgur.com/kPBSy7z.png" alt="border to pixel"/>
       </div>
       <div className="event-container">
         <h1 className="title2">
@@ -72,7 +74,18 @@ const Home = ({ partners, events, ressources }) => (
         font-size: 12px;
         margin-left: 62rem;
         margin-bottom: 2rem;
-      }  
+      }
+      .img-container{
+        position: relative;
+        bottom: 13rem;
+      }
+      .event-container {
+        margin-top: 16rem;
+      }
+      .img2-container {
+        position: relative;
+        top: 5rem;
+      }
     `}
     </style>
   </div>

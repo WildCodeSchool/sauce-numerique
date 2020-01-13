@@ -14,7 +14,7 @@ const Manifest = () => {
             </div>
             <style jsx>{`
                 .manifeste-container {
-                    margin-bottom: 5em;
+                    margin-bottom: 24em;
                 }
                 .manifeste-title {
                     margin: 0 auto;
