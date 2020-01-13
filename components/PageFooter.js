@@ -9,6 +9,7 @@ const PageFooter = () => (
                     color: #e5e3e8;
                     text-align: center;
                     background: blue;
+                    font-size: 15px;
                 }
             `}</style>     
     </div>
