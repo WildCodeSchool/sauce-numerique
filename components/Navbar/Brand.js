@@ -9,7 +9,7 @@ const Brand = () => {
 }
 
 const Image = styled.img`
-    height: 100%;
+    height: 200%;
     margin: auto 0;
     display:block;
     margin-right:auto;
