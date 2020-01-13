@@ -35,7 +35,7 @@
     "slick-carousel": "^1.8.1",
     "sql-template-strings": "^2.2.2"
   },
-  "proxy": "https://sauce-num-back.herokuapp.com",
+  "proxy": "https://sauce-num-back.herokuapp.com ",
   "devDependencies": {
     "eslint": "^6.1.0",
     "eslint-config-airbnb": "^18.0.1",
