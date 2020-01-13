@@ -1,58 +1,111 @@
-img.yours-custom-class {
-    width: 100%;
-    position: initial;
-    height: 35rem;
-    top: -9rem;
-  }
+img.imgcarousel {
+  width: 100%;
+  position: relative;
+  height: 90rem;
+  bottom: 38rem;
+  object-fit: cover;
+}
+
+.alice-carousel__wrapper {
+  top: 3rem;
+  margin-bottom: -46rem;
+}
   
+p.alice-carousel__next-btn-item {
+  position: relative;
+  bottom: 365px;
+  right: 31px;
+  opacity: 0;
+  font-size: 2rem;
+}
+  
+.alice-carousel__prev-btn {
+  text-align: right;
+  position: relative;
+  bottom: 17rem;
+  opacity: 0;
+}
+  
+.question{
+  position: relative;
+  bottom: 79rem;
+  left: 6rem;
+  font-size: 4rem;
+  color: #fff;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+}
+  
+button.button_question {
+  display: flex;
+  z-index: 1;
+  position: relative;
+  bottom: 67rem;
+  margin: 10px;
+  left: 61rem;
+}
+  
+.alice-carousel__dots-item {
+  width: 8px;
+  height: 8px;
+  margin-left: -74px;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: #e0e4fb;
+  position: relative;
+  bottom: 244px;
+  left: 35px;
+  display: none;
+}
+  
+.slick-slider.slick-initialized {
+  position: relative;
+  bottom: 19rem;
+}
+
+@media screen and (max-device-width: 1024px){
+  .question{
+    bottom: 57rem;
+    left: 1rem;
+    font-size: 2rem;
+  }
+
+  img.imgcarousel {
+    width: 108%;
+    height: 62rem;
+    bottom: 37rem;
+  }
+
+  button.button_question {
+    bottom: 58rem;
+    margin: 2rem;
+    left: 27rem;
+    width: 4rem;
+    font-size: 1rem;
+    z-index: 1;
+  }
+
   p.alice-carousel__next-btn-item {
-    position: relative;
-    bottom: 36rem;
-    right: 11px;
+    bottom: 149px;
+    left: 6px;
     opacity: 0;
+    font-size: 1rem;
   }
-  
-  .alice-carousel__prev-btn {
-    text-align: right;
-    position: relative;
-    bottom: 17rem;
-    opacity: 0;
-  }
+}
+
+@media (orientation: portrait){
+  button.button_question {
+    bottom: 77rem;
+    margin: 2rem;
+    left: 15rem;
+    width: 4rem;
+  } 
   
   .question{
-    position: relative;
-    bottom: 30rem;
-    left: 1rem;
-    font-size: 3rem;
-    color: #fff;
+    bottom: 87rem;
+    left: 2rem;
   }
-  
-  button.button_question {
-    position: relative;
-    bottom: 29rem;
-    margin: 2rem;
-    left: 32rem;
-  }
-  
-  .alice-carousel__dots-item {
-    width: 8px;
-    height: 8px;
-    margin-left: -74px;
-    cursor: pointer;
-    border-radius: 50%;
-    background-color: #e0e4fb;
-    position: relative;
-    bottom: 244px;
-    left: 35px;
-    display: none;
-  }
-  
-  .h1-partner {
-    position: relative;
-    bottom: 19rem;
-  }
-  
-  .slick-slider.slick-initialized {
-    position: relative;
-    bottom: 19rem;
-  }
+}
