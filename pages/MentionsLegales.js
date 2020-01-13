@@ -2,8 +2,10 @@ import React from 'react';
 import Layout from '../components/Layout';
 import Link from 'next/link';
 
+
 const MentionsLegales = () => (
     <div>
+        <Layout>
         <h3 className="mentions-legales-title">Mentions Légales</h3>
         
         {/* Lien pour générer les Mentions-Légales: http://generateur-de-mentions-legales.com/ */}
@@ -24,15 +26,21 @@ const MentionsLegales = () => (
             qui officia deserunt mollit anim 
             id est laborum.</p>
 
+        </Layout>
+
             <style jsx>{`
             .mentions-legales-title {
                 text-align: center;
+                margin: 40px 0 0 0;
+                font-size: 20px;
             }
 
             .mentions-legales-text {
                 width: 60%;
                 margin: 0 auto;
+                margin-bottom: 10px;
                 text-align: center;
+                font-size: 15px;
             }
             
             `}</style>  
