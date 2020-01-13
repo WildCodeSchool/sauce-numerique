@@ -4,7 +4,7 @@ import { useSpring, animated } from 'react-spring';
 import Header from '../Header';
 
 const CollapseWrapper = styled(animated.div)`
-  background: #2d3436;
+  background: #1f2040;
   position: fixed;
   top: 4.5rem;
   left: 0;
@@ -37,8 +37,7 @@ const NavLinks = styled.ul`
     display: block;
     font-size: 1.7rem;
     line-height: 2.5;
-    color: #dfe6e9;
-    text-transform: uppercase;
+    color: #ffffff;
     text-decoration: none;
     cursor: pointer;
     text-align: center;
