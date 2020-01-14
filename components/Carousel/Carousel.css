@@ -1,14 +1,24 @@
 img.imgcarousel {
   width: 100%;
   position: relative;
-  height: 90rem;
-  bottom: 38rem;
   object-fit: cover;
 }
 
+img.background{
+  width: 100%;
+  position: relative;
+  object-fit: cover;
+  top: 65rem;
+  z-index: 1;
+  opacity: 0.8;
+}
+
+.alice-carousel{
+  bottom: 66rem;
+}
+
 .alice-carousel__wrapper {
-  top: 3rem;
-  margin-bottom: -46rem;
+  margin-bottom: -87rem;
 }
   
 p.alice-carousel__next-btn-item {
@@ -28,9 +38,29 @@ p.alice-carousel__next-btn-item {
   
 .question{
   position: relative;
-  bottom: 79rem;
-  left: 6rem;
-  font-size: 4rem;
+  bottom: 47rem;
+  left: 1rem;
+  font-size: 8rem;
+  color: #fff;
+  z-index: 1;
+}
+
+.question2 {
+  position: relative;
+  bottom: 47rem;
+  left: 1rem;
+  font-size: 9rem;
+  text-align: center;
+  z-index: 1;
+  color: #fff;
+}
+
+a.question-lien {
+  position: relative;
+  bottom: 41rem;
+  z-index: 1;
+  left: 57rem;
+  font-size: 2rem;
   color: #fff;
 }
 
@@ -43,9 +73,23 @@ button.button_question {
   display: flex;
   z-index: 1;
   position: relative;
-  bottom: 67rem;
-  margin: 10px;
-  left: 61rem;
+  bottom: 36rem;
+  margin: 4px;
+  left: 47rem;
+  height: 29px;
+  width: 215px;
+  border-radius: 10px;
+  font-size: 2rem;
+}
+
+button.button_question2 {
+  position: relative;
+  bottom: 34rem;
+  z-index: 1;
+  font-size: 2rem;
+  border-radius: 10px;
+  width: 16rem;
+  left: 38rem;
 }
   
 .alice-carousel__dots-item {

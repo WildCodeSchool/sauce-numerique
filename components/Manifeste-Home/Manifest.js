@@ -4,88 +4,50 @@ const Manifest = () => {
             <h1 className="manifeste-title">
                 Manifeste
             </h1>
+            <hr className="barre"/>
             <p className="manifeste-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ipsum orci, tristique ut tortor ut, mollis commodo ex. Nullam fringilla sagittis euismod. Nunc euismod dui justo, quis porta eros venenatis gravida. Fusce ut mauris velit. Morbi ac eros sagittis, placerat ante pellentesque, consequat erat. Maecenas at erat augue. Donec ullamcorper nunc id ipsum ultrices rutrum. Donec molestie, erat vel sodales vehicula, mauris augue malesuada eros, at rutrum nisi erat sed leo. Sed vestibulum elit quis vehicula feugiat. Donec id felis eget augue fringilla congue vel ac libero. Morbi pulvinar tempor metus ut gravida. Etiam ante augue, posuere ut nulla at, placerat pulvinar quam.
-            </p>
-            <div className="button-container">
-                <a className="manifeste-link" href="/faq">
-                    <button className="manifeste-button">
-                        Voir plus
-                    </button>
-                </a>
+                Le numérique est aujourd’hui omniprésent dans nos vies, il impact fortement nos modes de vies, nos sociétés, nos politiques, nos relations sociales professionnelles ou privées. Pour autant, il ne profite pas à tous, nombreux sont celles et ceux qui le comprennent mal ou bien pire, en sont exclus !<br/><br/>
+                La Sauce Numérique souhaite par ses actions sur le terrain <strong>promouvoir l’accompagnement, l’apprentissage, l’accès et l’appropriation du numérique à destination du grand public</strong> avec pas ou peu de connaissance de ce vaste univers. La Sauce Numérique est une association régie par la loi du 1er juillet 1901. Ses membres sont issus du numérique et d’autres horizons, formant un groupe riche et éclectique dont l’objectif est d’organiser des actions les plus accessibles et adaptées possibles aux problèmes liées au numérique.
+            </p>            
+            <div className="faq-container">
+                <p>Des questions ? Consultez notre <a href="/faq">Foire Aux Questions</a></p>
             </div>
             <style jsx>{`
                 .manifeste-link {
                     text-decoration: none;
                 }
                 .manifeste-container {
-                    margin-bottom: 5em;
+                    margin-bottom: 24em;
                 }
                 .manifeste-title {
                     margin: 0 auto;
                     text-align: center;
-                    font-size: 3em;
+                    font-size: 6em;
                     margin-bottom: 10px;
-                    text-transform: uppercase;
-                    font-weight: bold;
-                    color: black;
+                    font-family: 'Dosis',sans-serif;
+                    font-weight: 900;
+                    color: #1F2040;
                     text-shadow: 0 1px 2px rgba(black,.15);
                 }
+
+                hr.barre {
+                    width: 3%;
+                    height: 4px;
+                    background-color: #250A40;
+                    margin-left: 67rem;
+                }
                 .manifeste-text {
-                    text-align: justify;
-                    font-size: 2em;
+                    font-size: 3em;
                     margin: 10px;
                     padding: 50px;
-                }
-                .manifeste-button {
-                    display: flex;
-                    margin: 0 auto;
+                    color: #1F2040;
                     position: relative;
-                    background: transparent;
-                    outline: 0;
-                    border: 8px solid #e74c3c;
-                    border-right: 0px;
-                    padding: 10px 20px;
-                    color: #e74c3c;
-                    font-weight: bold;
-                    min-width: 150px;
-                    font-size: 20px;
-                    font-weight: Roboto;
-                    cursor: pointer;
+                    left: 3rem;
                 }
-            
-                .manifeste-button::after {
-                    position: absolute;
-                    content: "";
-                    display: block;
-                    right: 0;
-                    top:0;
-                    width:8px;
-                    height: 100%;
-                    background: #e74c3c;
-                    transition: height 1s;
-                }
-            
-                .manifeste-button::before {
-                    position: absolute;
-                    content: "";
-                    display: block;
-                    bottom:0;
-                    right: 0;
-                    width:8px;
-                    height: 8px;
-                    background: #e74c3c;
-                    transition: right 0.2s;
-                }
-            
-                .manifeste-button:hover::after {
-                    height: calc(100% - 8px);
-                    transition: height 0s;
-                }
-                
-                .manifeste-button:hover::before {
-                    right: -16px;
-                    transition: right 0.2s;
+                .faq-container{
+                    font-size: 2rem;
+                    font-weight: 700;
+                    margin-left: 48rem;
                 }
             `}
             </style>
