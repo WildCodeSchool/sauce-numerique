@@ -1,5 +1,12 @@
 .events-container {
-    margin: 1em;
+    margin: 10em;
+    display: flex;
+    width: 64%;
+    height: 360px;
+    margin-left: 45rem;
+}
+a.url{
+    text-decoration: none;
 }
 
 .events-title {
@@ -7,19 +14,26 @@
     align-items: center;
 }
 
+p.event-description {
+    position: relative;
+    top: 15px;
+}
+
 .events{
-    width: auto;
-    margin-top: 1em;
-    margin-left: 10em;
-    margin-right: 10em;
-    border: 3px solid #000000;
-    background-color: #e74c3c;
+    width: 97%;
+    background-color: #1F2040;
     color: #FFFFFF;
     display: flex;
-    text-align: right;
+    margin: 117px;
+    border-radius: 35px;
+    position: relative;
+    bottom: 10rem;
+    right: 23rem;
 }
 .events-logo{
-    width:15rem;
+    width: 28rem;
+    border-radius: 30px;
+    height: 32rem;
 }
 
 .events-text{

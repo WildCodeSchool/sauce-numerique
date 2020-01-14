@@ -4,6 +4,7 @@ import './Events.css';
 const Events = ({ events })=>(
     <div className="events-container">
         {events.events.map((y) => (
+            <a className="url" target="_blanck" href={y.url}>
             <div className={"events"}  key={y.id}>
             {y.logo && <img className="events-logo" src={y.logo.url} />}
                 <div className="events-text">
@@ -13,13 +14,15 @@ const Events = ({ events })=>(
                     <p className="event-description">
                         {y.description.text}
                     </p>
-                    <a className="events-button" href={y.url}>
-                        S'inscrire
-                    </a>
+                    <p className="event-description">
+                        {y.description.text}
+                    </p>
                 </div>
             </div>
-        ))}
+            </a>
+        ))}             
     </div>
+    
 )
 
 
