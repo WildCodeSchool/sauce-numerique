@@ -8,7 +8,7 @@ const Wrapper = styled.div`
   display: block;
 
   & span {
-    background: #1f2040;
+    background: #ffffff;
     display: block;
     position: relative;
     width: 3.5rem;

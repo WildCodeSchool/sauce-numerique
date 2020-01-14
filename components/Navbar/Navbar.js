@@ -12,7 +12,7 @@ const NavLinks = styled(animated.ul)`
   margin: auto 0;
 
   & a {
-    color: #1f2040;
+    color: #ffffff;
     font-weight: 600;
     border-bottom: 1px solid transparent;
     margin: 0 1.5rem;
