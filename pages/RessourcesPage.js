@@ -7,7 +7,7 @@ const RessourcesPage = ({ ressources }) => (
   <div>
     <Layout>
       <article>
-        <h1>Ceci est la page : Ressources</h1>
+        <h1 className="ressources">Ressources</h1>
         <Ressources ressources={ressources}/>
       </article>
     </Layout>

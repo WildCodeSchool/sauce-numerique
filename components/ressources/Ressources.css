@@ -1,5 +1,5 @@
 .ressources-container {
-    margin: 1px;
+    margin: 329px;
 }
 
 .ressources{
@@ -17,4 +17,12 @@
     font-size: 1em;
     margin: 1em;
     text-align: right;
+}
+
+p.text-ressources {
+    position: relative;
+    top: 5rem;
+    left: 33rem;
+    font-size: 2rem;
+    color: #1F2040;
 }
