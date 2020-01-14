@@ -5,7 +5,6 @@ import Header from '../Header';
 
 const CollapseWrapper = styled(animated.div)`
   background: #1f2040;
-  position: fixed;
   top: 4.5rem;
   left: 0;
   right: 0;
@@ -43,8 +42,8 @@ const NavLinks = styled.ul`
     text-align: center;
 
     &:hover {
-      color: #e74c3c;
-      border-bottom: 1px solid #e74c3c;
+      color: #ffffff;
+      border-bottom: 1px solid #ffffff;
     }
   }
 }
