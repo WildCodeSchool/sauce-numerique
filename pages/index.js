@@ -10,7 +10,7 @@ import Ressources from '../components/ressources/Ressources';
 const Home = ({ partners, events, ressources }) => (
   <div>
     <Layout>
-        <Carousel />
+      <Carousel />
       <Manifest />
       <div className="partner-container">
         <img className="img-container" src="https://i.imgur.com/o2qSbpI.png" alt="border to pixel"/>

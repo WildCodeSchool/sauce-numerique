@@ -13,6 +13,9 @@ const Manifest = () => {
                 <p>Des questions ? Consultez notre <a href="/faq">Foire Aux Questions</a></p>
             </div>
             <style jsx>{`
+                .manifeste-link {
+                    text-decoration: none;
+                }
                 .manifeste-container {
                     margin-bottom: 24em;
                 }
