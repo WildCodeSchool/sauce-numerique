@@ -8,8 +8,10 @@ const PageFooter = () => (
                 a, .footer-title{ 
                     color: #e5e3e8;
                     text-align: center;
-                    background: #250a40;
+                    background: #1F2040;
                     font-size: 15px;
+                    margin-bottom: -5vh;
+                    margin-top: 2vh;
                 }
             `}</style>     
     </div>
