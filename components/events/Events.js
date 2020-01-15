@@ -6,10 +6,11 @@ moment.locale('fr');
 
 const Events = ({ events })=>(
     <div className="events-events">
+
         {events.events.map((y) => {
             const start = moment(y.start.local)
             return(
-            <div className="events-container">
+            <div className="events-container" key={y.id}>
             <a className="url" target="_blanck" href={y.url}>
             <div className={"events"}  key={y.id}>
             <div className="event">
