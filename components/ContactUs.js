@@ -9,8 +9,6 @@ const ContactUs = () => (
         <p className="p-contact-component">Le numérique est aujourd'hui omniprésent dans nos vies, il impact fortement nos mode de vies, nos société, nos politiques, nos relations sociales, professionnelles ou privée. 
             Pour autant, il ne profite pas à tous, nombreux sont celles et ceux qui le comprennent mal ou bien pire, en sont exclus!</p>
         <br />
-        
-
         <button><a className="lien-mail" href="/contact">CONTACTER PAR EMAIL</a></button>
         <br />
         <a href="https://www.facebook.com/"><img className="logo-fcb" src="https://i.imgur.com/H05W1un.png" /></a>
