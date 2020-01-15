@@ -61,6 +61,23 @@ const Container = styled.div`
     left: 0rem;
     right: 0rem;
     font-size: 90%;
+
+    & a {
+      text-decoration: none;
+      margin-right: 2px;
+      margin-left: 2px;
+    }
+
+    & a:last-child {
+      margin-right: 0
+    }  
+    & a:link {
+      color: #FFFFFF
+    }
+
+    & a:visited {
+      color: #FFFFFF
+    }
 `;
 
 
@@ -77,19 +94,39 @@ const CollapseMenu = (props) => {
       }}
       >
         <NavLinks>
-            <Header />
-            <Container>
-              <a href="https://www.facebook.com">
-                <Image src={'https://i.imgur.com/HOLM9VN.png'} alt="Facebook" />
-              </a>
-              <a href="https://www.eventbrite.com/o/nicolas-brondin-bernard-20254074974">
-                <Image src={'https://i.imgur.com/8pSf4Kh.png'} alt="Eventbrite" />
-              </a>
-              <a href="https://www.helloasso.com/associations/la-sauce-numerique">
-                <Image src={'https://i.imgur.com/SvjyzIR.png'} alt="Helloasso" />
-              </a>
-            <p>Crédits: Wild Code School - Alex' LE COQ - Stan VEGA - Bwouno - Jean MARMAIN</p>
-            </Container>
+          <Header />
+          <Container>
+            <a href="https://www.facebook.com" target="_blank">
+              <Image src={'https://i.imgur.com/HOLM9VN.png'} alt="Facebook" />
+            </a>
+            <a href="https://www.eventbrite.com/o/nicolas-brondin-bernard-20254074974" target="_blank">
+              <Image src={'https://i.imgur.com/8pSf4Kh.png'} alt="Eventbrite" />
+            </a>
+            <a href="https://www.helloasso.com/associations/la-sauce-numerique" target="_blank">
+              <Image src={'https://i.imgur.com/SvjyzIR.png'} alt="Helloasso" />
+            </a>
+            <p>Crédits :
+                  <a href="https://www.wildcodeschool.com/fr-FR" target="_blank">
+                Wild Code School
+                  </a>
+              -
+                  <a href="https://www.linkedin.com/in/alex-le-coq-a7b695101/" target="_blank">
+                Alex' LE COQ
+                  </a>
+              -
+                  <a href="https://www.linkedin.com/in/stanislas-vega-807b89163/" target="_blank">
+                Stan VEGA
+                  </a>
+              -
+                  <a href="https://www.linkedin.com/in/bruno-hoarau-dev-full-stack-javascript-893066137/" target="_blank">
+                Bruno HOARAU
+                  </a>
+              -
+                  <a href="https://www.linkedin.com/in/jean-marmain-2967a5168/" target="_blank">
+                Jean MARMAIN
+                  </a>
+            </p>
+          </Container>
         </NavLinks>
       </CollapseWrapper>
     );
