@@ -1,6 +1,9 @@
 import React from 'react';
 import './Events.css';
 
+const moment = require('moment');
+moment.locale('fr');
+
 const Events = ({ events })=>(
     <div className="events-events">
         {events.events.map((y) => (
@@ -23,10 +26,10 @@ const Events = ({ events })=>(
                 </div>
                 <div className="date">
                     <p className="event-date">
-                        {y.start.local}
+                    {moment(y.start.local).format('DD MMMM')} 
                     </p>
-                    <p className="event-date">
-                        {y.end.local}
+                    <p className="event-time">
+                    de {moment(y.start.local).format('LT')} à {moment(y.end.local).format(' HH:mm')}
                     </p>
                 </div>                
             </div>
