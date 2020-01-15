@@ -16,7 +16,7 @@ const Layout = ({ children }) => (
     <Menu />
     {children}
     <ContactUs />
-    <PageFooter />
+    {/* <PageFooter /> */}
   </div>
 
 );
