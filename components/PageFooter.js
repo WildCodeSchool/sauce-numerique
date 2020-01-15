@@ -10,6 +10,7 @@ const PageFooter = () => (
                     text-align: center;
                     background: #250a40;
                     font-size: 15px;
+                    margin-top: 17rem;
                 }
             `}</style>     
     </div>

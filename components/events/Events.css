@@ -7,6 +7,8 @@
 }
 a.url{
     text-decoration: none;
+    position: relative;
+    right: 15rem;
 }
 
 .events-title {
@@ -28,11 +30,11 @@ p.event-description {
     border-radius: 35px;
     position: relative;
     bottom: 10rem;
-    right: 23rem;
+    right: 11rem;
 }
 .events-logo{
     width: 28rem;
-    border-radius: 30px;
+    border-radius: 10% 0% 0% 10%;
     height: 32rem;
 }
 
