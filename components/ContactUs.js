@@ -13,8 +13,8 @@ const ContactUs = () => (
 
         <button><a className="lien-mail" href="/contact">CONTACTER PAR EMAIL</a></button>
         <br />
-        <img className="logo-fcb" src="https://i.imgur.com/H05W1un.png" href="https://www.facebook.com/" />
-        <img className="logo-tweeter" src="https://i.imgur.com/UBWGdnK.png" href="https://twitter.com/home" />
+        <a href="https://www.facebook.com/"><img className="logo-fcb" src="https://i.imgur.com/H05W1un.png" /></a>
+        <a href="https://twitter.com/home"><img className="logo-tweeter" src="https://i.imgur.com/UBWGdnK.png" /></a>
 
         <PageFooter />
             <style jsx>{`
