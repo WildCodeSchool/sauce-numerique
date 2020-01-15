@@ -1,9 +1,14 @@
 import React from 'react';
 import './Events.css';
 
+const moment = require('moment');
+moment.locale('fr');
+
 const Events = ({ events })=>(
     <div className="events-events">
-        {events.events.map((y) => (
+        {events.events.map((y) => {
+            const start = moment(y.start.local)
+            return(
             <div className="events-container">
             <a className="url" target="_blanck" href={y.url}>
             <div className={"events"}  key={y.id}>
@@ -23,16 +28,16 @@ const Events = ({ events })=>(
                 </div>
                 <div className="date">
                     <p className="event-date">
-                        {y.start.local}
+                    {start.format('DD MMMM')} 
                     </p>
-                    <p className="event-date">
-                        {y.end.local}
+                    <p className="event-time">
+                    de {start.format('LT')} à {moment(y.end.local).format(' HH:mm')}
                     </p>
                 </div>                
             </div>
             </a>
             </div>
-        ))}             
+        )})}             
     </div>
     
 )

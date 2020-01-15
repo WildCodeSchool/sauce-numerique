@@ -7,12 +7,13 @@
 }
 
 .events{
-    width: 97%;
+    width: 77%;
     background-color: #1F2040;
     color: #FFFFFF;
     display: flex;
     margin: 117px;
     border-radius: 35px;
+    margin-left: 14em;
 }
 .events-logo{
     width: 20vw;
@@ -48,7 +49,6 @@
 .events-title {
     width: 80%;
     position: relative;
-    top: 9rem;
     font-size: 23px;
     left: 2rem;
 }
@@ -56,19 +56,32 @@
 .event-date {
     position: relative;
     top: 1rem;
-    right: 21rem;
+    right: 20rem;
     width: 172%;
+    font-size: 23px;
 }
 
 .event-description {
     position: relative;
-    top: 14rem;
+    top: 2rem;
     font-size: 15px;
     left: 2rem;
 }
 
 .event {
     height: 32rem;
+}
+
+.events-text {
+    width: 16vw;
+    position: relative;
+    top: 7em;
+}
+
+.event-time {
+    position: relative;
+    top: 1rem;
+    right: 20rem;
 }
 
 
