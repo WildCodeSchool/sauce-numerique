@@ -13,8 +13,6 @@ const ContactUs = () => (
 
         <button><a className="lien-mail" href="/contact">CONTACTER PAR EMAIL</a></button>
         <br />
-        {/* INTEGRATION DES ICONS DE RESEAU SOCIAUX */}
-
         <img className="logo-fcb" src="https://i.imgur.com/H05W1un.png" href="https://www.facebook.com/" />
         <img className="logo-tweeter" src="https://i.imgur.com/UBWGdnK.png" href="https://twitter.com/home" />
 
@@ -33,7 +31,6 @@ const ContactUs = () => (
                 font-size: 6em;
                 margin-bottom: 10px;
                 font-family: 'Dosis',sans-serif;
-                font-weight: 900;
                 color: #fff;
                 text-shadow: 0 1px 2px rgba(black,.15);
             }
@@ -46,7 +43,6 @@ const ContactUs = () => (
                 padding: 3rem;
                 width: 86vw;
                 text-align: center;
-                font-weight: 600;
             }
 
             .barre{
