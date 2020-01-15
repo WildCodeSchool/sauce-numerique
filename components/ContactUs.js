@@ -11,8 +11,8 @@ const ContactUs = () => (
         <br />
         <button><a className="lien-mail" href="/contact">CONTACTER PAR EMAIL</a></button>
         <br />
-        <a href="https://www.facebook.com/"><img className="logo-fcb" src="https://i.imgur.com/H05W1un.png" /></a>
-        <a href="https://twitter.com/home"><img className="logo-tweeter" src="https://i.imgur.com/UBWGdnK.png" /></a>
+        <a href="https://www.facebook.com/" target="_blanck"><img className="logo-fcb" src="https://i.imgur.com/H05W1un.png" /></a>
+        <a href="https://twitter.com/home" target="_blanck"><img className="logo-tweeter" src="https://i.imgur.com/UBWGdnK.png" /></a>
 
         <PageFooter />
             <style jsx>{`
