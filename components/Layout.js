@@ -2,6 +2,7 @@
 import Head from 'next/head';
 import PageFooter from './PageFooter';
 import Menu from './Navbar/Menu';
+import ContactUs from '../components/ContactUs';
 
 const Layout = ({ children }) => (
   <div>
@@ -14,7 +15,8 @@ const Layout = ({ children }) => (
     </Head>
     <Menu />
     {children}
-    <PageFooter />
+    <ContactUs />
+    {/* <PageFooter /> */}
   </div>
 
 );
