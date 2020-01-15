@@ -19,6 +19,7 @@ const ContactUs = () => (
             .contact-us{
                 background: #1F2040;
                 color: #e5e3e8;
+                margin-top: 17rem;
             }
 
             h2, p{ text-align: center; }
@@ -32,7 +33,7 @@ const ContactUs = () => (
                 margin: 0 0 0 45%;
                 padding: 2px;
             }
-            
+
             a{ text-decoration: none; }
             
 
