@@ -5,21 +5,18 @@ import Header from '../Header';
 
 const CollapseWrapper = styled(animated.div)`
   background: #3e53ce;
-  top: 4rem;
+  top: 4.5rem;
   left: 0;
   right: 0;
+  bottom: 0;
   z-index: 1;
   position: fixed;
   align-content: center;
-
-  & img {
-    display: inline-grid;
-  }
 `;
 
 const NavLinks = styled.ul`
   list-style-type: none;
-  padding: 2rem 1rem 35rem 2rem;
+  padding: 2rem 1rem 2rem 2rem;
   text-align: center;
 
   & li {
@@ -52,7 +49,6 @@ const NavLinks = styled.ul`
 `;
 
 const Image = styled.img`
-    display:flex;
     width: 100px;
     margin: auto 0;
     margin-top: 20px;
@@ -60,9 +56,11 @@ const Image = styled.img`
 
 const Container = styled.div`
     display: grid;
-    text-align: -webkit-center;
-    bottom: 10px;
-    margin-top: 50px;
+    position: fixed;
+    bottom: 1rem;
+    left: 0rem;
+    right: 0rem;
+    font-size: 90%;
 `;
 
 
