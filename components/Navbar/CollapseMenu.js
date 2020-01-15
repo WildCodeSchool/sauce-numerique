@@ -10,6 +10,7 @@ const CollapseWrapper = styled(animated.div)`
   right: 0;
   z-index: 1;
   position: fixed;
+  align-content: center;
 
   & img {
     display: inline-grid;
@@ -57,10 +58,10 @@ const Image = styled.img`
     margin-top: 20px;
 `;
 
-const ImageContainer = styled.div`
+const Container = styled.div`
     display: grid;
     text-align: -webkit-center;
-    bottom: 0;
+    bottom: 10px;
     margin-top: 50px;
 `;
 
@@ -79,7 +80,7 @@ const CollapseMenu = (props) => {
       >
         <NavLinks>
             <Header />
-            <ImageContainer>
+            <Container>
               <a href="https://www.facebook.com">
                 <Image src={'https://i.imgur.com/HOLM9VN.png'} alt="Facebook" />
               </a>
@@ -89,8 +90,8 @@ const CollapseMenu = (props) => {
               <a href="https://www.helloasso.com/associations/la-sauce-numerique">
                 <Image src={'https://i.imgur.com/SvjyzIR.png'} alt="Helloasso" />
               </a>
-            </ImageContainer>
             <p>Crédits: Wild Code School - Alex' LE COQ - Stan VEGA - Bwouno - Jean MARMAIN</p>
+            </Container>
         </NavLinks>
       </CollapseWrapper>
     );
