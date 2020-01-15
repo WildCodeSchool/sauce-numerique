@@ -1,10 +1,13 @@
 import React from 'react';
 import './Events.css';
+const moment = require('moment');
+moment.locale('fr');
 
 const Events = ({ events })=>(
-    
     <div className="events-container">
-        {events.events.map((y) => (
+        {events.events.map((y) => {
+            const start = moment(y.start.local)
+            return (
             <div className={"events"}  key={y.id}>
             {y.logo && <img className="events-logo" src={y.logo.original.url} />}
             {y.is_free ? <p className="events-is_free" >gratuit</p> : <p className="events-is_free" >payant</p>}
@@ -16,18 +19,17 @@ const Events = ({ events })=>(
                         {y.description.text}
                     </p>
                     <p className="event-date">
-                        
-                    {y.start.local}.split()
+                        {start.format('DD MMMM')} de
                     </p>
                     <p className="event-date">
-                    {y.end.local}
+                        {start.format('LT')} à {moment(y.end.local).format('LT')}
                     </p>
                     <a className="events-button" href={y.url}>
                         S'inscrire
                     </a>
                 </div>
             </div>
-        ))}
+        )})}
     </div>
 )
 
