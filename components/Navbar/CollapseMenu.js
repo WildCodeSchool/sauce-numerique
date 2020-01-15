@@ -4,11 +4,12 @@ import { useSpring, animated } from 'react-spring';
 import Header from '../Header';
 
 const CollapseWrapper = styled(animated.div)`
-  background: #1f2040;
-  top: 4.5rem;
+  background: #3e53ce;
+  top: 4rem;
   left: 0;
   right: 0;
   z-index: 1;
+  position: fixed;
 
   & img {
     display: inline-grid;

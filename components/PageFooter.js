@@ -12,6 +12,7 @@ const PageFooter = () => (
                     font-size: 15px;
                     margin-bottom: -5vh;
                     margin-top: 2vh;
+
                 }
             `}</style>     
     </div>
