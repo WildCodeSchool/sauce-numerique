@@ -1,6 +1,6 @@
 import React from 'react';
 import Layout from '../components/Layout';
-
+import Support from '../components/Layout';
 
 
 const AboutUs = () => (

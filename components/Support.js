@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 
-const Soutien = () => (
+const Support = () => (
     <div>
         <h5 className="soutien-title">Apportez votre soutien</h5>
         <hr className="hr-soutien"/>
@@ -45,4 +45,4 @@ const Soutien = () => (
 
 
 
-export default Soutien;
+export default Support;
