@@ -102,16 +102,12 @@ const Home = ({ partners, events, ressources }) => (
       a.event-href{
         color: #1F2040;
         font-weight: 700;
-        position: relative;
-        left: 64rem;
-        bottom: 1rem;
+        margin: 46vw;
       }
       a.ressources-href{
         color: #1F2040;
         font-weight: 700;
-        position: relative;
-        left: 65rem;
-        top: 11rem;
+        margin-left: 65rem;
       }
     `}
     </style>
