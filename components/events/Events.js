@@ -3,9 +3,6 @@ import './Events.css';
 const moment = require('moment');
 moment.locale('fr');
 
-const moment = require('moment');
-moment.locale('fr');
-
 const Events = ({ events })=>(
     <div className="events-events">
 
