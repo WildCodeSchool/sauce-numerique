@@ -35,6 +35,7 @@
     background-color: #fff;
     position: relative;
     bottom: 27rem;
+    border-radius: 0 10px 10px 0;
 }
 
 .events-is_free {
