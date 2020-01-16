@@ -5,40 +5,83 @@
     height: 360px;
     margin-left: 45rem;
 }
-a.url{
-    text-decoration: none;
-    position: relative;
-    right: 15rem;
-}
-
-.events-title {
-    font-size: 3em;
-    align-items: center;
-}
-
-p.event-description {
-    position: relative;
-    top: 15px;
-}
 
 .events{
-    width: 97%;
+    width: 77%;
     background-color: #1F2040;
     color: #FFFFFF;
     display: flex;
     margin: 117px;
     border-radius: 35px;
-    position: relative;
-    bottom: 10rem;
-    right: 11rem;
+    margin-left: 14em;
 }
 .events-logo{
-    width: 28rem;
+    width: 20vw;
     border-radius: 10% 0% 0% 10%;
     height: 32rem;
 }
 
-.events-text{
-    font-size: 1em;
-    margin: 1em;
+.events-events {
+    display: grid;
+    grid-template-columns: 633px 0px;
+    position: relative;
+    right: 51rem;
+    bottom: 13rem;
 }
+
+.rectangle {
+    width: 26%;
+    height: 14%;
+    background-color: #fff;
+    position: relative;
+    bottom: 27rem;
+}
+
+.events-is_free {
+    position: relative;
+    top: 12px;
+    font-size: 18px;
+    left: 5px;
+    color: #1F2040;
+    text-decoration: none;
+}
+
+.events-title {
+    width: 80%;
+    position: relative;
+    font-size: 23px;
+    left: 2rem;
+}
+
+.event-date {
+    position: relative;
+    top: 1rem;
+    right: 20rem;
+    width: 172%;
+    font-size: 23px;
+}
+
+.event-description {
+    position: relative;
+    top: 2rem;
+    font-size: 15px;
+    left: 2rem;
+}
+
+.event {
+    height: 32rem;
+}
+
+.events-text {
+    width: 16vw;
+    position: relative;
+    top: 7em;
+}
+
+.event-time {
+    position: relative;
+    top: 1rem;
+    right: 20rem;
+}
+
+
