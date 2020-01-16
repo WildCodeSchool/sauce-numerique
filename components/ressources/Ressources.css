@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     width: 87%;
-    
+    margin-top: 11em;    
 }
 
 .ressources{
@@ -25,7 +25,7 @@
     color: #1F2040;
 }
 
-h1.ressources-title {
+.ressources-title {
     width: 23vw;
     height: 33rem;
     position: relative;
