@@ -11,7 +11,7 @@ import Ressources from '../components/ressources/Ressources';
 const Home = ({ partners, events, ressources }) => (
   <div>
     <Layout>
-        <Carousel />
+      <Carousel />
       <Manifest />
       <div className="partner-container">
         <img className="img-container" src="https://i.imgur.com/o2qSbpI.png" alt="border to pixel"/>
@@ -26,20 +26,25 @@ const Home = ({ partners, events, ressources }) => (
       </div>
       <div className="event-container">
         <h1 className="title2">
-          Prochains Événements
+           Événements à venir
         </h1>
+        <hr className="barre_barre"/>
       <Events events={events} />
+      <a className="event-href" href="/EventsPage">VOIR TOUS LES ÉVÉNEMENTS ></a>
       </div>
       <div className="ressource-container">
         <h1 className="title2">
           Ressources
         </h1>
+        <hr className="barre_barre"/>
+        <p className="text-ressources">Le numérique est aujourd’hui omniprésent dans nos vies, il impact fortement nos modes de vies, nos<br/>sociétés, nos politiques, nos relations sociales professionnelles ou privées. Pour autant, il ne profite pas à<br/>tous, nombreux sont celles et ceux qui le comprennent mal ou bien pire, en sont exclus !</p>
       <Ressources ressources={ressources}/>
+      <a className="ressources-href" href="/RessourcesPages">VOIR TOUTE LA BIBLIO ></a>
       </div>
     </Layout>
     <style jsx>{`
       .title2 {
-        margin: 0 auto;
+        margin: 104px;
         text-align: center;
         font-size: 6em;
         margin-bottom: 10px;
@@ -64,6 +69,12 @@ const Home = ({ partners, events, ressources }) => (
         background-color: #fff;
         margin-left: 67rem;
       }
+      hr.barre_barre{
+        width: 3%;
+        height: 4px;
+        background-color: #1F2040;
+        margin-left: 67rem;
+      }
       .text-container{
         color: #fff;
         font-size: 2rem;
@@ -78,14 +89,26 @@ const Home = ({ partners, events, ressources }) => (
       }
       .img-container{
         position: relative;
-        bottom: 13rem;
+        bottom: 11rem;
+        width: 100%;
       }
       .event-container {
         margin-top: 16rem;
       }
       .img2-container {
         position: relative;
-        top: 5rem;
+        top: 4rem;
+        width: 100%;
+      }
+      a.event-href{
+        color: #1F2040;
+        font-weight: 700;
+        margin: 46vw;
+      }
+      a.ressources-href{
+        color: #1F2040;
+        font-weight: 700;
+        margin-left: 65rem;
       }
     `}
     </style>

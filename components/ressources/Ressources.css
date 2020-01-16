@@ -1,20 +1,52 @@
 .ressources-container {
-    margin: 1px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 87%;
+    margin-top: 25em;    
 }
 
 .ressources{
-    width: auto;
-    margin-top: 1em;
-    margin-left: 10em;
-    margin-right: 10em;
-    border: 3px solid #000000;
-    background-color: #e74c3c;
+    max-width: 95%;
+    margin-top: -12rem;
+    margin-right: -56rem;
+    background-color: #1F2040;
     color: #FFFFFF;
     display: flex;
+    border-radius: 15px;
+    position: relative;
+    left: 8rem;
+    margin-bottom: 20vh;
 }
 
-.ressources-description{
-    font-size: 1em;
-    margin: 1em;
-    text-align: right;
+.text-ressources {
+    font-size: 2rem;
+    margin-left: 15em;
+    color: #1F2040;
 }
+
+.ressources-title {
+    width: 23vw;
+    height: 33rem;
+    position: relative;
+    top: 8rem;
+    left: 3rem;
+    font-size: 18px;
+}
+
+p.ressources-theme{
+    position: relative;
+    right: 3rem;
+    top: 1rem;
+}
+
+.description {
+    position: relative;
+    top: 20rem;
+    right: 6rem;
+    width: 38vw;
+    font-size: 12px;
+}
+
+
+
+

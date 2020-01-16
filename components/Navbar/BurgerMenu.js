@@ -8,7 +8,7 @@ const Wrapper = styled.div`
   display: block;
 
   & span {
-    background: #e74c3c;
+    background: #ffffff;
     display: block;
     position: relative;
     width: 3.5rem;
@@ -24,11 +24,13 @@ const Wrapper = styled.div`
   .open span:nth-child(3) {
     transform: rotate(45deg);
     top: -11px;
+    background: #ffffff;
   }
 
   .open span:nth-child(1) {
     transform: rotate(-45deg);
     top: 11px;
+    background: #ffffff;
   }
 
 `;

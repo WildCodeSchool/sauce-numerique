@@ -12,8 +12,7 @@ const NavLinks = styled(animated.ul)`
   margin: auto 0;
 
   & a {
-    color: #dfe6e9;
-    text-transform: uppercase;
+    color: #ffffff;
     font-weight: 600;
     border-bottom: 1px solid transparent;
     margin: 0 1.5rem;
@@ -22,8 +21,7 @@ const NavLinks = styled(animated.ul)`
     cursor: pointer;
 
     &:hover {
-      color: #e74c3c;
-      border-bottom: 1px solid #e74c3c;
+      border-bottom: 2px solid;
     }
 
     @media (max-width: 768px) {
@@ -37,13 +35,12 @@ const NavBar = styled(animated.nav)`
   width: 100%;
   top: 0;
   left: 0;
-  background: transparent;
+  background: #3e53ce;
   z-index: 1;
   font-size: 1.4rem;
 `;
 
 const FlexContainer = styled.div`
-  max-width: 120rem;
   display: flex;
   margin: auto;
   padding: 0 2rem;;
