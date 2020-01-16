@@ -43,7 +43,7 @@ const EventsPage = ({ events }) => (
 );
 
 EventsPage.getInitialProps= async () => {
-  const res = await fetch(`'https://www.eventbriteapi.com/v3/users/me/events/?token=${API_SECRET_JETON}&order_by=start_desc'`);
+  const res = await fetch('https://www.eventbriteapi.com/v3/users/me/events/?token=EQCXFCP563PTYQ5DE2TD&order_by=start_desc');
   const data = await res.json();
  
 
