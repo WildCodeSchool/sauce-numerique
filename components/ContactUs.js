@@ -1,9 +1,10 @@
 import React from 'react';
-import Link from 'next/link';
 import PageFooter from './PageFooter';
 
 const ContactUs = () => (
     <div className="contact-us">
+        <img className="contact-pixel-bar" src="https://i.imgur.com/wKCXc4G.png" />
+        
         <h2 className="title">Nous contacter</h2>
         <hr className="barre"/>
         <p className="p-contact-component">Le numérique est aujourd'hui omniprésent dans nos vies, il impact fortement nos mode de vies, nos société, nos politiques, nos relations sociales, professionnelles ou privée. 
@@ -16,6 +17,12 @@ const ContactUs = () => (
 
         <PageFooter />
             <style jsx>{`
+            .contact-pixel-bar{
+                width: 100%;
+                position: relative;
+                bottom: 9rem;  
+            }
+
             .contact-us{
                 background: #1F2040;
                 color: #e5e3e8;
