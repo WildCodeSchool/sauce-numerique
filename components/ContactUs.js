@@ -63,7 +63,7 @@ const ContactUs = () => (
             }
 
             button{
-                margin: 0 0 3% 37.5%;
+                margin: 0 0 3rem 59rem;
                 padding: 0.8vh 3vw;
                 border-radius: 1rem;
                 font-size: 2rem;
@@ -80,7 +80,7 @@ const ContactUs = () => (
             }
 
             .logo-fcb{
-                margin-left: 43%;
+                margin-left: 66rem;
             }
             .logo-tweeter{
                 margin-left: 2vw;

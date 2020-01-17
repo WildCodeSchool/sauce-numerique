@@ -39,10 +39,10 @@ const Soutien = () => (
                 }
 
                 .don-button{
-                    margin-left: 35vw;
+                    margin-left: 36.5vw;
                     margin-top: 4vh;
                     padding: 10px 20px;
-                    width: 30vw;
+                    width: 25vw;
                     color: #e5e3e8;
                     background-color: #1F2040;
                     border-radius: 10px;
