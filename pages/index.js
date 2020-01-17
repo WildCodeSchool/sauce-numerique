@@ -120,7 +120,7 @@ const Home = ({ partners, events, ressources }) => (
 Home.getInitialProps = async () => {
   const [partnersRes, eventsRes, ressourcesRes] = await Promise.all([
     fetch('https://sauce-num-back.herokuapp.com/api/v1/partners'),
-    fetch('https://www.eventbriteapi.com/v3/users/me/events/?token=${process.env.API_SECRET_JETON}&page_size=4&order_by=start_desc'),
+    fetch(`https://www.eventbriteapi.com/v3/users/me/events/?token=${process.env.API_SECRET_JETON}&page_size=4&order_by=start_desc`),
     fetch('https://sauce-num-back.herokuapp.com/api/v1/ressources'),
   ]);
   const partnersData = await partnersRes.json();
