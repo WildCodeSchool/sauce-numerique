@@ -7,7 +7,7 @@ const PageFooter = () => (
             <style jsx>{`
                 @media screen and ( max-width: 375px ){
                     a, .footer-title{
-                        margin: 4.5vh 0 -3.5vh -4vh;
+                        margin: 4.5vh 0 -3.5vh -0.8vh;
                         text-align: center;
                         font-size: 10px;
                     }
@@ -19,10 +19,7 @@ const PageFooter = () => (
                     color: #e5e3e8;
                     text-align: center;
                     background: #1F2040;
-                //     font-size: 15px;
-                //     margin-bottom: -3.5vh;
-                //     margin-top: 2vh;
-                // }
+                }
             `}</style>     
     </div>
         );
