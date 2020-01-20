@@ -18,73 +18,104 @@ const ContactUs = () => (
 
         <PageFooter />
             <style jsx>{`
+            @media screen and (max-width: 375px){
+                .contact-us{
+                    background: #1F2040;
+                    color: #e5e3e8;
+                    margin-top: 17rem;
+                    padding: 6vh 0;
+                }
+                .barre{
+                    width: 3vw;
+                    height: 0.3vh;
+                    background-color: #e5e3e8;
+                    margin: auto;
+                    margin-top: 2vh;
+                    margin-bottom: 1vh;
+                }
+                .contact-pixel-bar{
+                    width: 100%;
+                    position: relative;
+                    bottom: 8.8rem;  
+                }
+                .title{
+                    margin: 0 auto;
+                    text-align: center;
+                    font-size: 3em;
+                    margin-bottom: 10px;
+                    font-family: 'Dosis',sans-serif;
+                    color: #fff;
+                    text-shadow: 0 1px 2px rgba(black,.15);
+                }
+
+            }
+
             
-            
-            .contact-pixel-bar{
-                width: 100%;
-                position: relative;
-                bottom: 8.8rem;  
-            }
+            // .contact-pixel-bar{
+            //     width: 100%;
+            //     position: relative;
+            //     bottom: 8.8rem;  
+            // }
 
-            .contact-us{
-                background: #1F2040;
-                color: #e5e3e8;
-                margin-top: 17rem;
-                padding: 6vh 0;
-            }
+            // .contact-us{
+            //     background: #1F2040;
+            //     color: #e5e3e8;
+            //     margin-top: 17rem;
+            //     padding: 6vh 0;
+            // }
 
-            .title{
-                margin: 0 auto;
-                text-align: center;
-                font-size: 6em;
-                margin-bottom: 10px;
-                font-family: 'Dosis',sans-serif;
-                color: #fff;
-                text-shadow: 0 1px 2px rgba(black,.15);
-            }
+            // .title{
+            //     margin: 0 auto;
+            //     text-align: center;
+            //     font-size: 6em;
+            //     margin-bottom: 10px;
+            //     font-family: 'Dosis',sans-serif;
+            //     color: #fff;
+            //     text-shadow: 0 1px 2px rgba(black,.15);
+            // }
 
-            .p-contact-component{
-                color: #fff;
-                font-size: 2rem;
-                margin-left: 3.5rem;
-                margin-right: 5rem;
-                padding: 3rem;
-                width: 86vw;
-                text-align: center;
-            }
+            // .p-contact-component{
+            //     color: #fff;
+            //     font-size: 2rem;
+            //     margin-left: 3.5rem;
+            //     margin-right: 5rem;
+            //     padding: 3rem;
+            //     width: 86vw;
+            //     text-align: center;
+            // }
 
-            .barre{
-                width: 3vw;
-                height: 0.3vh;
-                background-color: #e5e3e8;
-                margin: auto;
-                margin-top: 2vh;
-                margin-bottom: 1vh;
-            }
+            // .barre{
+            //     width: 3vw;
+            //     height: 0.3vh;
+            //     background-color: #e5e3e8;
+            //     margin: auto;
+            //     margin-top: 2vh;
+            //     margin-bottom: 1vh;
+            // }
 
-            button{
-                margin: 0 0 3rem 59rem;
-                padding: 0.8vh 3vw;
-                border-radius: 1rem;
-                font-size: 2rem;
-                color: #1F2040;
-            }
+            // button{
+            //     margin: 0 0 3rem 59rem;
+            //     padding: 0.8vh 3vw;
+            //     border-radius: 1rem;
+            //     font-size: 2rem;
+            //     color: #1F2040;
+            // }
 
 
-            a{
-                text-decoration: none;
-                font-size: 2rem;
-                color: #1F2040;
-                font-weight: 800;
-                font-family: 'Dosis'
-            }
+            // a{
+            //     text-decoration: none;
+            //     font-size: 2rem;
+            //     color: #1F2040;
+            //     font-weight: 800;
+            //     font-family: 'Dosis'
+            // }
 
-            .logo-fcb{
-                margin-left: 66rem;
-            }
-            .logo-tweeter{
-                margin-left: 2vw;
-            }
+            // .logo-fcb{
+            //     margin-left: 66rem;
+            // }
+            // .logo-tweeter{
+            //     margin-left: 2vw;
+            // }
 
             `}</style>     
         </div>
