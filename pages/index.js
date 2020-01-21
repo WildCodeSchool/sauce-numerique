@@ -1,6 +1,6 @@
 import fetch from 'isomorphic-unfetch';
 import Layout from '../components/Layout';
-import Manifest from '../components/Manifeste-Home/Manifest'
+import Manifest from '../components/Manifeste-Home/Manifest';
 import Carousel from '../components/Carousel/Carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import Partners from '../components/partners/Partners';
@@ -117,7 +117,7 @@ Home.getInitialProps = async () => {
   const [partnersRes, eventsRes, ressourcesRes] = await Promise.all([
     fetch('https://sauce-num-back.herokuapp.com/api/v1/partners'),
     fetch('https://www.eventbriteapi.com/v3/users/me/events/?token=EQCXFCP563PTYQ5DE2TD&page_size=4&order_by=start_desc'),
-    fetch('https://sauce-num-back.herokuapp.com/api/v1/ressources'),
+    fetch('https://sauce-num-back.herokuapp.com/api/v1/ressources?limit=8'),
   ]);
   const partnersData = await partnersRes.json();
   const eventsData = await eventsRes.json();
