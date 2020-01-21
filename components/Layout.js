@@ -1,8 +1,7 @@
 // eslint-disable-next-line import/no-unresolved
 import Head from 'next/head';
-import PageFooter from './PageFooter';
 import Menu from './Navbar/Menu';
-import ContactUs from '../components/ContactUs';
+import ContactUs from './ContactUs';
 
 const Layout = ({ children }) => (
   <div>
@@ -16,7 +15,6 @@ const Layout = ({ children }) => (
     <Menu />
     {children}
     <ContactUs />
-    {/* <PageFooter /> */}
   </div>
 
 );

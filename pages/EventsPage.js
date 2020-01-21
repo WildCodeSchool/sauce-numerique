@@ -7,14 +7,25 @@ import Events from '../components/events/Events';
 const EventsPage = ({ events }) => (
   <div>
     <h1 className="title2">Événements</h1>
-    <hr className="barre_barre"/>
-    <p className="text-ressources">Le numérique est aujourd’hui omniprésent dans nos vies, il impact fortement nos modes de vies, nos<br/>sociétés, nos politiques, nos relations sociales professionnelles ou privées. Pour autant, il ne profite pas à<br/>tous, nombreux sont celles et ceux qui le comprennent mal ou bien pire, en sont exclus !</p>
+    <hr className="barre_barre" />
+    <p className="text-ressources">
+      Le numérique est aujourd’hui omniprésent dans nos vies,
+      {' '}
+      il impact fortement nos modes de vies, nos
+      <br />
+      sociétés, nos politiques, nos relations sociales professionnelles ou privées.
+      {' '}
+       Pour autant, il ne profite pas à
+      <br />
+      tous, nombreux sont celles et ceux qui le comprennent mal ou bien pire, en sont exclus !
+    </p>
     <Layout>
       <article>
-        <Events events={events}/>
+        <Events events={events} />
       </article>
     </Layout>
-    <style jsx>{`
+    <style jsx>
+      {`
       .title2 {
         margin: 104px;
         text-align: center;
@@ -42,10 +53,10 @@ const EventsPage = ({ events }) => (
   </div>
 );
 
-EventsPage.getInitialProps= async () => {
-  const res = await fetch(`https://www.eventbriteapi.com/v3/users/me/events/?token=${process.env.API_SECRET_JETON}&order_by=start_desc`);
+EventsPage.getInitialProps = async () => {
+  const res = await fetch('https://www.eventbriteapi.com/v3/users/me/events/?token=EQCXFCP563PTYQ5DE2TD&order_by=start_desc');
   const data = await res.json();
- 
+
 
   return {
     events: data,
