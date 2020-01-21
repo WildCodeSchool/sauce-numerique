@@ -13,35 +13,54 @@ const Home = ({ partners, events, ressources }) => (
       <Carousel />
       <Manifest />
       <div className="partner-container">
-        <img className="img-container" src="https://i.imgur.com/o2qSbpI.png" alt="border to pixel"/>
+        <img className="img-container" src="https://i.imgur.com/o2qSbpI.png" alt="border to pixel" />
         <h1 className="title">
           Nos Partenaires
         </h1>
-        <hr className="barre"/>
-        <p className="text-container">Privée ou Public, ils nous soutiennent dans notre action pour promouvoir la culture du numérique, l’accès<br/>à ce formidable outil pour toutes et tous. Vous souhaitez nous accompagner dans notre action ?</p>
+        <hr className="barre" />
+        <p className="text-container">
+          Privée ou Public, ils nous soutiennent dans notre action pour promouvoir
+          {' '}
+          la culture du numérique, l’accès
+          <br />
+          à ce formidable outil pour toutes et tous.
+          {' '}
+          Vous souhaitez nous accompagner dans notre action ?
+        </p>
         <a className="contact-container" href="/contact">Contactez nous dès maintenant</a>
-      <Partners partners={partners} />
-      <img className="img2-container" src="https://i.imgur.com/kPBSy7z.png" alt="border to pixel"/>
+        <Partners partners={partners} />
+        <img className="img2-container" src="https://i.imgur.com/kPBSy7z.png" alt="border to pixel" />
       </div>
       <div className="event-container">
         <h1 className="title2">
            Événements à venir
         </h1>
-        <hr className="barre_barre"/>
-      <Events events={events} />
-      <a className="event-href" href="/EventsPage">VOIR TOUS LES ÉVÉNEMENTS ></a>
+        <hr className="barre_barre" />
+        <Events events={events} />
+        <a className="event-href" href="/EventsPage">VOIR TOUS LES ÉVÉNEMENTS</a>
       </div>
       <div className="ressource-container">
         <h1 className="title2">
           Ressources
         </h1>
-        <hr className="barre_barre"/>
-        <p className="text-ressources">Le numérique est aujourd’hui omniprésent dans nos vies, il impact fortement nos modes de vies, nos<br/>sociétés, nos politiques, nos relations sociales professionnelles ou privées. Pour autant, il ne profite pas à<br/>tous, nombreux sont celles et ceux qui le comprennent mal ou bien pire, en sont exclus !</p>
-      <Ressources ressources={ressources}/>
-      <a className="ressources-href" href="/RessourcesPages">VOIR TOUTE LA BIBLIO ></a>
+        <hr className="barre_barre" />
+        <p className="text-ressources">
+          Le numérique est aujourd’hui omniprésent dans nos vies, 
+          {' '}
+          il impact fortement nos modes de vies, nos
+          <br />
+          sociétés, nos politiques, nos relations sociales professionnelles ou privées.
+          {' '}
+          Pour autant, il ne profite pas à
+          <br />
+          tous, nombreux sont celles et ceux qui le comprennent mal ou bien pire, en sont exclus !
+        </p>
+        <Ressources ressources={ressources} />
+        <a className="ressources-href" href="/RessourcesPages">VOIR TOUTE LA BIBLIO ></a>
       </div>
     </Layout>
-    <style jsx>{`
+    <style jsx>
+      {`
       .title2 {
         margin: 104px;
         text-align: center;
@@ -122,7 +141,6 @@ Home.getInitialProps = async () => {
     fetch('https://sauce-num-back.herokuapp.com/api/v1/partners'),
     fetch('https://www.eventbriteapi.com/v3/users/me/events/?token=EQCXFCP563PTYQ5DE2TD&page_size=4&order_by=start_desc'),
     fetch('https://sauce-num-back.herokuapp.com/api/v1/ressources?limit=3'),
-dev
   ]);
   const partnersData = await partnersRes.json();
   const eventsData = await eventsRes.json();
