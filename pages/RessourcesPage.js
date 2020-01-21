@@ -5,15 +5,22 @@ import Ressources from '../components/ressources/Ressources';
 
 const RessourcesPage = ({ ressources }) => (
   <div>
-  <h1 className="title2">Ressources</h1>
-  <hr className="barre_barre"/>
-  <p className="text-ressources">Le numérique est aujourd’hui omniprésent dans nos vies, il impact fortement nos modes de vies, nos<br/>sociétés, nos politiques, nos relations sociales professionnelles ou privées. Pour autant, il ne profite pas à<br/>tous, nombreux sont celles et ceux qui le comprennent mal ou bien pire, en sont exclus !</p>
-    <Layout>      
-      <article>        
-        <Ressources ressources={ressources}/>
+    <h1 className="title2">Ressources</h1>
+    <hr className="barre_barre" />
+    <p className="text-ressources">
+Le numérique est aujourd’hui omniprésent dans nos vies, il impact fortement nos modes de vies, nos
+      <br />
+sociétés, nos politiques, nos relations sociales professionnelles ou privées. Pour autant, il ne profite pas à
+      <br />
+tous, nombreux sont celles et ceux qui le comprennent mal ou bien pire, en sont exclus !
+    </p>
+    <Layout>
+      <article>
+        <Ressources ressources={ressources} />
       </article>
     </Layout>
-    <style jsx>{`
+    <style jsx>
+      {`
       .title2 {
         margin: 104px;
         text-align: center;
@@ -41,11 +48,10 @@ const RessourcesPage = ({ ressources }) => (
   </div>
 );
 
-RessourcesPage.getInitialProps= async () => {
+RessourcesPage.getInitialProps = async () => {
   const ressourcesRes = await fetch('https://sauce-num-back.herokuapp.com/api/v1/ressources?limit=3');
-dev
   const ressourcesData = await ressourcesRes.json();
- 
+
 
   return {
     ressources: ressourcesData,
