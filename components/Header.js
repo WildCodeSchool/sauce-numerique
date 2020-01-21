@@ -22,7 +22,7 @@ const Header = () => (
           <a className="navbar__link" style={linkStyle}>Ressources</a>
         </Link>
         <Link href="/contact">
-        <a className="navbar__link" style={linkStyle}>Contact</a>
+          <a className="navbar__link" style={linkStyle}>Contact</a>
         </Link>
       </div>
     </nav>
