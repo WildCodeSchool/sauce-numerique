@@ -13,8 +13,10 @@ const ContactUs = () => (
         <br />
         <button><a className="lien-mail" href="/contact">CONTACTER PAR EMAIL</a></button>
         <br />
+        <div className="logo-contact-us">
         <a href="https://www.facebook.com/" target="_blanck"><img className="logo-fcb" src="https://i.imgur.com/H05W1un.png" /></a>
         <a href="https://twitter.com/home" target="_blanck"><img className="logo-tweeter" src="https://i.imgur.com/UBWGdnK.png" /></a>
+        </div>
 
         <PageFooter />
             <style jsx>{`
@@ -35,11 +37,11 @@ const ContactUs = () => (
                 }
                 .contact-pixel-bar{
                     width: 100%;
-                    position: relative;
-                    bottom: 8.8rem;  
+                    margin-top: -18.1vh;
+                    margin-bottom: 7.7vh; 
                 }
                 .title{
-                    margin: 0 auto;
+                    margin-top: -27px;
                     text-align: center;
                     font-size: 3em;
                     margin-bottom: 10px;
@@ -47,9 +49,30 @@ const ContactUs = () => (
                     color: #fff;
                     text-shadow: 0 1px 2px rgba(black,.15);
                 }
+                button{
+                    border-radius: 1rem;
+                    font-size: 2rem;
+                    color: #1F2040;
+                    margin: 0 0 0 20vw;
+                }
+                a{
+                    text-decoration: none;
+                    font-size: 2rem;
+                    color: #1F2040;
+                    font-weight: 800;
+                    font-family: 'Dosis';
+                }
+                .p-contact-component{
+                    padding: 0 10px 0 10px;
+                }
+                .logo-contact-us{
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
 
             }
-
+            // .block-contact-us{ display: flex; flex-direction: column; }
             
             // .contact-pixel-bar{
             //     width: 100%;
