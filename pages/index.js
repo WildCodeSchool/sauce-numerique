@@ -45,7 +45,7 @@ const Home = ({ partners, events, ressources }) => (
         </h1>
         <hr className="barre_barre" />
         <p className="text-ressources">
-          Le numérique est aujourd’hui omniprésent dans nos vies, 
+          Le numérique est aujourd’hui omniprésent dans nos vies,
           {' '}
           il impact fortement nos modes de vies, nos
           <br />
@@ -56,7 +56,7 @@ const Home = ({ partners, events, ressources }) => (
           tous, nombreux sont celles et ceux qui le comprennent mal ou bien pire, en sont exclus !
         </p>
         <Ressources ressources={ressources} />
-        <a className="ressources-href" href="/RessourcesPages">VOIR TOUTE LA BIBLIO ></a>
+        <a className="ressources-href" href="/RessourcesPages">VOIR TOUTE LA BIBLIO</a>
       </div>
     </Layout>
     <style jsx>
