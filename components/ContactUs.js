@@ -95,17 +95,9 @@ const ContactUs = () => (
             
 
 
-<<<<<<< HEAD
             `}</style>     
     </div>
-        );
-=======
-            `}
->>>>>>> 8bb205f00f224f00ad37c6aebd468ed3ddd39124
-
-      </style>
     </div>
-  </div>
 );
 
 
