@@ -2,7 +2,8 @@ import React from 'react';
 import PageFooter from './PageFooter';
 
 const ContactUs = () => (
-    <div className="contact-us">
+    <div className="block-contact-us">
+        <div className="contact-us">
         <img className="contact-pixel-bar" src="https://i.imgur.com/wKCXc4G.png" />
         
         <h2 className="title">Nous contacter</h2>
@@ -17,10 +18,12 @@ const ContactUs = () => (
 
         <PageFooter />
             <style jsx>{`
+            
+            
             .contact-pixel-bar{
                 width: 100%;
                 position: relative;
-                bottom: 9rem;  
+                bottom: 8.8rem;  
             }
 
             .contact-us{
@@ -82,10 +85,9 @@ const ContactUs = () => (
             .logo-tweeter{
                 margin-left: 2vw;
             }
-            
-
 
             `}</style>     
+        </div>
     </div>
         );
 

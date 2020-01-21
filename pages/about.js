@@ -1,53 +1,156 @@
+import fetch from 'isomorphic-unfetch';
 import React from 'react';
 import Layout from '../components/Layout';
+import Support from '../components/Support';
+import Partners from '../components/partners/Partners';
 
-
-
-const AboutUs = () => (
+const AboutUs = ({ partners }) => (
   <div>
     <Layout>
-      <article>
-        <h1>Qui sommes-nous ?</h1>
-        <section>
-          <div>
-          <img width="100%" src="http://genie-civil.insa-strasbourg.fr/wp-content/uploads/2019/02/dc66f5dd88cce481d512376d40570d87.jpg"
-          alt="team-picture" id="team-picture"/>
-          </div>
-        </section>
-          <h2>L'équipe</h2>
-        <section>
-          <h3>Why</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-            sed do eiusmod tempor incididunt ut labore et dolore magna
-             aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-              ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-              Duis aute irure dolor in reprehenderit in voluptate velit 
-              esse cillum dolore eu fugiat nulla pariatur. 
-              Excepteur sint occaecat cupidatat non proident, sunt in 
-              culpa qui officia deserunt mollit anim id est laborum.</p>
-          <h3>Who</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-            sed do eiusmod tempor incididunt ut labore et dolore magna
-             aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-              ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-              Duis aute irure dolor in reprehenderit in voluptate velit 
-              esse cillum dolore eu fugiat nulla pariatur. 
-              Excepteur sint occaecat cupidatat non proident, sunt in 
-              culpa qui officia deserunt mollit anim id est laborum.</p>
-          <h3>What</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-            sed do eiusmod tempor incididunt ut labore et dolore magna
-             aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-              ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-              Duis aute irure dolor in reprehenderit in voluptate velit 
-              esse cillum dolore eu fugiat nulla pariatur. 
-              Excepteur sint occaecat cupidatat non proident, sunt in 
-              culpa qui officia deserunt mollit anim id est laborum.</p>
-        </section>
-      </article>
-    </Layout>    
+      <div className="aboutus-presentation">
+        <h1 className="title2">
+          Qui sommes-nous ?
+        </h1>
+        <hr className="barre_barre" />
+        <article>
+          <p className="aboutus-text">
+            Le numérique est aujourd'hui omniprésent dans nos vies, il impacte fortement nos modes de vies, nos
+            sociétés, nos politiques, nos relations sociales professionnelles ou privées. Pour autant, il ne profite pas à
+            tous, nombreux sont celles et ceux qui le comprennent mal ou bien pire, en sont exclus !
+  
+          La Sauce Numérique souhaite par ses actions sur le terrain <b>promouvoir l'accompagnement,
+          l'apprentissage, l'accès et l'appropriation du numérique à destination du grand public</b> avec pas ou peu
+            de connaissance de ce vaste univers. La Sauce Numérique est une association régie
+            par la loi du 1 juillet
+            1901. Ses membres sont issus du numérique et d’autres horizons, formant un groupe riche et éclectique
+            dont l’objectif est d’organiser des actions les plus accessibles et adaptées possibles aux problèmes liées au
+            numérique.
+  
+            Le numérique est aujourd’hui omniprésent dans nos vies, il impacte fortement nos modes de vies, nos
+            sociétés, nos politiques, nos relations sociales professionnelles ou privées. Pour autant, il profite pas à
+            tous, nombreux sont celles ou ceux qui le comprennent mal ou bien pire, en sont exclus !
+          </p>
+        </article>
+        <div className="aboutus-member">
+          <img src="https://via.placeholder.com/150" />
+          <p>
+            La Sauce Numérique souhaite par ses actions sur le terrain <b>promouvoir l'accompagnement,
+            l'apprentissage, l'accès et l'appropriation du numérique à destination du grand public</b> avec pas ou peu
+	          de connaissance de ce vaste univers. La Sauce
+          </p>
+          <img src="https://via.placeholder.com/150" />
+          <p>
+            La Sauce Numérique souhaite par ses actions sur le terrain <b>promouvoir l'accompagnement,
+            l'apprentissage, l'accès et l'appropriation du numérique à destination du grand public</b> avec pas ou peu
+	          de connaissance de ce vaste univers. La Sauce
+          </p>
+          <img src="https://via.placeholder.com/150" />
+          <p>
+            La Sauce Numérique souhaite par ses actions sur le terrain <b>promouvoir l'accompagnement,
+            l'apprentissage, l'accès et l'appropriation du numérique à destination du grand public</b> avec pas ou peu
+	          de connaissance de ce vaste univers. La Sauce
+          </p>
+          <img src="https://via.placeholder.com/150" />
+          <p>
+            La Sauce Numérique souhaite par ses actions sur le terrain <b>promouvoir l'accompagnement,
+            l'apprentissage, l'accès et l'appropriation du numérique à destination du grand public</b> avec pas ou peu
+	          de connaissance de ce vaste univers. La Sauce
+          </p>
+        </div>
+      </div>
+      <div className="partner-container">
+        <h1 className="title">
+          Nos Partenaires
+        </h1>
+        <hr className="barre" />
+        <p className="partners-text">
+          Privée ou Public, ils nous soutiennent dans notre action pour promouvoir la culture du numérique, l’accès
+        <br />
+          à ce formidable outil pour toutes et tous. Vous souhaitez nous accompagner dans notre action ?
+        </p>
+        <a className="partners-link" href="/contact">
+          Contactez nous dès maintenant
+        </a>
+        <Partners partners={partners} />
+      </div>
+      <Support />
+    </Layout>
+    <style jsx>{`
+      .title {
+        margin: 0 auto;
+        text-align: center;
+        font-size: 6em;
+        margin-bottom: 10px;
+        font-family: 'Dosis',sans-serif;
+        font-weight: 900;
+        color: #fff;
+        text-shadow: 0 1px 2px rgba(black,.15);
+      }
+
+      .title2 {
+        margin: 104px;
+        text-align: center;
+        font-size: 6em;
+        margin-bottom: 10px;
+        font-family: 'Dosis',sans-serif;
+        font-weight: 900;
+        color: #1F2040;
+        text-shadow: 0 1px 2px rgba(black,.15);
+      }
+
+      hr.barre_barre {
+        width: 3%;
+        height: 4px;
+        background-color: #1F2040;
+        margin-left: 67rem;
+        border-style: none;
+        border-radius: 2px;
+      }
+
+      p.aboutus-text {
+        font-size: 2rem;
+        margin-left: 3.5rem;
+        margin-right: 5rem;
+        padding: 3rem;
+        width: 86vw;
+        text-align: justify;
+        color: #1F2040;
+      }
+      
+      hr.barre {
+        width: 3%;
+        height: 4px;
+        background-color: #fff;
+        margin-left: 67rem;
+        border-style: none;
+        border-radius: 2px;
+      }
+
+      .partners-link{
+        color: #fff;
+        font-size: 12px;
+        margin-left: 62rem;
+        margin-bottom: 2rem;
+      }
+
+      .partners-text{
+        color: #fff;
+        font-size: 2rem;
+        margin-left: 26rem;
+        padding: 5rem;
+      }
+    `}
+    </style>
   </div>
 );
 
-export default AboutUs;
+AboutUs.getInitialProps = async () => {
+  const partnersRes = await fetch('https://sauce-num-back.herokuapp.com/api/v1/partners');
+  const partnersData = await partnersRes.json();
 
+  return {
+    partners: partnersData,
+  };
+};
+
+export default AboutUs;

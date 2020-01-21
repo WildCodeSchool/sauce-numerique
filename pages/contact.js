@@ -1,5 +1,5 @@
 import Layout from "../components/Layout";
-import Soutien from '../components/Soutien';
+import Support from '../components/Support';
 import ContactMail from "../components/Contact/contact-mail"
 import ContactSponsor from "../components/Contact/contact-sponso"
 import ContactPartner from "../components/Contact/contact-partner"
@@ -38,7 +38,7 @@ const Contact = () => (
          des actions les plus accessibles et adaptées possibles aux problèmes 
          liées au numérique.
         </p>
-        <Soutien />
+        <Support />
         {/* <ContactMail />
         <ContactSponsor />
         <ContactPartner /> */}

@@ -102,12 +102,16 @@ const Home = ({ partners, events, ressources }) => (
       a.event-href{
         color: #1F2040;
         font-weight: 700;
-        margin: 46vw;
+        position: relative;
+        left: 64rem;
+        bottom: 1rem;
       }
       a.ressources-href{
         color: #1F2040;
         font-weight: 700;
-        margin-left: 65rem;
+        position: relative;
+        left: 65rem;
+        top: 11rem;
       }
     `}
     </style>
@@ -117,7 +121,8 @@ Home.getInitialProps = async () => {
   const [partnersRes, eventsRes, ressourcesRes] = await Promise.all([
     fetch('https://sauce-num-back.herokuapp.com/api/v1/partners'),
     fetch('https://www.eventbriteapi.com/v3/users/me/events/?token=EQCXFCP563PTYQ5DE2TD&page_size=4&order_by=start_desc'),
-    fetch('https://sauce-num-back.herokuapp.com/api/v1/ressources?limit=8'),
+    fetch('https://sauce-num-back.herokuapp.com/api/v1/ressources?limit=3'),
+dev
   ]);
   const partnersData = await partnersRes.json();
   const eventsData = await eventsRes.json();
