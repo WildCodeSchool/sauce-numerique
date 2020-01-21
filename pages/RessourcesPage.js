@@ -8,11 +8,15 @@ const RessourcesPage = ({ ressources }) => (
     <h1 className="title2">Ressources</h1>
     <hr className="barre_barre" />
     <p className="text-ressources">
-Le numérique est aujourd’hui omniprésent dans nos vies, il impact fortement nos modes de vies, nos
+      Le numérique est aujourd’hui omniprésent dans nos vies,
+      {' '}
+      il impact fortement nos modes de vies, nos
       <br />
-sociétés, nos politiques, nos relations sociales professionnelles ou privées. Pour autant, il ne profite pas à
+      sociétés, nos politiques, nos relations sociales professionnelles ou privées.
+      {' '}
+      Pour autant, il ne profite pas à
       <br />
-tous, nombreux sont celles et ceux qui le comprennent mal ou bien pire, en sont exclus !
+      tous, nombreux sont celles et ceux qui le comprennent mal ou bien pire, en sont exclus !
     </p>
     <Layout>
       <article>

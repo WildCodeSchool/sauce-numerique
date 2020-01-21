@@ -19,9 +19,13 @@ const Home = ({ partners, events, ressources }) => (
         </h1>
         <hr className="barre" />
         <p className="text-container">
-Privée ou Public, ils nous soutiennent dans notre action pour promouvoir la culture du numérique, l’accès
+          Privée ou Public, ils nous soutiennent dans notre action pour promouvoir
+          {' '}
+          la culture du numérique, l’accès
           <br />
-à ce formidable outil pour toutes et tous. Vous souhaitez nous accompagner dans notre action ?
+          à ce formidable outil pour toutes et tous.
+          {' '}
+          Vous souhaitez nous accompagner dans notre action ?
         </p>
         <a className="contact-container" href="/contact">Contactez nous dès maintenant</a>
         <Partners partners={partners} />
@@ -41,14 +45,18 @@ Privée ou Public, ils nous soutiennent dans notre action pour promouvoir la cul
         </h1>
         <hr className="barre_barre" />
         <p className="text-ressources">
-Le numérique est aujourd’hui omniprésent dans nos vies, il impact fortement nos modes de vies, nos
+          Le numérique est aujourd’hui omniprésent dans nos vies,
+          {' '}
+          il impact fortement nos modes de vies, nos
           <br />
-sociétés, nos politiques, nos relations sociales professionnelles ou privées. Pour autant, il ne profite pas à
+          sociétés, nos politiques, nos relations sociales professionnelles ou privées.
+          {' '}
+          Pour autant, il ne profite pas à
           <br />
-tous, nombreux sont celles et ceux qui le comprennent mal ou bien pire, en sont exclus !
+          tous, nombreux sont celles et ceux qui le comprennent mal ou bien pire, en sont exclus !
         </p>
         <Ressources ressources={ressources} />
-        <a className="ressources-href" href="/RessourcesPages">VOIR TOUTE LA BIBLIO ></a>
+        <a className="ressources-href" href="/RessourcesPages">VOIR TOUTE LA BIBLIO</a>
       </div>
     </Layout>
     <style jsx>
