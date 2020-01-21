@@ -20,7 +20,7 @@ const Manifest = () => {
                     margin-bottom: 24em;
                 }
                 .manifeste-title {
-                    margin: 0 auto;
+                    margin: 89px auto;
                     text-align: center;
                     font-size: 6em;
                     margin-bottom: 10px;
