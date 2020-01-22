@@ -1,6 +1,5 @@
 import Layout from "../components/Layout";
 import Soutien from '../components/Soutien';
-import Layout from '../components/Layout';
 import Support from '../components/Support';
 
 
