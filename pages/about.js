@@ -9,7 +9,7 @@ const AboutUs = ({ partners }) => (
     <Layout>
       <div className="aboutus-presentation">
         <h1 className="title2">À propos</h1>
-        <hr className="barre_barre" />
+        <hr className="blue-break" />
         <article>
           <p className="aboutus-text">
             Le numérique est aujourd'hui omniprésent dans nos vies, il impacte
@@ -139,15 +139,15 @@ const AboutUs = ({ partners }) => (
       </div>
       <div className="partner-container">
         <h1 className="title">Nos Partenaires</h1>
-        <hr className="barre" />
+        <hr className="white-break" />
         <p className="partners-text">
           Privée ou Public, ils nous soutiennent dans notre action pour
           promouvoir la culture du numérique, l’accès
-          <br />à ce formidable outil pour toutes et tous. Vous souhaitez nous
-            accompagner dans notre action ?
+          à ce formidable outil pour toutes et tous. Vous souhaitez nous
+          accompagner dans notre action ?
         </p>
         <a className="partners-link" href="/contact">
-          Contactez nous dès maintenant
+          Contactez nous dès maintenant >
         </a>
         <Partners partners={partners} />
       </div>
@@ -178,13 +178,13 @@ const AboutUs = ({ partners }) => (
             text-shadow: 0 1px 2px rgba(black, 0.15);
           }
   
-          hr.barre_barre {
-            width: 3%;
+          hr.blue-break {
+            width: 3rem;
             height: 4px;
             background-color: #1f2040;
-            margin-left: 67rem;
             border-style: none;
             border-radius: 2px;
+            margin: auto;
           }
   
           p.aboutus-text {
@@ -196,13 +196,13 @@ const AboutUs = ({ partners }) => (
             color: #1f2040;
           }
   
-          hr.barre {
-            width: 3%;
+          hr.white-break {
+            width: 3rem;
             height: 4px;
             background-color: #fff;
-            margin-left: 67rem;
             border-style: none;
             border-radius: 2px;
+            margin: auto;
           }
   
           .partners-link {
@@ -215,7 +215,7 @@ const AboutUs = ({ partners }) => (
           .partners-text {
             color: #fff;
             font-size: 2rem;
-            margin-left: 26rem;
+            margin: auto;
             padding: 5rem;
           }
 
@@ -244,20 +244,188 @@ const AboutUs = ({ partners }) => (
             float: left;
             margin: 0 0 0 2rem;
             width: 40%;
+            
+          }
+  
+          .aboutus-member-name {
+            font-size: 170%;
+          }
+        };
+
+        @media screen and (min-width: 768px) and (max-width: 1023px) {
+          .title {
+            margin: 0 auto;
+            text-align: center;
+            font-size: 6em;
+            margin-bottom: 10px;
+            font-family: "Dosis", sans-serif;
+            font-weight: bold;
+            color: #fff;
+            text-shadow: 0 1px 2px rgba(black, 0.15);
+          }
+  
+          .title2 {
+            margin: 8rem auto;
+            text-align: center;
+            font-size: 6em;
+            margin-bottom: 10px;
+            font-family: "Dosis", sans-serif;
+            font-weight: bold;
+            color: #1f2040;
+            text-shadow: 0 1px 2px rgba(black, 0.15);
+          }
+  
+          hr.blue-break {
+            width: 3rem;
+            height: 4px;
+            background-color: #1f2040;
+            border-style: none;
+            border-radius: 2px;
+            margin: auto;
+          }
+  
+          p.aboutus-text {
+            font-size: 2rem;
+            margin: auto;
+            padding: 3rem;
+            width: 86vw;
+            text-align: justify;
+            color: #1f2040;
+          }
+  
+          hr.white-break {
+            width: 3rem;
+            height: 4px;
+            background-color: #fff;
+            border-style: none;
+            border-radius: 2px;
+            margin: auto;
+          }
+  
+          .partners-link {
+            color: #fff;
+            font-size: 12px;
+            margin: auto;
+          }
+          
+          .partners-text {
+            color: #fff;
+            font-size: 2rem;
+            margin: auto;
+            padding: 5rem;
+            text-align: center;
+          }
+
+          .aboutus-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;        
+            padding: 6rem;
+            width: 100%;
+          }
+  
+          .aboutus-member {
+            width: 50%;
+            display: block;
+          }
+  
+          .aboutus-member-text {
+            margin: 1rem 1rem 1rem 1rem;
+          }
+          
+          .aboutus-pic {
+            display: block;
+            border-radius: 50%;
+            width: 50%;
+            margin: auto;
           }
   
           .aboutus-member-name {
             font-size: 200%;
           }
-        };
+
+          .aboutus-member-role {
+            font-size: 160%;
+          }
+
+          .aboutus-member-description {
+            font-size: 140%;
+            text-align: justify;
+            margin: auto;
+
+          }
+        }
        
         @media screen and (min-width: 1024px) {
+          .title {
+            margin: 0 auto;
+            text-align: center;
+            font-size: 6em;
+            margin-bottom: 10px;
+            font-family: "Dosis", sans-serif;
+            font-weight: bold;
+            color: #fff;
+            text-shadow: 0 1px 2px rgba(black, 0.15);
+          }
+  
+          .title2 {
+            margin: 8rem auto;
+            text-align: center;
+            font-size: 6em;
+            margin-bottom: 10px;
+            font-family: "Dosis", sans-serif;
+            font-weight: bold;
+            color: #1f2040;
+            text-shadow: 0 1px 2px rgba(black, 0.15);
+          }
+  
+          hr.blue-break {
+            width: 3rem;
+            height: 4px;
+            background-color: #1f2040;
+            border-style: none;
+            border-radius: 2px;
+            margin: auto;
+          }
+  
+          p.aboutus-text {
+            font-size: 2rem;
+            margin: auto;
+            padding: 3rem;
+            width: 86vw;
+            text-align: justify;
+            color: #1f2040;
+          }
+  
+          hr.white-break {
+            width: 3rem;
+            height: 4px;
+            background-color: #fff;
+            border-style: none;
+            border-radius: 2px;
+            margin: auto;
+          }
+  
+          .partners-link {
+            color: #fff;
+            font-size: 12px;
+            margin-left: 62rem;
+            margin-bottom: 2rem;
+          }
+          
+          .partners-text {
+            color: #fff;
+            font-size: 2rem;
+            margin: auto;
+            text-align: center;
+            padding: 5rem;
+          }
+
           .aboutus-container {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;        
             padding: 5rem;
-            border: 10px solid black;
             width: 100%;
           }
   
@@ -269,18 +437,27 @@ const AboutUs = ({ partners }) => (
   
           .aboutus-member-text {
             text-align: left;
-            border: 5px solid black;
           }
           
           .aboutus-pic {
             border-radius: 50%;
-            height: 50%;
+            width: 70%;
             float: left;
             margin: 2rem;
           }
   
           .aboutus-member-name {
             font-size: 200%;
+          }
+
+          .aboutus-member-role {
+            font-size: 160%;
+          }
+
+          .aboutus-member-description {
+            font-size: 140%;
+            text-align: justify;
+            margin-bottom: 3rem;
           }
       }
       `}
