@@ -8,9 +8,6 @@ const PageFooter = () => (
       {' '}
       - Sauce Numérique Tous droits réservés
     </h5>
-    <Link href="/admin">
-      <a>Se connecter</a>
-    </Link>
     <style jsx>
       {`
         a, .footer-title{ 
