@@ -1,17 +1,29 @@
 import React from 'react';
 import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import './Partners.css';
+
 
 function Partners({ partners }) {
   console.log({ partners });
 
   const settings = {
-    dots: true,
+    arrows: false,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
+    responsive: [{
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+      }
+    }, {
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 1,
+      }
+    }
+    ]
   };
   return (
     // eslint-disable-next-line react/jsx-props-no-spreading
@@ -29,22 +41,14 @@ function Partners({ partners }) {
         </a>
       <Slider {...settings} autoplay>
         {partners.map((y) => (
-          <div className="logo-partners" key={y.id}>
-            <img className="partners" src={y.logo} alt={y.id} />
+          <div className="slider-logo-partners" key={y.id}>
+            <img className="logo-partners" src={y.logo} alt={y.id} />
           </div>
         ))}
       </Slider>
       <style jsx>{`
-
-            .partners{
-              margin: 0 auto;
-              text-align: center;
-              font-size: 6em;
-              margin-bottom: 10px;
-              font-family: 'Dosis',sans-serif;
-              font-weight: 900;
-              color: #fff;
-              text-shadow: 0 1px 2px rgba(black,.15);
+            .logo-partners{
+              margin: auto;
             }
 
             .partner-container {
@@ -52,26 +56,12 @@ function Partners({ partners }) {
               padding-top: 6rem;
               padding-bottom: 1rem;
             }
+
             .logo-partners {
               display: flex;
               justify-content: center;
             }
 
-            ul.slick-dots {
-              margin: -30rem;
-              margin-left: 0rem;
-              bottom: 27rem;
-            }
-
-            .slick-slider.slick-initialized{
-              top: 1em;
-              margin-bottom: 5em;
-              margin-top: 8rem;
-            }
-
-            .slick-dots li{
-              display: none;
-            }
             .title {
               margin: 0 auto;
               text-align: center;
@@ -95,7 +85,7 @@ function Partners({ partners }) {
             .partners-link {
               color: #fff;
               font-size: 20px;
-              margin: auto;
+              margin-bottom: 50px;
               display: block;
               text-align: -webkit-center;
             }
