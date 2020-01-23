@@ -49,58 +49,58 @@ class Carousel extends React.Component {
         />
         <style jsx>
           {`
-						img.picture {
-    					width: 100%;
-    					margin-top: 5em;
-    					object-fit: cover;
-    					height: 63vh;
-						}
-						h2.title_carousel {
-							font-size: 72px;
-    					position: relative;
-    					bottom: 32vh;
-    					left: 0vh;
-    					margin-top: -24vh;
-    					color: #fff;
-    					text-align: center;
-							font-weight: 900;
-						}
-						button.reponse1_button {
-    					position: relative;
-    					bottom: 22vh;
-    					left: 53vh;
-    					font-size: 3vh;
-    					width: 18vw;
-    					border-radius: 2vh;
-							border: none;
-						}
-						button.reponse2_button {
-							position: relative;
-    						bottom: 22vh;
-    						left: 60vh;
-    						font-size: 3vh;
-    						width: 18vw;
-    						border-radius: 2vh;
-								border: none;
-						}
-						button.reponse3_button {
-							position: relative;
-    						bottom: 15vh;
-    						left: 7vh;
-    						font-size: 3vh;
-    						width: 18vw;
-    						border-radius: 2vh;
-								border: none;
-						}
-						a.lien {
-    					font-size: 2vh;
-    					position: relative;
-    					bottom: 26vh;
-    					right: 21vh;
-    					color: #fff;
-    					font-weight: 900;
-						}
-        	`}
+		img.picture {
+		width: 100%;
+		margin-top: 5em;
+		object-fit: cover;
+		height: 63vh;
+		}
+		h2.title_carousel {
+			font-size: 72px;
+		position: relative;
+		bottom: 32vh;
+		left: 0vh;
+		margin-top: -24vh;
+		color: #fff;
+		text-align: center;
+			font-weight: 900;
+		}
+		button.reponse1_button {
+		position: relative;
+		bottom: 22vh;
+		left: 53vh;
+		font-size: 3vh;
+		width: 18vw;
+		border-radius: 2vh;
+			border: none;
+		}
+		button.reponse2_button {
+			position: relative;
+			bottom: 22vh;
+			left: 60vh;
+			font-size: 3vh;
+			width: 18vw;
+			border-radius: 2vh;
+				border: none;
+		}
+		button.reponse3_button {
+			position: relative;
+			bottom: 15vh;
+			left: 7vh;
+			font-size: 3vh;
+			width: 18vw;
+			border-radius: 2vh;
+				border: none;
+		}
+		a.lien {
+		font-size: 2vh;
+		position: relative;
+		bottom: 26vh;
+		right: 21vh;
+		color: #fff;
+		font-weight: 900;
+		}
+`}
         </style>
       </div>
     );

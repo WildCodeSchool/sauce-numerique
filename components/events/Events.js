@@ -37,7 +37,7 @@ const Events = ({ events }) => (
                   {' '}
                   {start.format('LT')}
                   {' '}
-à
+                    à
                   {' '}
                   {moment(y.end.local).format(' HH:mm')}
                 </p>
