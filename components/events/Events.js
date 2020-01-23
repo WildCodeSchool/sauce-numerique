@@ -19,18 +19,11 @@ const Events = ({ events }) => (
                 </div>
               </div>
               <div className="events-text">
-                <h2 className="events-title">
-                  {y.name.text}
-                </h2>
-                <p className="event-description">
-                  {y.description.text}
-                </p>
-              </div>
               <div className="date">
-                <p className="event-date">
+                <p className="events-date">
                   {start.format('DD MMMM')}
                 </p>
-                <p className="event-time">
+                <p className="events-time">
                     de
                   {' '}
                   {start.format('LT')}
@@ -40,16 +33,56 @@ const Events = ({ events }) => (
                   {moment(y.end.local).format(' HH:mm')}
                 </p>
               </div>
+                <h2 className="events-title">
+                  {y.name.text}
+                </h2>
+                <p className="events-description">
+                  {y.description.text}
+                </p>
+              </div>
             </div>
           </a>
         <style jsx>{`
           a {
             text-decoration: none;
+            color: #fff;
           }
 
           .events-container {
             background-color: #1F2040;
-            border-radius: 35px;
+            border-radius: 5px;
+            margin: 1rem;
+            width: 30rem;
+            min-height: 20rem;
+          }
+
+          .events-text {
+            text-align: right;
+            margin: 0 1rem 0 0;
+            padding: 0 0 0 15rem;
+          }
+
+          .events-title {
+            font-size: 125%;
+            margin: 1rem 0 1rem 0;
+            text-align: left;
+          }
+
+          .events-description {
+            text-align: left;
+          }
+          
+          .date {
+            text-align: left;
+            margin-bottom: 2rem;
+          }
+
+          .events-date {
+            font-size: 200%;
+          }
+
+          .events-time {
+            font-size: 100%;
           }
         `}
 
