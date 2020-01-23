@@ -157,36 +157,12 @@ const AboutUs = ({ partners }) => (
           </div>
         </div>
       </div>
-      <div className="partner-container">
-        <h1 className="title">Nos Partenaires</h1>
-        <hr className="white-break" />
-        <p className="partners-text">
-          Privée ou Public, ils nous soutiennent dans notre action pour
-          promouvoir la culture du numérique, l’accès
-          à ce formidable outil pour toutes et tous. Vous souhaitez nous
-          accompagner dans notre action ?
-        </p>
-        <a className="partners-link" href="/contact">
-          Contactez nous dès maintenant >
-        </a>
-        <Partners partners={partners} />
-      </div>
+      <Partners partners={partners} />
       <Support />
     </Layout>
     <style jsx>
       {`
-        @media screen and (max-width: 767px) {
-          .title {
-            margin: 0 auto;
-            text-align: center;
-            font-size: 6em;
-            margin-bottom: 10px;
-            font-family: "Dosis", sans-serif;
-            font-weight: bold;
-            color: #fff;
-            text-shadow: 0 1px 2px rgba(black, 0.15);
-          }
-  
+        @media screen and (max-width: 767px) {    
           .title2 {
             margin: 8rem auto;
             text-align: center;
@@ -216,29 +192,6 @@ const AboutUs = ({ partners }) => (
             color: #1f2040;
           }
   
-          hr.white-break {
-            width: 3rem;
-            height: 4px;
-            background-color: #fff;
-            border-style: none;
-            border-radius: 2px;
-            margin: auto;
-          }
-  
-          .partners-link {
-            color: #fff;
-            font-size: 12px;
-            margin-left: 62rem;
-            margin-bottom: 2rem;
-          }
-          
-          .partners-text {
-            color: #fff;
-            font-size: 2rem;
-            margin: auto;
-            padding: 5rem;
-          }
-
           .aboutus-container {
             display: flex;
             flex-wrap: wrap;
@@ -273,16 +226,6 @@ const AboutUs = ({ partners }) => (
         };
 
         @media screen and (min-width: 768px) and (max-width: 1023px) {
-          .title {
-            margin: 0 auto;
-            text-align: center;
-            font-size: 6em;
-            margin-bottom: 10px;
-            font-family: "Dosis", sans-serif;
-            font-weight: bold;
-            color: #fff;
-            text-shadow: 0 1px 2px rgba(black, 0.15);
-          }
   
           .title2 {
             margin: 8rem auto;
@@ -313,29 +256,6 @@ const AboutUs = ({ partners }) => (
             color: #1f2040;
           }
   
-          hr.white-break {
-            width: 3rem;
-            height: 4px;
-            background-color: #fff;
-            border-style: none;
-            border-radius: 2px;
-            margin: auto;
-          }
-  
-          .partners-link {
-            color: #fff;
-            font-size: 12px;
-            margin: auto;
-          }
-          
-          .partners-text {
-            color: #fff;
-            font-size: 2rem;
-            margin: auto;
-            padding: 5rem;
-            text-align: center;
-          }
-
           .aboutus-container {
             display: flex;
             flex-wrap: wrap;
@@ -377,16 +297,6 @@ const AboutUs = ({ partners }) => (
         }
        
         @media screen and (min-width: 1024px) {
-          .title {
-            margin: 0 auto;
-            text-align: center;
-            font-size: 6em;
-            margin-bottom: 10px;
-            font-family: "Dosis", sans-serif;
-            font-weight: bold;
-            color: #fff;
-            text-shadow: 0 1px 2px rgba(black, 0.15);
-          }
   
           .title2 {
             margin: 8rem auto;
@@ -415,30 +325,6 @@ const AboutUs = ({ partners }) => (
             width: 86vw;
             text-align: justify;
             color: #1f2040;
-          }
-  
-          hr.white-break {
-            width: 3rem;
-            height: 4px;
-            background-color: #fff;
-            border-style: none;
-            border-radius: 2px;
-            margin: auto;
-          }
-  
-          .partners-link {
-            color: #fff;
-            font-size: 12px;
-            margin-left: 62rem;
-            margin-bottom: 2rem;
-          }
-          
-          .partners-text {
-            color: #fff;
-            font-size: 2rem;
-            margin: auto;
-            text-align: center;
-            padding: 5rem;
           }
 
           .aboutus-container {
