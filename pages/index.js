@@ -12,25 +12,7 @@ const Home = ({ partners, events, ressources }) => (
     <Layout>
       <Carousel />
       <Manifest />
-      <div className="partner-container">
-        <img className="img-container" src="https://i.imgur.com/o2qSbpI.png" alt="border to pixel" />
-        <h1 className="title">
-          Nos Partenaires
-        </h1>
-        <hr className="barre" />
-        <p className="text-container">
-          Privée ou Public, ils nous soutiennent dans notre action pour promouvoir
-          {' '}
-          la culture du numérique, l’accès
-          <br />
-          à ce formidable outil pour toutes et tous.
-          {' '}
-          Vous souhaitez nous accompagner dans notre action ?
-        </p>
-        <a className="contact-container" href="/contact">Contactez nous dès maintenant</a>
-        <Partners partners={partners} />
-        <img className="img2-container" src="https://i.imgur.com/kPBSy7z.png" alt="border to pixel" />
-      </div>
+      <Partners partners={partners} />
       <div className="event-container">
         <h1 className="title2">
            Événements à venir
