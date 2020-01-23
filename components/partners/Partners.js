@@ -67,7 +67,6 @@ function Partners({ partners }) {
               text-align: center;
               font-size: 6em;
               margin-bottom: 10px;
-              font-family: "Dosis", sans-serif;
               font-weight: bold;
               color: #fff;
               text-shadow: 0 1px 2px rgba(black, 0.15);

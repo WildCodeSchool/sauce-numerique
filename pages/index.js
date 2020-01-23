@@ -12,9 +12,7 @@ const Home = ({ partners, events, ressources }) => (
     <Layout>
       <Carousel />
       <Manifest />
-        <img className="img-container" src="https://i.imgur.com/o2qSbpI.png" alt="border to pixel" />
-        <Partners partners={partners} />
-        <img className="img2-container" src="https://i.imgur.com/kPBSy7z.png" alt="border to pixel" />
+      <Partners partners={partners} />
       <div className="event-container">
         <h1 className="title2">
            Événements à venir
