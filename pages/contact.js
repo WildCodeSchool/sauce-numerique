@@ -1,10 +1,13 @@
 import Layout from '../components/Layout';
-import Soutien from '../components/Soutien';
+import Support from '../components/Support';
+
 
 const Contact = () => (
   <div>
     <Layout>
-      <h5 className="contact-title">Contact</h5>
+      <h5 className="contact-title">
+        Contact
+      </h5>
       <hr className="hr-contact" />
       <p className="p-contact">
         La Sauce Numérique souhaite par ses actions
@@ -36,7 +39,7 @@ const Contact = () => (
          des actions les plus accessibles et adaptées possibles aux problèmes
          liées au numérique.
       </p>
-      <Soutien />
+      <Support />
     </Layout>
     <style jsx>
       {`

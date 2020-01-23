@@ -24,9 +24,9 @@ const Home = ({ partners, events, ressources }) => (
           {' '}
           la culture du numérique, l’accès
           <br />
-          à ce formidable outil pour toutes et tous. Vous souhaitez nous accompagner
+          à ce formidable outil pour toutes et tous.
           {' '}
-          dans notre action ?
+          Vous souhaitez nous accompagner dans notre action ?
         </p>
         <a className="contact-container" href="/contact">Contactez nous dès maintenant</a>
         <Partners partners={partners} />
@@ -57,7 +57,7 @@ const Home = ({ partners, events, ressources }) => (
           tous, nombreux sont celles et ceux qui le comprennent mal ou bien pire, en sont exclus !
         </p>
         <Ressources ressources={ressources} />
-        <a className="ressources-href" href="/RessourcesPages">VOIR TOUTE LA BIBLIO ></a>
+        <a className="ressources-href" href="/RessourcesPages">VOIR TOUTE LA BIBLIO</a>
       </div>
     </Layout>
     <style jsx>
@@ -122,12 +122,16 @@ const Home = ({ partners, events, ressources }) => (
       a.event-href{
         color: #1F2040;
         font-weight: 700;
-        margin: 46vw;
+        position: relative;
+        left: 64rem;
+        bottom: 1rem;
       }
       a.ressources-href{
         color: #1F2040;
         font-weight: 700;
-        margin-left: 65rem;
+        position: relative;
+        left: 65rem;
+        top: 11rem;
       }
     `}
     </style>

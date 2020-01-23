@@ -31,7 +31,7 @@ const NavLinks = styled(animated.ul)`
 `;
 
 const NavBar = styled(animated.nav)`
-  position: fixed;
+  position: absolute;
   width: 100%;
   top: 0;
   left: 0;
@@ -71,10 +71,10 @@ const Navbar = (props) => {
 
   return (
     <>
-      <NavBar style={barAnimation}>
+      <NavBar>
         <FlexContainer>
           <Brand />
-          <NavLinks style={linkAnimation}>
+          <NavLinks>
           <Header />
           </NavLinks>
           <BurgerWrapper>
