@@ -95,9 +95,11 @@ const ContactUs = () => (
             
 
 
-            `}</style>     
+            `}
+
+      </style>
     </div>
-    </div>
+  </div>
 );
 
 
