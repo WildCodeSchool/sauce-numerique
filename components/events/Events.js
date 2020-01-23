@@ -1,5 +1,4 @@
 import React from 'react';
-import './Events.css';
 
 const moment = require('moment');
 
@@ -7,7 +6,6 @@ moment.locale('fr');
 
 const Events = ({ events }) => (
   <div className="events-events">
-
     {events.events.map((y) => {
       const start = moment(y.start.local);
       return (
@@ -15,7 +13,7 @@ const Events = ({ events }) => (
           <a className="url" target="_blanck" href={y.url}>
             <div className="events" key={y.id}>
               <div className="event">
-                {y.logo ? <img className="events-logo" src={y.logo.original.url} /> : <img className="events-logo" src="https://i.imgur.com/eSTiexo.jpg" />}
+                {/*} {y.logo ? <img className="events-logo" src={y.logo.original.url} /> : <img className="events-logo" src="https://i.imgur.com/eSTiexo.jpg" />} */}
                 <div className="rectangle">
                   {y.is_free ? <p className="events-is_free">GRATUIT</p> : <p className="events-is_free">PAYANT</p>}
                 </div>
@@ -44,6 +42,18 @@ const Events = ({ events }) => (
               </div>
             </div>
           </a>
+        <style jsx>{`
+          a {
+            text-decoration: none;
+          }
+
+          .events-container {
+            background-color: #1F2040;
+            border-radius: 35px;
+          }
+        `}
+
+        </style>
         </div>
       );
     })}
