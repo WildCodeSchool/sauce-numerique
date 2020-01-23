@@ -1,4 +1,4 @@
-import Layout from "../components/Layout";
+import Layout from '../components/Layout';
 import Support from '../components/Support';
 
 
@@ -38,8 +38,8 @@ const Contact = () => (
         formant un groupe riche et éclectique dont l’objectif est d’organiser
          des actions les plus accessibles et adaptées possibles aux problèmes
          liées au numérique.
-    </p>
-    <Support/>
+      </p>
+      <Support />
     </Layout>
     <style jsx>
       {`
@@ -69,9 +69,7 @@ const Contact = () => (
                     margin-top: 2vh;
                     margin-bottom: 1vh;
                 }
-
             `}
-
     </style>
   </div>
 );

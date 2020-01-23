@@ -5,12 +5,16 @@
   "scripts": {
     "dev": "next dev",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "next build",
+    "build": "next build && next export",
     "start": "next start -p $PORT"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@material-ui/icons": "^4.5.1",
+    "@testing-library/jest-dom": "^5.0.0",
+    "@testing-library/react": "^9.4.0",
+    "@testing-library/user-event": "^8.0.3",
     "@zeit/next-css": "^1.0.1",
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
@@ -24,6 +28,7 @@
     "next": "9.1.4",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
+    "react-admin": "^3.1.2",
     "react-alice-carousel": "^1.17.2",
     "react-dom": "^16.12.0",
     "react-is": "^16.12.0",
@@ -37,7 +42,7 @@
     "sql-template-strings": "^2.2.2",
     "styled-components": "^5.0.0-rc.3"
   },
-  "proxy": "https://sauce-num-back.herokuapp.com ",
+  "proxy": "http://localhost:5000",
   "devDependencies": {
     "babel-plugin-styled-components": "^1.10.6",
     "eslint": "^6.1.0",

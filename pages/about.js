@@ -1,8 +1,8 @@
-import fetch from "isomorphic-unfetch";
-import React from "react";
-import Layout from "../components/Layout";
-import Support from "../components/Support";
-import Partners from "../components/partners/Partners";
+import fetch from 'isomorphic-unfetch';
+import React from 'react';
+import Layout from '../components/Layout';
+import Support from '../components/Support';
+import Partners from '../components/partners/Partners';
 
 const AboutUs = ({ partners }) => (
   <div>
@@ -17,11 +17,15 @@ const AboutUs = ({ partners }) => (
             relations sociales professionnelles ou privées. Pour autant, il ne
             profite pas à tous, nombreux sont celles et ceux qui le comprennent
             mal ou bien pire, en sont exclus ! La Sauce Numérique souhaite par
-            ses actions sur le terrain 
-            &nbsp; <strong>
+            ses actions sur le terrain
+            &nbsp;
+            {' '}
+            <strong>
             promouvoir l'accompagnement, l'apprentissage, l'accès et
             l'appropriation du numérique à destination du grand public
-            &nbsp; </strong>
+            &nbsp;
+              {' '}
+            </strong>
             avec pas ou peu de connaissance de ce vaste univers. La Sauce
             Numérique est une association régie par la loi du 1 juillet 1901.
             Ses membres sont issus du numérique et d’autres horizons, formant un
@@ -46,17 +50,21 @@ const AboutUs = ({ partners }) => (
               Jedi Master
             </h3>
             <p className="aboutus-member-description">
-              La Sauce Numérique souhaite par ses actions sur le terrain{" "}
+              La Sauce Numérique souhaite par ses actions sur le terrain
+              {' '}
               <strong>
                 promouvoir l'accompagnement, l'apprentissage, l'accès et
                 l'appropriation du numérique à destination du grand public
-              </strong>{" "}
+              </strong>
+              {' '}
               avec pas ou peu de connaissance de ce vaste univers. La Sauce
-              Numérique souhaite par ses actions sur le terrain{" "}
+              Numérique souhaite par ses actions sur le terrain
+              {' '}
               <strong>
                 promouvoir l'accompagnement, l'apprentissage, l'accès et
                 l'appropriation du numérique à destination du grand public
-            </strong>{" "}
+              </strong>
+              {' '}
               avec pas ou peu de connaissance de ce vaste univers. La Sauce
             </p>
           </div>
@@ -71,19 +79,23 @@ const AboutUs = ({ partners }) => (
               Jedi Master
             </h3>
             <p className="aboutus-member-description">
-                La Sauce Numérique souhaite par ses actions sur le terrain{" "}
+                La Sauce Numérique souhaite par ses actions sur le terrain
+              {' '}
               <strong>
                 promouvoir l'accompagnement, l'apprentissage, l'accès et
                 l'appropriation du numérique à destination du grand public
-              </strong>{" "}
+              </strong>
+              {' '}
                 avec pas ou peu de connaissance de ce vaste univers. La Sauce
-                Numérique souhaite par ses actions sur le terrain{" "}
+                Numérique souhaite par ses actions sur le terrain
+              {' '}
               <strong>
                 promouvoir l'accompagnement, l'apprentissage, l'accès et
                 l'appropriation du numérique à destination du grand public
-            </strong>{" "}
+              </strong>
+              {' '}
               avec pas ou peu de connaissance de ce vaste univers. La Sauce
-          </p>
+            </p>
           </div>
         </div>
         <div className="aboutus-member">
@@ -96,19 +108,23 @@ const AboutUs = ({ partners }) => (
               Jedi Master
             </h3>
             <p className="aboutus-member-description">
-              La Sauce Numérique souhaite par ses actions sur le terrain{" "}
+              La Sauce Numérique souhaite par ses actions sur le terrain
+              {' '}
               <strong>
                 promouvoir l'accompagnement, l'apprentissage, l'accès et
                 l'appropriation du numérique à destination du grand public
-              </strong>{" "}
+              </strong>
+              {' '}
               avec pas ou peu de connaissance de ce vaste univers. La Sauce
-              Numérique souhaite par ses actions sur le terrain{" "}
+              Numérique souhaite par ses actions sur le terrain
+              {' '}
               <strong>
                 promouvoir l'accompagnement, l'apprentissage, l'accès et
                 l'appropriation du numérique à destination du grand public
-            </strong>{" "}
+              </strong>
+              {' '}
               avec pas ou peu de connaissance de ce vaste univers. La Sauce
-          </p>
+            </p>
           </div>
         </div>
         <div className="aboutus-member">
@@ -121,19 +137,23 @@ const AboutUs = ({ partners }) => (
               Jedi Master
             </h3>
             <p className="aboutus-member-description">
-              La Sauce Numérique souhaite par ses actions sur le terrain{" "}
+              La Sauce Numérique souhaite par ses actions sur le terrain
+              {' '}
               <strong>
                 promouvoir l'accompagnement, l'apprentissage, l'accès et
                 l'appropriation du numérique à destination du grand public
-            </strong>{" "}
+              </strong>
+              {' '}
               avec pas ou peu de connaissance de ce vaste univers. La Sauce
-              Numérique souhaite par ses actions sur le terrain{" "}
+              Numérique souhaite par ses actions sur le terrain
+              {' '}
               <strong>
                 promouvoir l'accompagnement, l'apprentissage, l'accès et
                 l'appropriation du numérique à destination du grand public
-            </strong>{" "}
+              </strong>
+              {' '}
               avec pas ou peu de connaissance de ce vaste univers. La Sauce
-          </p>
+            </p>
           </div>
         </div>
       </div>
@@ -353,12 +373,12 @@ const AboutUs = ({ partners }) => (
 
 AboutUs.getInitialProps = async () => {
   const partnersRes = await fetch(
-    "https://sauce-num-back.herokuapp.com/api/v1/partners"
+    'https://sauce-num-back.herokuapp.com/api/v1/partners',
   );
   const partnersData = await partnersRes.json();
 
   return {
-    partners: partnersData
+    partners: partnersData,
   };
 };
 

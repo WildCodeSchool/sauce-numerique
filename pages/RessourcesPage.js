@@ -1,7 +1,9 @@
 import React from 'react';
 import fetch from 'isomorphic-unfetch';
 import Layout from '../components/Layout';
+import API_URL from '../api.config';
 import Ressources from '../components/ressources/Ressources';
+
 
 const RessourcesPage = ({ ressources }) => (
   <div>
@@ -53,7 +55,7 @@ const RessourcesPage = ({ ressources }) => (
 );
 
 RessourcesPage.getInitialProps = async () => {
-  const ressourcesRes = await fetch('https://sauce-num-back.herokuapp.com/api/v1/ressources');
+  const ressourcesRes = await fetch(`${API_URL}/api/v1/ressources`);
   const ressourcesData = await ressourcesRes.json();
 
 
