@@ -94,7 +94,7 @@ function Partners({ partners }) {
               font-size: 2rem;
               margin: auto;
               padding: 5rem;
-              text-align: center;
+              text-align: justify;
             }
 
             @media screen and (min-width: 768px) and (max-width: 1023px) {
