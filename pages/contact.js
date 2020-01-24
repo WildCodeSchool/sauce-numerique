@@ -44,30 +44,29 @@ const Contact = () => (
     <style jsx>
       {`
                 .contact-title{
-                    margin-top: 12%;
-                    text-align: center;
-                    font-size: 6em;
-                    margin-bottom: 10px;
-                    font-family: 'Dosis',sans-serif;
-                    color: #1F2040;
-                    text-shadow: 0 1px 2px rgba(black,.15);
+                  margin: 8rem auto;
+                  text-align: center;
+                  font-size: 6em;
+                  margin-bottom: 10px;
+                  font-weight: bold;
+                  color: #1F2040;
+                  text-shadow: 0 1px 2px rgba(black,.15);
                 }
                 .p-contact{
-                    font-size: 2rem;
-                    margin-left: 3.5rem;
-                    margin-right: 5rem;
-                    padding: 3rem;
-                    width: 86vw;
-                    text-align: center;
-                    color: #1F2040;
+                  font-size: 2rem;
+                  margin: auto;
+                  padding: 3rem;
+                  width: 86vw;
+                  text-align: justify;
+                  color: #1F2040;
                 }
                 .hr-contact{
-                    width: 3vw;
-                    height: 1vh;
-                    background-color: #1F2040;
-                    margin: auto;
-                    margin-top: 2vh;
-                    margin-bottom: 1vh;
+                  width: 3rem;
+                  height: 4px;
+                  background-color: #1f2040;
+                  border-style: none;
+                  border-radius: 2px;
+                  margin: auto;
                 }
             `}
     </style>
