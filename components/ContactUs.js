@@ -26,38 +26,24 @@ const ContactUs = () => (
       <style jsx>
         {`
             
+            // General rules
             
-            .contact-pixel-bar{
-                width: 100%;
-                position: relative;
-                bottom: 8.8rem;  
-            }
-
             .contact-us{
+                margin-top: 17%;
                 background: #1F2040;
                 color: #e5e3e8;
-                margin-top: 17rem;
-                padding: 6vh 0;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                padding: 10px;
             }
-
+            
             .title{
-                margin: 0 auto;
                 text-align: center;
-                font-size: 6em;
-                margin-bottom: 10px;
                 font-family: 'Dosis',sans-serif;
                 color: #fff;
                 text-shadow: 0 1px 2px rgba(black,.15);
-            }
-
-            .p-contact-component{
-                color: #fff;
-                font-size: 2rem;
-                margin-left: 3.5rem;
-                margin-right: 5rem;
-                padding: 3rem;
-                width: 86vw;
-                text-align: center;
+                margin-bottom: 10px;
             }
 
             .barre{
@@ -65,35 +51,47 @@ const ContactUs = () => (
                 height: 0.3vh;
                 background-color: #e5e3e8;
                 margin: auto;
-                margin-top: 2vh;
-                margin-bottom: 1vh;
             }
-
-            button{
-                margin: 0 0 3% 37.5%;
-                padding: 0.8vh 3vw;
-                border-radius: 1rem;
-                font-size: 2rem;
+            
+            .p-contact-component{
+                color: #fff;
+                margin: 10px;
+                font-family: 'Dosis',sans-serif;
+            }
+            
+            .lien-mail{
+                border: 2px solid #fff;
+                border-radius: 5px;
+                background-color: #e5e3e8;
                 color: #1F2040;
-            }
-
-
-            a{
                 text-decoration: none;
-                font-size: 2rem;
-                color: #1F2040;
                 font-weight: 800;
-                font-family: 'Dosis'
+                font-family: 'Dosis',sans-serif;
+                width: 130px;
+                margin: auto;
+                text-align: center;
+            }
+
+            .logo-contact-us {
+                display: flex;
+                justify-content: center;
+                margin-bottom: 10px;
+                margin-top: 10px
             }
 
             .logo-fcb{
-                margin-left: 43%;
-            }
-            .logo-tweeter{
-                margin-left: 2vw;
+                margin-right: 10px;
+                width: 40px;
             }
             
 
+            .logo-tweeter {
+                width: 40px;
+            }
+            
+            `}</style>     
+        </div>
+        );
 
             `}
 

@@ -55,9 +55,8 @@ const Contact = () => (
                 .p-contact{
                     font-size: 2rem;
                     margin-left: 3.5rem;
-                    margin-right: 5rem;
-                    padding: 3rem;
-                    width: 86vw;
+                    margin-right: 3.5rem;
+                    width: 90%;
                     text-align: center;
                     color: #1F2040;
                 }
