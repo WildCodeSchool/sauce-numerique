@@ -26,7 +26,7 @@ const Home = ({ partners, events, ressources }) => (
         <h1 className="title2">
           Ressources
         </h1>
-        <hr className="barre_barre" />
+        <hr className="blue-break" />
         <Ressources ressources={ressources} />
         <a className="ressources-href" href="/RessourcesPages">VOIR TOUTE LA BIBLIO</a>
       </div>

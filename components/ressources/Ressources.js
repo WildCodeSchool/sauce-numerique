@@ -1,10 +1,9 @@
 import React from 'react';
-import './Ressources.css';
 
 
 const Ressources = ({ ressources }) => (
-  <div className="ressources-container">
-      <p className="text-ressources">
+  <div>
+    <p className="text-ressources">
           Le numérique est aujourd’hui omniprésent dans nos vies,
           {' '}
           il impact fortement nos modes de vies, nos
@@ -15,6 +14,7 @@ const Ressources = ({ ressources }) => (
           <br />
           tous, nombreux sont celles et ceux qui le comprennent mal ou bien pire, en sont exclus !
         </p>
+  <div className="ressources-container">   
     {ressources.map((y) => {
       const flag = y.theme.substring(0, 1);
       return (
@@ -26,10 +26,20 @@ const Ressources = ({ ressources }) => (
             <p className="ressources-description-container">{y.description}</p>
           </div>
         </div>
+ 
       );
     })}
+    </div>
     <style jsx>
       {`
+        .text-ressources{
+          color: #1F2040;
+          font-size: 2rem;
+          margin: auto;
+          padding: 5rem;
+          text-align: justify;
+        }
+
         .ressources-container {
           display: grid;
           grid-template-columns: repeat(4, 1fr);
@@ -74,6 +84,7 @@ const Ressources = ({ ressources }) => (
         }
     `}
     </style>
+  
   </div>
 );
 

@@ -45,10 +45,11 @@ const RessourcesPage = ({ ressources }) => (
         margin: auto;
       }
       .text-ressources{
+        color: #fff;
         font-size: 2rem;
-        color: #1F2040;
+        margin: auto;
+        padding: 5rem;
         text-align: center;
-        padding: 0 7% 0 6%;
       }
     `}
     </style>
