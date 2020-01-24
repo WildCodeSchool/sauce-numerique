@@ -81,13 +81,13 @@ class Carousel extends React.Component {
 								color: #000;
     						font-size: 160%;
     						border-radius: 10px;
-    						margin: -117% -73% 8% 33%;
+    						margin: -94% -73% 8% 31%;
 							}
 							button.reponse2_button {
 								color: #000;
     						font-size: 160%;
     						border-radius: 10px;
-    						margin: -83% -71% 2% 23%;
+    						margin: -75% -71% 2% 23%;
 							}
 							.button_slide2 {
     						display: flex;
