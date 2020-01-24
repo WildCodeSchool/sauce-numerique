@@ -97,7 +97,7 @@ function Partners({ partners }) {
               text-align: justify;
             }
 
-            @media screen and (min-width: 768px) and (max-width: 1023px) {
+            @media screen and (min-width: 768px) {
               .partners-text {
                 padding: 8rem 15rem 8rem 15rem;
               }
