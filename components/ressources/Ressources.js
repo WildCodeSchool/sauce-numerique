@@ -82,6 +82,12 @@ const Ressources = ({ ressources }) => (
           width: 38vw;
           font-size: 12px;
         }
+
+        @media screen and (min-width: 768px) {
+          .text-ressources {
+            padding: 8rem 15rem 8rem 15rem;
+          }        
+
     `}
     </style>
   
