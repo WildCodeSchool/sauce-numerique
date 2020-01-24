@@ -2,12 +2,12 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     width: 87%;
-    
+    margin-top: 25em;    
 }
 
 .ressources{
     max-width: 95%;
-    margin-top: 13rem;
+    margin-top: -12rem;
     margin-right: -56rem;
     background-color: #1F2040;
     color: #FFFFFF;
@@ -15,17 +15,16 @@
     border-radius: 15px;
     position: relative;
     left: 8rem;
+    margin-bottom: 20vh;
 }
 
 .text-ressources {
     font-size: 2rem;
-    position: relative;
-    top: 7rem;
-    left: 33rem;
+    margin-left: 15em;
     color: #1F2040;
 }
 
-h1.ressources-title {
+.ressources-title {
     width: 23vw;
     height: 33rem;
     position: relative;
