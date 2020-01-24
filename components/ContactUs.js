@@ -51,9 +51,11 @@ const ContactUs = () => (
             }
             
             .p-contact-component{
-                color: #fff;
-                margin: 10px;
-                font-family: 'Dosis',sans-serif;
+                font-size: 2rem;
+                margin: auto;
+                padding: 3rem;
+                width: 86vw;
+                text-align: justify;
             }
             
             .lien-mail{
