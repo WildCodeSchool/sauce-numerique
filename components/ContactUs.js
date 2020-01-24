@@ -3,28 +3,25 @@ import Link from 'next/link';
 import PageFooter from './PageFooter';
 
 const ContactUs = () => (
-  <div className="block-contact-us">
-    <div className="contact-us">
-      <img className="contact-pixel-bar" src="https://i.imgur.com/wKCXc4G.png" />
+        <div className="contact-us">
+        {/* <img className="contact-pixel-bar" src="https://i.imgur.com/wKCXc4G.png" /> */}
+        
+        <h2 className="title">Nous contacter</h2>
+        <hr className="barre"/>
+        <p className="p-contact-component">Le numérique est aujourd'hui omniprésent dans nos vies, il impact fortement nos mode de vies, nos société, nos politiques, 
+            {' '}
+            nos relations sociales, professionnelles ou privée. 
+            Pour autant, il ne profite pas à tous, nombreux sont celles et ceux qui le comprennent mal ou bien pire, en sont exclus!</p>
+        <br />
+        <a className="lien-mail" href="/contact">CONTACTER PAR EMAIL</a>
+        <br />
+        <div className="logo-contact-us">
+        <a href="https://www.facebook.com/" target="_blanck"><img className="logo-fcb" src="https://i.imgur.com/H05W1un.png" alt="logo-facebook" /></a>
+        <a href="https://twitter.com/home" target="_blanck"><img className="logo-tweeter" src="https://i.imgur.com/UBWGdnK.png" alt="logo-tweeter"/></a>
+        </div>
 
-      <h2 className="title">Nous contacter</h2>
-      <hr className="barre" />
-      <p className="p-contact-component">
-        Le numérique est aujourd'hui omniprésent dans nos vies, il impact fortement nos mode de vies, nos société, nos politiques,
-        {' '}
-        nos relations sociales, professionnelles ou privée.
-        Pour autant, il ne profite pas à tous, nombreux sont celles et ceux qui le comprennent mal ou bien pire, en sont exclus!
-
-      </p>
-      <br />
-      <button><a className="lien-mail" href="/contact">CONTACTER PAR EMAIL</a></button>
-      <br />
-      <a href="https://www.facebook.com/" target="_blanck"><img className="logo-fcb" src="https://i.imgur.com/H05W1un.png" /></a>
-      <a href="https://twitter.com/home" target="_blanck"><img className="logo-tweeter" src="https://i.imgur.com/UBWGdnK.png" /></a>
-
-      <PageFooter />
-      <style jsx>
-        {`
+        <PageFooter />
+            <style jsx>{`
             
             // General rules
             
@@ -91,13 +88,6 @@ const ContactUs = () => (
             
             `}</style>     
         </div>
-        );
-
-            `}
-
-      </style>
-    </div>
-  </div>
 );
 
 
