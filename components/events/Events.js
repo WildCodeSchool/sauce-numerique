@@ -14,7 +14,7 @@ const Events = ({ events }) => (
             <div className="events" key={y.id}>
               <div className="event">
                 {/*} {y.logo ? <img className="events-logo" src={y.logo.original.url} /> : <img className="events-logo" src="https://i.imgur.com/eSTiexo.jpg" />} */}
-                <div className="rectangle">
+                <div className="free-container">
                   {y.is_free ? <p className="events-is_free">GRATUIT</p> : <p className="events-is_free">PAYANT</p>}
                 </div>
               </div>
@@ -50,7 +50,7 @@ const Events = ({ events }) => (
 
           .events-container {
             background-color: #1F2040;
-            border-radius: 5px;
+            border-radius: 10px;
             margin: 1rem;
             width: 30rem;
             min-height: 20rem;
@@ -63,8 +63,8 @@ const Events = ({ events }) => (
           }
 
           .events-title {
-            font-size: 125%;
-            margin: 1rem 0 1rem 0;
+            margin-bottom: 1rem;
+            display: inline-block;
             text-align: left;
           }
 
@@ -75,6 +75,7 @@ const Events = ({ events }) => (
           .date {
             text-align: left;
             margin-bottom: 2rem;
+            float: left;
           }
 
           .events-date {
@@ -83,6 +84,33 @@ const Events = ({ events }) => (
 
           .events-time {
             font-size: 100%;
+          }
+
+          .events-is_free {
+            font-weight: bold;
+            margin: 2rem 0 0 0;
+            padding: 0.5rem 0.5rem 0.5rem 2rem;
+            float:left;
+            color: #1F2040;
+            background-color: #fff
+          }
+
+          .events-is_free:after {
+            content: "";
+            position: relative;
+            border-top : 11px solid #fff;
+            border-right : 6px solid transparent;
+            left: 1.1rem;
+            top: 0.6rem;
+          }
+          
+          .events-is_free:before {
+            content: "";
+            border-right : 6px solid transparent;
+            border-bottom : 11px solid #fff;
+            position: relative;
+            left: 5.2rem;
+            bottom: 0.6rem;
           }
         `}
 
