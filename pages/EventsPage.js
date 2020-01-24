@@ -49,7 +49,7 @@ const EventsPage = ({ events }) => (
         font-size: 2rem;
         margin: auto;
         padding: 5rem;
-        text-align: center;
+        text-align: justify;
       }
     `}
     </style>
