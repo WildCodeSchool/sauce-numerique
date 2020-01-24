@@ -39,9 +39,6 @@ const Contact = () => (
          liées au numérique.
         </p>
         <Soutien />
-        {/* <ContactMail />
-        <ContactSponsor />
-        <ContactPartner /> */}
         </Layout>
 
 

@@ -36,7 +36,7 @@ const MentionsLegales = () => (
             }
 
             .mentions-legales-text {
-                width: 60%;
+                width: 100%;
                 margin: 0 auto;
                 margin-bottom: 10px;
                 text-align: center;
