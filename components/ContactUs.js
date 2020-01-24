@@ -3,7 +3,6 @@ import Link from 'next/link';
 import PageFooter from './PageFooter';
 
 const ContactUs = () => (
-  <div className="block-contact-us">
     <div className="contact-us">
       <img className="contact-pixel-bar" src="https://i.imgur.com/wKCXc4G.png" />
 
@@ -91,13 +90,6 @@ const ContactUs = () => (
             
             `}</style>     
         </div>
-        );
-
-            `}
-
-      </style>
-    </div>
-  </div>
 );
 
 
