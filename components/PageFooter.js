@@ -13,7 +13,7 @@ const PageFooter = () => (
                 }
             `}</style>     
     </div>
-        );
+);
 
 
 
