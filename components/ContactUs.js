@@ -7,7 +7,7 @@ const ContactUs = () => (
         {/* <img className="contact-pixel-bar" src="https://i.imgur.com/wKCXc4G.png" /> */}
         
         <h2 className="title">Nous contacter</h2>
-        <hr className="barre"/>
+        <hr className="white-break"/>
         <p className="p-contact-component">Le numérique est aujourd'hui omniprésent dans nos vies, il impact fortement nos mode de vies, nos société, nos politiques, 
             {' '}
             nos relations sociales, professionnelles ou privée. 
@@ -37,18 +37,21 @@ const ContactUs = () => (
             
             .title{
                 text-align: center;
-                font-family: 'Dosis',sans-serif;
+                font-size: 6rem;
+                font-weight: bold;
                 color: #fff;
                 text-shadow: 0 1px 2px rgba(black,.15);
                 margin-bottom: 10px;
             }
 
-            .barre{
-                width: 3vw;
-                height: 0.3vh;
-                background-color: #e5e3e8;
+            hr.white-break {
+                width: 3rem;
+                height: 4px;
+                background-color: #FFFFFF;
+                border-style: none;
+                border-radius: 2px;
                 margin: auto;
-            }
+              }
             
             .p-contact-component{
                 font-size: 2rem;
