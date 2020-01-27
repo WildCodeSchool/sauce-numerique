@@ -54,7 +54,7 @@ const Events = ({ events }) => (
           .events-container {
             background-color: #1F2040;
             border-radius: 0.625rem;
-            margin: 1rem;
+            margin: 2rem;
             width: 30rem;
             min-height: 20rem;
           }

@@ -11,11 +11,9 @@ const EventsPage = ({ events }) => (
       Le numérique est aujourd’hui omniprésent dans nos vies,
       {' '}
       il impact fortement nos modes de vies, nos
-      <br />
       sociétés, nos politiques, nos relations sociales professionnelles ou privées.
       {' '}
        Pour autant, il ne profite pas à
-      <br />
       tous, nombreux sont celles et ceux qui le comprennent mal ou bien pire, en sont exclus !
     </p>
     <Layout>
@@ -48,9 +46,14 @@ const EventsPage = ({ events }) => (
         color: #1F2040;
         font-size: 2rem;
         margin: auto;
-        padding: 5rem;
+        padding: 3rem;
         text-align: justify;
       }
+
+      @media screen and (min-width: 1024px) {
+        .text-ressources{
+          padding: 5rem 15rem 5rem 15rem;
+        }
     `}
     </style>
   </div>
