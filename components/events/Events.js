@@ -1,4 +1,5 @@
 import React from 'react';
+import RandomImage from '../RandomImage/RandomImage'
 
 const moment = require('moment');
 
@@ -10,10 +11,12 @@ const Events = ({ events }) => (
       const start = moment(y.start.local);
       return (
         <div className="events-container" key={y.id}>
+
           <a className="url" target="_blanck" href={y.url}>
             <div className="events" key={y.id}>
               <div className="event">
-                {/*} {y.logo ? <img className="events-logo" src={y.logo.original.url} /> : <img className="events-logo" src="https://i.imgur.com/eSTiexo.jpg" />} */}
+                {/* {y.logo ? <img className="events-logo" src={y.logo.original.url} /> : <img className="events-logo" src="https://i.imgur.com/eSTiexo.jpg" />} */}
+                <RandomImage />
                 <div className="free-container">
                   {y.is_free ? <p className="events-is_free">GRATUIT</p> : <p className="events-is_free">PAYANT</p>}
                 </div>
@@ -50,7 +53,7 @@ const Events = ({ events }) => (
 
           .events-container {
             background-color: #1F2040;
-            border-radius: 10px;
+            border-radius: 0.625rem;
             margin: 1rem;
             width: 30rem;
             min-height: 20rem;
@@ -92,7 +95,8 @@ const Events = ({ events }) => (
             padding: 0.5rem 0.5rem 0.5rem 2rem;
             float:left;
             color: #1F2040;
-            background-color: #fff
+            background-color: #fff;
+            position: absolute;
           }
 
           .events-is_free:after {
