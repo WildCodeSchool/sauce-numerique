@@ -20,7 +20,7 @@ const Home = ({ partners, events, ressources }) => (
         </h1>
         <hr className="blue-break" />
         <Events events={events} />
-        <a className="event-href" href="/EventsPage">VOIR TOUS LES ÉVÉNEMENTS ></a>
+        <a className="event-href" href="/EventsPage">VOIR TOUS LES ÉVÉNEMENTS </a>
       </div>
       <div className="ressource-container">
         <h1 className="title2">

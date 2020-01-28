@@ -7,8 +7,8 @@ import Ressources from '../components/ressources/Ressources';
 
 const RessourcesPage = ({ ressources }) => (
   <div>
-      <h1 className="title-ressources">Ressources</h1>
-      <hr className="blue-break" />
+    <h1 className="title-ressources">Ressources</h1>
+    <hr className="blue-break" />
     <p className="text-ressources">
       Le numérique est aujourd’hui omniprésent dans nos vies,
       {' '}
