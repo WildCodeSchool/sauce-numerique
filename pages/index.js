@@ -123,7 +123,7 @@ Home.getInitialProps = async () => {
   const [partnersRes, eventsRes, ressourcesRes] = await Promise.all([
     fetch(`${API_URL}/api/v1/partners`),
     fetch('https://www.eventbriteapi.com/v3/users/me/events/?token=EQCXFCP563PTYQ5DE2TD&page_size=4&order_by=start_desc'),
-    fetch(`${API_URL}/api/v1/ressources?limit=8`),
+    fetch(`${API_URL}/api/v1/ressourcesFront?limit=8`),
   ]);
   const partnersData = await partnersRes.json();
   const eventsData = await eventsRes.json();
