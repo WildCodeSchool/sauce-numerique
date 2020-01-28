@@ -13,26 +13,26 @@ const Events = ({ events }) => (
           <a className="url" target="_blanck" href={y.url}>
             <div className="events" key={y.id}>
               <div className="event">
-                {/*} {y.logo ? <img className="events-logo" src={y.logo.original.url} /> : <img className="events-logo" src="https://i.imgur.com/eSTiexo.jpg" />} */}
+                {/* } {y.logo ? <img className="events-logo" src={y.logo.original.url} /> : <img className="events-logo" src="https://i.imgur.com/eSTiexo.jpg" />} */}
                 <div className="free-container">
                   {y.is_free ? <p className="events-is_free">GRATUIT</p> : <p className="events-is_free">PAYANT</p>}
                 </div>
               </div>
               <div className="events-text">
-              <div className="date">
-                <p className="events-date">
-                  {start.format('DD MMMM')}
-                </p>
-                <p className="events-time">
+                <div className="date">
+                  <p className="events-date">
+                    {start.format('DD MMMM')}
+                  </p>
+                  <p className="events-time">
                     de
-                  {' '}
-                  {start.format('LT')}
-                  {' '}
+                    {' '}
+                    {start.format('LT')}
+                    {' '}
                     à
-                  {' '}
-                  {moment(y.end.local).format(' HH:mm')}
-                </p>
-              </div>
+                    {' '}
+                    {moment(y.end.local).format(' HH:mm')}
+                  </p>
+                </div>
                 <h2 className="events-title">
                   {y.name.text}
                 </h2>
@@ -42,7 +42,8 @@ const Events = ({ events }) => (
               </div>
             </div>
           </a>
-        <style jsx>{`
+          <style jsx>
+            {`
           a {
             text-decoration: none;
             color: #fff;
@@ -114,7 +115,7 @@ const Events = ({ events }) => (
           }
         `}
 
-        </style>
+          </style>
         </div>
       );
     })}
