@@ -3,6 +3,7 @@ import React from 'react';
 import Layout from '../components/Layout';
 import Support from '../components/Support';
 import Partners from '../components/partners/Partners';
+import API_URL from '../api.config';
 
 const AboutUs = ({ partners }) => (
   <div>
@@ -41,7 +42,7 @@ const AboutUs = ({ partners }) => (
       </div>
       <div className="aboutus-container">
         <div className="aboutus-member">
-          <img className="aboutus-pic" src="https://via.placeholder.com/150" />
+          <img className="aboutus-pic" src="https://via.placeholder.com/150" alt="aboutus-pis" />
           <div className="aboutus-member-text">
             <h2 className="aboutus-member-name">
               Luke Skywalker
@@ -70,7 +71,7 @@ const AboutUs = ({ partners }) => (
           </div>
         </div>
         <div className="aboutus-member">
-          <img className="aboutus-pic" src="https://via.placeholder.com/150" />
+          <img className="aboutus-pic" src="https://via.placeholder.com/150" alt="aboutus-pics" />
           <div className="aboutus-member-text">
             <h2 className="aboutus-member-name">
               Luke Skywalker
@@ -99,7 +100,7 @@ const AboutUs = ({ partners }) => (
           </div>
         </div>
         <div className="aboutus-member">
-          <img className="aboutus-pic" src="https://via.placeholder.com/150" />
+          <img className="aboutus-pic" src="https://via.placeholder.com/150" alt="aboutus-pic" />
           <div className="aboutus-member-text">
             <h2 className="aboutus-member-name">
               Luke Skywalker
@@ -128,7 +129,7 @@ const AboutUs = ({ partners }) => (
           </div>
         </div>
         <div className="aboutus-member">
-          <img className="aboutus-pic" src="https://via.placeholder.com/150" />
+          <img className="aboutus-pic" src="https://via.placeholder.com/150" alt="aboutus-pic" />
           <div className="aboutus-member-text">
             <h2 className="aboutus-member-name">
               Luke Skywalker
@@ -372,7 +373,7 @@ const AboutUs = ({ partners }) => (
 
 AboutUs.getInitialProps = async () => {
   const partnersRes = await fetch(
-    'https://sauce-num-back.herokuapp.com/api/v1/partners',
+    `${API_URL}/api/v1/partners`,
   );
   const partnersData = await partnersRes.json();
 
