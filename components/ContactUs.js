@@ -32,12 +32,13 @@ const ContactUs = () => (
                 width: 100%;
                 display: flex;
                 flex-direction: column;
-                padding: 10px;
+                padding: 20px 10px 10px 10px;
             }
             
             .title{
                 text-align: center;
                 font-family: 'Dosis',sans-serif;
+                font-size: 6em;
                 color: #fff;
                 text-shadow: 0 1px 2px rgba(black,.15);
                 margin-bottom: 10px;
