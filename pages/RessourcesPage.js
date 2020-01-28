@@ -55,7 +55,7 @@ const RessourcesPage = ({ ressources }) => (
 );
 
 RessourcesPage.getInitialProps = async () => {
-  const ressourcesRes = await fetch(`${API_URL}/api/v1/ressources`);
+  const ressourcesRes = await fetch(`${API_URL}/api/v1/ressourcesFront`);
   const ressourcesData = await ressourcesRes.json();
 
 
