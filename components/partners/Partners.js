@@ -16,14 +16,14 @@ function Partners({ partners }) {
       breakpoint: 1024,
       settings: {
         slidesToShow: 2,
-      }
+      },
     }, {
       breakpoint: 767,
       settings: {
         slidesToShow: 1,
-      }
-    }
-    ]
+      },
+    },
+    ],
   };
   return (
     // eslint-disable-next-line react/jsx-props-no-spreading
@@ -35,10 +35,10 @@ function Partners({ partners }) {
         promouvoir la culture du numérique, l’accès
         à ce formidable outil pour toutes et tous. Vous souhaitez nous
         accompagner dans notre action ?
-        </p>
+      </p>
       <a className="partners-link" href="/contact">
         Contactez nous dès maintenant >
-        </a>
+      </a>
       <Slider {...settings} autoplay>
         {partners.map((y) => (
           <div className="slider-logo-partners" key={y.id}>
@@ -46,7 +46,8 @@ function Partners({ partners }) {
           </div>
         ))}
       </Slider>
-      <style jsx>{`
+      <style jsx>
+        {`
             .logo-partners{
               margin: auto;
             }
@@ -94,10 +95,10 @@ function Partners({ partners }) {
               font-size: 2rem;
               margin: auto;
               padding: 5rem;
-              text-align: center;
+              text-align: justify;
             }
 
-            @media screen and (min-width: 768px) and (max-width: 1023px) {
+            @media screen and (min-width: 768px) {
               .partners-text {
                 padding: 8rem 15rem 8rem 15rem;
               }
