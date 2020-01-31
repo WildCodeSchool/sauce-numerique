@@ -19,9 +19,6 @@ class Layout extends Component {
     if (this.props.router.pathname === '/') {
       this.setState({ isHome: true })
       console.log(this.state.isHome)
-    } else {
-      this.setState({ isHome: false })
-      console.log(this.state.isHome)
     }
   };
 
