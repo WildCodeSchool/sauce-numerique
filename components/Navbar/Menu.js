@@ -15,13 +15,13 @@ class Menu extends Component {
     };
 
         render() {
-
+            const { isHome } = this.props
             return (
                 <>
                     <Navbar
                         navbarState={this.state.navbarOpen}
                         handleNavbar={this.handleNavbar}
-                        isHome={this.props.isHome}
+                        isHome={isHome}
                     />
                     <GlobalStyles />
                 </>

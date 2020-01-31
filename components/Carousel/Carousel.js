@@ -51,7 +51,6 @@ class Carousel extends React.Component {
           {`
 						img.picture {
     					width: 100%;
-    					margin-top: 5em;
     					object-fit: cover;
     					height: 63vh;
 						}

@@ -56,7 +56,7 @@ const BurgerWrapper = styled.div`
   }
 `;
 
-const Navbar = (props) => {
+const Navbar = ({ isHome, navbarState, handleNavbar} ) => {
   const barAnimation = useSpring({
     from: { transform: 'translate3d(0, -10rem, 0)' },
     transform: 'translate3d(0, 0, 0)',
@@ -71,7 +71,7 @@ const Navbar = (props) => {
 
   return (
     <>
-      <NavBar isHome={props.isHome}>
+      <NavBar isHome={isHome}>
         <FlexContainer>
           <Brand />
           <NavLinks>
@@ -79,15 +79,15 @@ const Navbar = (props) => {
           </NavLinks>
           <BurgerWrapper>
             <Burgermenu
-              navbarState={props.navbarState}
-              handleNavbar={props.handleNavbar}
+              navbarState={navbarState}
+              handleNavbar={handleNavbar}
             />
           </BurgerWrapper>
         </FlexContainer>
       </NavBar>
       <CollapseMenu
-        navbarState={props.navbarState}
-        handleNavbar={props.handleNavbar}
+        navbarState={navbarState}
+        handleNavbar={handleNavbar}
       />
     </>
   );
