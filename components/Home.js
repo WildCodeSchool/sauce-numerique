@@ -1,9 +1,54 @@
-// eslint-disable-next-line import/no-unresolved
-import Head from 'next/head';
-import Menu from './Navbar/Menu';
-import ContactUs from './ContactUs';
-import { withRouter } from 'next/router';
-import React, { Component } from 'react';
+/* import { withRouter } from 'next/router';
+import React from 'react';
+import { Router } from 'express';
+
+
+class Home extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      isHome: true, 
+    }
+  }
+  render () {
+    const Home = ({ router }) => {
+      const path = router.pathname;
+      urlcheck = () => {
+        const URL = path === '/' ? true : false);
+        this.setState({isHome})
+        return (
+          <div>
+              <h1>
+                  <p>OUI</p>
+              </h1>
+          </div>
+    )
+  }
+    return (
+      <div>
+          <Home />
+      </div>
+    )
+  }
+}
+
+
+export default withRouter(Home);
+/*
+const Home = ({ router }) => {
+    const path = router.pathname;
+    const isHome = () => (path === '/' ? true : false);
+      return (
+        <div>
+            <h1>
+                {isHome() && <p>OUI</p>}
+            </h1>
+        </div>
+  )
+}
+
+
+
 
 class Layout extends Component {
   constructor(props) {
@@ -16,7 +61,7 @@ class Layout extends Component {
   }
 
   componentDidMount = () => {
-    if (this.props.router.pathname === '/') {
+    if ( this.props.router.pathname === '/') {
       this.setState({ isHome: true })
       console.log(this.state.isHome)
     } else {
@@ -38,12 +83,13 @@ class Layout extends Component {
           <script type="text/javascript" src="../commons/js/jquery-2.2.1.min.js" />
         </Head>
         <Menu isHome={this.state.isHome} />
-        {this.props.children}
-        <ContactUs />
-      </div>
+        { children }
+       <ContactUs />
+     </div>
 
-    );
-  }
+   );
+ }
 }
 
 export default withRouter(Layout);
+/*/

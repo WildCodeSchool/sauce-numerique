@@ -35,7 +35,7 @@ const NavBar = styled(animated.nav)`
   width: 100%;
   top: 0;
   left: 0;
-  background: #3e53ce;
+  background: ${props => props.isHome ? "transparent" : "#3e53ce"};
   z-index: 1;
   font-size: 1.4rem;
 `;
@@ -71,7 +71,7 @@ const Navbar = (props) => {
 
   return (
     <>
-      <NavBar>
+      <NavBar isHome={props.isHome}>
         <FlexContainer>
           <Brand />
           <NavLinks>
