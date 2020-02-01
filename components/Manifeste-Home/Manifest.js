@@ -46,6 +46,11 @@ const Manifest = () => (
     </div>
     <style jsx>
       {`
+        .manifeste-container {
+          margin-top: 4rem;
+          margin-bottom: 3rem;
+        }
+
         .manifeste-link {
           text-decoration: none;
         }
