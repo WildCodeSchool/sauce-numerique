@@ -12,13 +12,11 @@ class Layout extends Component {
       isHome: false,
     }
     const { router } = this.props;
-    console.log(router);
   }
 
   componentDidMount = () => {
     if (this.props.router.pathname === '/') {
       this.setState({ isHome: true })
-      console.log(this.state.isHome)
     }
   };
 

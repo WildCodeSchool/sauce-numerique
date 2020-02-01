@@ -38,6 +38,10 @@ const NavBar = styled(animated.nav)`
   background: ${props => props.isHome ? "transparent" : "#3e53ce"};
   z-index: 1;
   font-size: 1.4rem;
+
+  @media screen and (max-width: 768px) {
+    background: #3e53ce;
+  }
 `;
 
 const FlexContainer = styled.div`
@@ -57,17 +61,6 @@ const BurgerWrapper = styled.div`
 `;
 
 const Navbar = ({ isHome, navbarState, handleNavbar} ) => {
-  const barAnimation = useSpring({
-    from: { transform: 'translate3d(0, -10rem, 0)' },
-    transform: 'translate3d(0, 0, 0)',
-  });
-
-  const linkAnimation = useSpring({
-    from: { transform: 'translate3d(0, 30px, 0)', opacity: 0 },
-    to: { transform: 'translate3d(0, 0, 0)', opacity: 1 },
-    delay: 800,
-    config: config.wobbly,
-  });
 
   return (
     <>
