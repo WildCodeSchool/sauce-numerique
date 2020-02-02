@@ -17,7 +17,7 @@ function RandomImage() {
     <style jsx>{`
         .events-img {
             width: 14rem;
-            height: 20rem;
+            height: fit-content;
             float: left;
             overflow: hidden;
             object-fit: cover;

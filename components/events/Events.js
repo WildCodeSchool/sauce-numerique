@@ -62,8 +62,8 @@ const Events = ({ events }) => (
           .events-container {
             background-color: #1F2040;
             border-radius: 0.625rem;
-            width: 30rem;
-            min-height: 20rem;
+            width: 40rem;
+            min-height: 25rem;
             margin: 2rem;
           };
           
@@ -71,12 +71,14 @@ const Events = ({ events }) => (
             text-align: right;
             margin: 0 1rem 0 0;
             padding: 0 0 0 15rem;
+            font-size: 1.7rem;
           };
           
           .events-title {
-            margin-bottom: 1rem;
+            margin-bottom: 2rem;
             display: inline-block;
             text-align: left;
+            font-size: 2rem;
           }
           
           .events-description {
@@ -85,12 +87,12 @@ const Events = ({ events }) => (
           
           .date {
             text-align: left;
-            margin-bottom: 2rem;
+            margin-bottom: 1rem;
             float: left;
           };
           
           .events-date {
-            font-size: 200%;
+            font-size: 2rem;
           };
           
           .events-time {
