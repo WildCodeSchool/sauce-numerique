@@ -1,18 +1,25 @@
 import React from 'react';
-import RandomImage from '../RandomImage/RandomImage'
+import styled from 'styled-components';
+import RandomImage from '../RandomImage/RandomImage';
 
 const moment = require('moment');
 
 moment.locale('fr');
 
+const EventsDisplay = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+`;
+
 const Events = ({ events }) => (
-  <div className="events-events">
+  <div className="events-display">
+    <EventsDisplay>  
     {events.events.map((y) => {
       const start = moment(y.start.local);
       return (
         <div className="events-container" key={y.id}>
-
-          <a className="url" target="_blanck" href={y.url}>
+          <a className="url" target="_blank" href={y.url}>
             <div className="events" key={y.id}>
               <div className="event">
                 {/* {y.logo ? <img className="events-logo" src={y.logo.original.url} /> : <img className="events-logo" src="https://i.imgur.com/eSTiexo.jpg" />} */}
@@ -22,20 +29,20 @@ const Events = ({ events }) => (
                 </div>
               </div>
               <div className="events-text">
-              <div className="date">
-                <p className="events-date">
-                  {start.format('DD MMMM')}
-                </p>
-                <p className="events-time">
+                <div className="date">
+                  <p className="events-date">
+                    {start.format('DD MMMM')}
+                  </p>
+                  <p className="events-time">
                     de
-                  {' '}
-                  {start.format('LT')}
-                  {' '}
+                    {' '}
+                    {start.format('LT')}
+                    {' '}
                     à
-                  {' '}
-                  {moment(y.end.local).format(' HH:mm')}
-                </p>
-              </div>
+                    {' '}
+                    {moment(y.end.local).format(' HH:mm')}
+                  </p>
+                </div>
                 <h2 className="events-title">
                   {y.name.text}
                 </h2>
@@ -45,50 +52,51 @@ const Events = ({ events }) => (
               </div>
             </div>
           </a>
-        <style jsx>{`
+          <style jsx>
+            {`
           a {
             text-decoration: none;
             color: #fff;
-          }
-
+          };
+          
           .events-container {
             background-color: #1F2040;
             border-radius: 0.625rem;
-            margin: 2rem;
             width: 30rem;
             min-height: 20rem;
-          }
-
+            margin: 2rem;
+          };
+          
           .events-text {
             text-align: right;
             margin: 0 1rem 0 0;
             padding: 0 0 0 15rem;
-          }
-
+          };
+          
           .events-title {
             margin-bottom: 1rem;
             display: inline-block;
             text-align: left;
           }
-
+          
           .events-description {
             text-align: left;
-          }
+          };
           
           .date {
             text-align: left;
             margin-bottom: 2rem;
             float: left;
-          }
-
+          };
+          
           .events-date {
             font-size: 200%;
-          }
-
+          };
+          
           .events-time {
             font-size: 100%;
-          }
-
+          };
+          
           .events-is_free {
             font-weight: bold;
             margin: 2rem 0 0 0;
@@ -97,8 +105,8 @@ const Events = ({ events }) => (
             color: #1F2040;
             background-color: #fff;
             position: absolute;
-          }
-
+          };
+          
           .events-is_free:after {
             content: "";
             position: relative;
@@ -106,7 +114,7 @@ const Events = ({ events }) => (
             border-right : 6px solid transparent;
             left: 1.1rem;
             top: 0.6rem;
-          }
+          };
           
           .events-is_free:before {
             content: "";
@@ -115,15 +123,15 @@ const Events = ({ events }) => (
             position: relative;
             left: 5.2rem;
             bottom: 0.6rem;
-          }
-        `}
+          };
+          `}
 
-        </style>
+          </style>
         </div>
       );
     })}
+    </EventsDisplay>
   </div>
-
 );
 
 

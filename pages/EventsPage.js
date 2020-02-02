@@ -17,9 +17,9 @@ const EventsPage = ({ events }) => (
       tous, nombreux sont celles et ceux qui le comprennent mal ou bien pire, en sont exclus !
     </p>
     <Layout>
-      <article>
+      <div className="eventspage-block">
         <Events events={events} />
-      </article>
+      </div>
     </Layout>
     <style jsx>
       {`
@@ -46,7 +46,7 @@ const EventsPage = ({ events }) => (
         color: #1F2040;
         font-size: 2rem;
         margin: auto;
-        padding: 3rem;
+        padding: 5rem;
         text-align: justify;
       }
 

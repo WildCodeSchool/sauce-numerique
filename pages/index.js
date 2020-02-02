@@ -20,24 +20,13 @@ const Home = ({ partners, events, ressources }) => (
         </h1>
         <hr className="blue-break" />
         <Events events={events} />
-        <a className="event-href" href="/EventsPage">VOIR TOUS LES ÉVÉNEMENTS ></a>
+        <a className="event-href" href="/EventsPage">VOIR TOUS LES ÉVÉNEMENTS </a>
       </div>
       <div className="ressource-container">
         <h1 className="title2">
           Ressources
         </h1>
-        <hr className="barre_barre" />
-        <p className="text-ressources">
-          Le numérique est aujourd’hui omniprésent dans nos vies,
-          {' '}
-          il impact fortement nos modes de vies, nos
-          <br />
-          sociétés, nos politiques, nos relations sociales professionnelles ou privées.
-          {' '}
-          Pour autant, il ne profite pas à
-          <br />
-          tous, nombreux sont celles et ceux qui le comprennent mal ou bien pire, en sont exclus !
-        </p>
+        <hr className="blue-break" />
         <Ressources ressources={ressources} />
         <a className="ressources-href" href="/RessourcesPages">VOIR TOUTE LA BIBLIO</a>
       </div>
@@ -127,7 +116,7 @@ Home.getInitialProps = async () => {
   const [partnersRes, eventsRes, ressourcesRes] = await Promise.all([
     fetch(`${API_URL}/api/v1/partners`),
     fetch('https://www.eventbriteapi.com/v3/users/me/events/?token=EQCXFCP563PTYQ5DE2TD&page_size=4&order_by=start_desc'),
-    fetch(`${API_URL}/api/v1/ressources?limit=8`),
+    fetch(`${API_URL}/api/v1/ressourcesFront?limit=8`),
   ]);
   const partnersData = await partnersRes.json();
   const eventsData = await eventsRes.json();
