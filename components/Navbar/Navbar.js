@@ -40,7 +40,7 @@ const NavBar = styled(animated.nav)`
   font-size: 1.4rem;
 
   @media screen and (max-width: 768px) {
-    background: #3e53ce;
+    background: ${props => props.navbarState && props.isHome ? "#3e53ce" : "transparent"};
   }
 `;
 
@@ -64,7 +64,7 @@ const Navbar = ({ isHome, navbarState, handleNavbar} ) => {
 
   return (
     <>
-      <NavBar isHome={isHome}>
+      <NavBar isHome={isHome} navbarState={navbarState}>
         <FlexContainer>
           <Brand />
           <NavLinks>
