@@ -19,7 +19,7 @@ const Ressources = ({ ressources }) => (
       const flag = y.theme.substring(0, 1);
       return (
         <div className="ressources" key={y.id}>
-          <p>{flag}</p>
+          <p className="icon-ressources">{flag}</p>
           <h1 className="ressources-title-container">{y.title}</h1>
           <p className="ressources-theme-container">{y.theme}</p>
           <div className="description-container">
@@ -42,9 +42,11 @@ const Ressources = ({ ressources }) => (
 
         .ressources-container {
           display: grid;
-          grid-template-columns: repeat(4, 1fr);
-          width: 87%;
-          margin-top: 25em;    
+          grid-template-columns: repeat(1,1fr);
+          border-radius: 10px;
+          margin: 44% 0 0 -22%;
+          width: 30rem;
+          min-height: 20rem;   
         }
 
         .ressources{
@@ -57,16 +59,17 @@ const Ressources = ({ ressources }) => (
           border-radius: 15px;
           position: relative;
           left: 8rem;
-          margin-bottom: 20vh;
+          margin-bottom: 30vh;
+        }
+
+        p.icon-ressources {
+          margin: 3% -7% 0 30px;
         }
 
         .ressources-title-container {
-          width: 23vw;
-          height: 33rem;
-          position: relative;
-          top: 8rem;
-          left: 3rem;
-          font-size: 18px;
+          text-align: left;
+          margin: 19% -38% 0% 5%;
+          display: flex;
         }
 
         p.ressources-theme-container{
