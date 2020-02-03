@@ -127,7 +127,6 @@ const Events = ({ events }) => (
             bottom: 0.6rem;
           };
           `}
-
           </style>
         </div>
       );

@@ -5,6 +5,7 @@ import Events from '../components/events/Events';
 
 const EventsPage = ({ events }) => (
   <div>
+    <Layout>
     <h1 className="title2">Événements</h1>
     <hr className="blue_break" />
     <p className="text-ressources">
@@ -16,7 +17,6 @@ const EventsPage = ({ events }) => (
        Pour autant, il ne profite pas à
       tous, nombreux sont celles et ceux qui le comprennent mal ou bien pire, en sont exclus !
     </p>
-    <Layout>
       <div className="eventspage-block">
         <Events events={events} />
       </div>
