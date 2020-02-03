@@ -35,13 +35,13 @@ const NavBar = styled(animated.nav)`
   width: 100%;
   top: 0;
   left: 0;
-  background: ${props => props.isHome ? "transparent" : "#3e53ce"};
+  background: ${props => props.ishome ? "transparent" : "#3e53ce"};
   z-index: 1;
   font-size: 1.4rem;
 
   @media screen and (max-width: 768px) {
-    background: ${props => props.isHome && props.navbarState ? "#3e53ce" : "transparent"};
-    position: ${props => props.navbarState ? "fixed" : ""};
+    background: ${props => props.ishome && props.navbarstate ? "#3e53ce" : "transparent"};
+    position: ${props => props.navbarstate ? "fixed" : ""};
   }
 `;
 
@@ -61,11 +61,11 @@ const BurgerWrapper = styled.div`
   }
 `;
 
-const Navbar = ({ isHome, navbarState, handleNavbar} ) => {
+const Navbar = ({ ishome, navbarstate, handleNavbar} ) => {
 
   return (
     <>
-      <NavBar isHome={isHome} navbarState={navbarState}>
+      <NavBar ishome={ishome} navbarstate={navbarstate}>
         <FlexContainer>
           <Brand />
           <NavLinks>
@@ -73,14 +73,14 @@ const Navbar = ({ isHome, navbarState, handleNavbar} ) => {
           </NavLinks>
           <BurgerWrapper>
             <Burgermenu
-              navbarState={navbarState}
+              navbarstate={navbarstate}
               handleNavbar={handleNavbar}
             />
           </BurgerWrapper>
         </FlexContainer>
       </NavBar>
       <CollapseMenu
-        navbarState={navbarState}
+        navbarstate={navbarstate}
         handleNavbar={handleNavbar}
       />
     </>

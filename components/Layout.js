@@ -9,14 +9,14 @@ class Layout extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      isHome: false,
+      ishome: false,
     }
     const { router } = this.props;
   }
 
   componentDidMount = () => {
     if (this.props.router.pathname === '/') {
-      this.setState({ isHome: true })
+      this.setState({ ishome: true })
     }
   };
 
@@ -32,7 +32,7 @@ class Layout extends Component {
           <link rel="stylesheet" href="./component/Carousel/styles.css" type="text/css" />
           <script type="text/javascript" src="../commons/js/jquery-2.2.1.min.js" />
         </Head>
-        <Menu isHome={this.state.isHome} />
+        <Menu ishome={this.state.ishome} />
         {this.props.children}
         <ContactUs />
       </div>
