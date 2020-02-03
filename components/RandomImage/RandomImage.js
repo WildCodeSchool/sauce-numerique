@@ -1,7 +1,7 @@
 import React from "react";
 
 
-const images = ["esports", "tech", "conference", "gaming"];
+const images = ["esports", "tech", "dev", "gaming"];
 
 function RandomImage() {
   const [one, two, three, four] = images.map(i =>
