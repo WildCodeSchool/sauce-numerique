@@ -3,26 +3,30 @@ import Navbar from './Navbar';
 import GlobalStyles from './Global';
 
 class Menu extends Component {
-    state = {
-        navbarOpen: false
+    constructor(props) {
+        super(props);
+        this.state = {
+            navbarOpen: false
+        };
+
+        this.handleNavbar = () => {
+            this.setState({ navbarOpen: !this.state.navbarOpen });
+        }
     };
 
-    handleNavbar = () => {
-        this.setState({ navbarOpen: !this.state.navbarOpen });
+        render() {
+            const { isHome } = this.props
+            return (
+                <>
+                    <Navbar
+                        navbarState={this.state.navbarOpen}
+                        handleNavbar={this.handleNavbar}
+                        isHome={isHome}
+                    />
+                    <GlobalStyles />
+                </>
+            );
+        };
     };
-
-    render() {
-
-        return (
-            <>
-                <Navbar
-                    navbarState={this.state.navbarOpen}
-                    handleNavbar={this.handleNavbar}
-                />
-            <GlobalStyles />
-            </>
-        );
-    };
-};
 
 export default Menu;

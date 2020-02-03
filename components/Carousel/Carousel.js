@@ -64,7 +64,6 @@ img.picture {
 width: 100%;
 object-fit: cover;
 height: 78vh;
-margin-top: 11%;
 }
 h2.title_carousel {
 color: #fff;
@@ -72,6 +71,7 @@ font-size: 360%;
 height: 100%;
 text-align: center;
 margin: -129% 5%;
+padding-top: 4rem;
 }
 .button_slide1 {
 display: flex;
@@ -115,7 +115,6 @@ img.picture {
 width: 100%;
 object-fit: cover;
 height: 62vh;
-margin-top: 6%;
 }
 h2.title_carousel {
 color: #fff;
@@ -167,7 +166,6 @@ img.picture {
 width: 100%;
 object-fit: cover;
 height: 38vh;
-margin-top: 3%;
 }
 h2.title_carousel {
 color: #fff;
@@ -219,7 +217,6 @@ img.picture {
 width: 100%;
 object-fit: cover;
 height: 73vh;
-margin-top: 3%;
 }
 h2.title_carousel {
 color: #fff;
