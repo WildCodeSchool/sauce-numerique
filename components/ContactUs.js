@@ -40,7 +40,7 @@ const ContactUs = () => (
                 width: 100%;
                 display: flex;
                 flex-direction: column;
-                padding: 10px;
+                padding: 20px 10px 10px 10px;
             }
             
             .title{

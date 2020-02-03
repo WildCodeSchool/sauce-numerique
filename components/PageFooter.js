@@ -14,6 +14,7 @@ const PageFooter = () => (
                     color: #e5e3e8;
                     text-align: center;
                     background: #1F2040;
+                    padding-top: 13%;
                 }
             `}
 

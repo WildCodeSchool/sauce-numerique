@@ -12,7 +12,7 @@ class Layout extends Component {
       isHome: false,
     }
     const { router } = this.props;
-  }
+ }
 
   componentDidMount = () => {
     if (this.props.router.pathname === '/') {
