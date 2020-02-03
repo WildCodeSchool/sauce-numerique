@@ -77,7 +77,7 @@ const Manifest = () => (
         .manifeste-text {
           font-size: 2em;
           margin: auto;
-          padding: 3rem;
+          padding: 5rem;
           color: #1F2040;
           text-align: justify;
         }
