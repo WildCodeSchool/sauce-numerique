@@ -24,7 +24,7 @@ const Support = () => (
       {' '}
       les plus accessibles et adaptées possibles aux problèmes liées au numérique.
     </p>
-    <button className="don">Faire un don</button>
+    <a href="https://www.helloasso.com/associations/la-sauce-numerique" target="_blank" className="don">Faire un don</a>
 
 
     <style jsx>
@@ -68,6 +68,7 @@ const Support = () => (
               width: 130px;
               padding: 3px;
               font-weight: 800;
+              text-decoration: none;
             }
 
             
