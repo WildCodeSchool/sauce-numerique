@@ -2,53 +2,58 @@ import React from 'react';
 import fetch from 'isomorphic-unfetch';
 import Layout from '../components/Layout';
 import Events from '../components/events/Events';
-import '../components/events/Events.css'
-
 
 const EventsPage = ({ events }) => (
   <div>
+    <Layout>
     <h1 className="title2">Événements</h1>
-    <hr className="barre_barre" />
+    <hr className="blue_break" />
     <p className="text-ressources">
       Le numérique est aujourd’hui omniprésent dans nos vies,
       {' '}
       il impact fortement nos modes de vies, nos
-      <br />
       sociétés, nos politiques, nos relations sociales professionnelles ou privées.
       {' '}
        Pour autant, il ne profite pas à
-      <br />
       tous, nombreux sont celles et ceux qui le comprennent mal ou bien pire, en sont exclus !
     </p>
-    <Layout>
-      <article>
+      <div className="eventspage-block">
         <Events events={events} />
-      </article>
+      </div>
     </Layout>
     <style jsx>
       {`
       .title2 {
-        margin: 104px;
+        margin: 8rem auto;
         text-align: center;
         font-size: 6em;
         margin-bottom: 10px;
-        font-family: 'Dosis',sans-serif;
-        font-weight: 900;
+        font-weight: bold;
         color: #1F2040;
         text-shadow: 0 1px 2px rgba(black,.15);
       }
-      hr.barre_barre{
-        width: 3%;
+
+      hr.blue_break {
+        width: 3rem;
         height: 4px;
-        background-color: #1F2040;
-        margin-left: 67rem;
+        background-color: #1f2040;
+        border-style: none;
+        border-radius: 2px;
+        margin: auto;
       }
+
       .text-ressources{
         color: #1F2040;
         font-size: 2rem;
-        margin-left: 0rem;
-        margin-top: 3rem;
+        margin: auto;
+        padding: 5rem;
+        text-align: justify;
       }
+
+      @media screen and (min-width: 1024px) {
+        .text-ressources{
+          padding: 5rem 15rem 5rem 15rem;
+        }
     `}
     </style>
   </div>

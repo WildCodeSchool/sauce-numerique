@@ -1,14 +1,14 @@
 import React from 'react';
 import fetch from 'isomorphic-unfetch';
 import Layout from '../components/Layout';
-import API_URL from '../api.config';
+{/*import API_URL from '../api.config';*/}
 import Ressources from '../components/ressources/Ressources';
 
 
 const RessourcesPage = ({ ressources }) => (
   <div>
-    <h1 className="title2">Ressources</h1>
-    <hr className="barre_barre" />
+    <h1 className="title-ressources">Ressources</h1>
+    <hr className="blue-break" />
     <p className="text-ressources">
       Le numérique est aujourd’hui omniprésent dans nos vies,
       {' '}
@@ -27,27 +27,29 @@ const RessourcesPage = ({ ressources }) => (
     </Layout>
     <style jsx>
       {`
-      .title2 {
-        margin: 104px;
+      .title-ressources{
+        margin: auto;
         text-align: center;
         font-size: 6em;
         margin-bottom: 10px;
-        font-family: 'Dosis',sans-serif;
-        font-weight: 900;
+        font-weight: bold;
         color: #1F2040;
         text-shadow: 0 1px 2px rgba(black,.15);
       }
-      hr.barre_barre{
-        width: 3%;
+      hr.blue-break {
+        width: 3rem;
         height: 4px;
-        background-color: #1F2040;
-        margin-left: 67rem;
+        background-color: #fff;
+        border-style: none;
+        border-radius: 2px;
+        margin: auto;
       }
       .text-ressources{
-        color: #1F2040;
+        color: #fff;
         font-size: 2rem;
-        margin-left: 0rem;
-        margin-top: 3rem;
+        margin: auto;
+        padding: 5rem;
+        text-align: center;
       }
     `}
     </style>
@@ -55,7 +57,7 @@ const RessourcesPage = ({ ressources }) => (
 );
 
 RessourcesPage.getInitialProps = async () => {
-  const ressourcesRes = await fetch(`${API_URL}/api/v1/ressources`);
+  const ressourcesRes = await fetch(`https://sauce-num-back.herokuapp.com/api/v1/ressourcesFront`);
   const ressourcesData = await ressourcesRes.json();
 
 

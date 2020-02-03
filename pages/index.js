@@ -3,7 +3,7 @@ import Layout from '../components/Layout';
 import Manifest from '../components/Manifeste-Home/Manifest';
 import Carousel from '../components/Carousel/Carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import API_URL from '../api.config';
+{/*import API_URL from '../api.config';*/}
 import Partners from '../components/partners/Partners';
 import Events from '../components/events/Events';
 import Ressources from '../components/ressources/Ressources';
@@ -18,26 +18,15 @@ const Home = ({ partners, events, ressources }) => (
         <h1 className="title2">
            Événements à venir
         </h1>
-        <hr className="barre_barre" />
+        <hr className="blue-break" />
         <Events events={events} />
-        <a className="event-href" href="/EventsPage">VOIR TOUS LES ÉVÉNEMENTS ></a>
+        <a className="event-href" href="/EventsPage">VOIR TOUS LES ÉVÉNEMENTS </a>
       </div>
       <div className="ressource-container">
         <h1 className="title2">
           Ressources
         </h1>
-        <hr className="barre_barre" />
-        <p className="text-ressources">
-          Le numérique est aujourd’hui omniprésent dans nos vies,
-          {' '}
-          il impact fortement nos modes de vies, nos
-          <br />
-          sociétés, nos politiques, nos relations sociales professionnelles ou privées.
-          {' '}
-          Pour autant, il ne profite pas à
-          <br />
-          tous, nombreux sont celles et ceux qui le comprennent mal ou bien pire, en sont exclus !
-        </p>
+        <hr className="blue-break" />
         <Ressources ressources={ressources} />
         <a className="ressources-href" href="/RessourcesPages">VOIR TOUTE LA BIBLIO</a>
       </div>
@@ -45,37 +34,40 @@ const Home = ({ partners, events, ressources }) => (
     <style jsx>
       {`
       .title2 {
-        margin: 104px;
+        margin: 8rem auto;
         text-align: center;
         font-size: 6em;
         margin-bottom: 10px;
-        font-family: 'Dosis',sans-serif;
-        font-weight: 900;
-        color: #1F2040;
-        text-shadow: 0 1px 2px rgba(black,.15);
+        font-weight: bold;
+        color: #1f2040;
+        text-shadow: 0 1px 2px rgba(black, 0.15);
       }
       .title{
         margin: 0 auto;
         text-align: center;
         font-size: 6em;
         margin-bottom: 10px;
-        font-family: 'Dosis',sans-serif;
         font-weight: 900;
         color: #fff;
         text-shadow: 0 1px 2px rgba(black,.15);
       }
+
       hr.barre {
         width: 3%;
         height: 4px;
         background-color: #fff;
         margin-left: 67rem;
       }
-      hr.barre_barre{
-        width: 3%;
+
+      hr.blue-break {
+        width: 3rem;
         height: 4px;
-        background-color: #1F2040;
-        margin-left: 67rem;
+        background-color: #1f2040;
+        border-style: none;
+        border-radius: 2px;
+        margin: auto;
       }
+      
       .text-container{
         color: #fff;
         font-size: 2rem;
@@ -103,10 +95,11 @@ const Home = ({ partners, events, ressources }) => (
       }
       a.event-href{
         color: #1F2040;
+        display: flex;
         font-weight: 700;
-        position: relative;
-        left: 64rem;
-        bottom: 1rem;
+        text-align: center;
+        margin: auto;
+        display: block;
       }
       a.ressources-href{
         color: #1F2040;
@@ -121,9 +114,9 @@ const Home = ({ partners, events, ressources }) => (
 );
 Home.getInitialProps = async () => {
   const [partnersRes, eventsRes, ressourcesRes] = await Promise.all([
-    fetch(`${API_URL}/api/v1/partners`),
+    fetch(`https://sauce-num-back.herokuapp.com/api/v1/partners`),
     fetch('https://www.eventbriteapi.com/v3/users/me/events/?token=EQCXFCP563PTYQ5DE2TD&page_size=4&order_by=start_desc'),
-    fetch(`${API_URL}/api/v1/ressources?limit=8`),
+    fetch(`https://sauce-num-back.herokuapp.com/api/v1/ressourcesFront?limit=8`),
   ]);
   const partnersData = await partnersRes.json();
   const eventsData = await eventsRes.json();
