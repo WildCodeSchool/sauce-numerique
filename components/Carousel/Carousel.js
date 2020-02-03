@@ -15,15 +15,36 @@ class Carousel extends React.Component {
 					question: 'Question 1/2',
           background: 'https://i.imgur.com/uIVo5Ie.png',
           reponse1: 'Oh bah grand max 3h…',
+          reponse1_method: ()=>{
+            this.Carousel.current.slideTo(2)
+          },
           reponse2: '8h! Et c’est bien trop!',
+          reponse2_method: ()=>{
+            this.Carousel.current.slideNext()
+          }
         },
         {
           id: 2,
 					title: 'Eh oui… 8h d’écrans par jour avec 7 écrans par famille en moyenne.',
 					question: 'Question 2/2',
           background: 'https://i.imgur.com/uIVo5Ie.png',
-          lien: 'Je veux voir l’étude à ce sujet>',
-          reponse3: 'Pas étonnant…',
+          link_name: 'Je veux voir l’étude à ce sujet>',
+          link_url: 'https://www.inspq.qc.ca/pdf/publications/2154_temps_ecran_habitudes_vie.pdf',
+          reponse1: 'Pas étonnant…',
+          reponse1_method: ()=>{
+            this.Carousel.current.slideNext()
+          },
+        },
+        {
+          id: 3,
+          title: 'Coucou',
+          background: 'https://i.imgur.com/uIVo5Ie.png',
+          link_name: 'Je veux voir l’étude à ce sujet>',
+          link_url: 'https://www.inspq.qc.ca/pdf/publications/2154_temps_ecran_habitudes_vie.pdf',
+          reponse1: 'Pas étonnant…',
+          reponse1_method: ()=>{
+            this.Carousel.current.slideNext()
+          },
         },
       ],
     };
@@ -42,19 +63,24 @@ class Carousel extends React.Component {
 							<h2 className="question">{item.question}</h2>
 							<hr className="white-break" />
               <h2 className="title_carousel">{item.title}</h2>
-							{/* Button */}
-							<div className="button_container" id="slide1">
-								<div className="button_slide1">
-              		<button className="reponse1_button" onClick={() => this.Carousel.current.slideNext()}>{item.reponse1}</button>
-              		<button className="reponse2_button" onClick={() => this.Carousel.current.slideNext()}>{item.reponse2}</button>
-								</div>
-								</div>
-								<div className="button_container" id="slide2">
-								<div className="button_slide2">
-              		<button className="reponse3_button" onClick={() => this.Carousel.current.slideNext()}>{item.reponse3}</button>
-								</div>
-								</div>
-              <a className="lien" href="https://www.inspq.qc.ca/pdf/publications/2154_temps_ecran_habitudes_vie.pdf" target="_blank">{item.lien}</a>
+              <div className="button_container">
+              
+                <div className="button_slide1">
+                  {
+                  item.reponse1 &&
+                    <button className="reponse1_button" onClick={item.reponse1_method}>{item.reponse1}</button>
+                  }
+                  {
+                  item.reponse2 &&
+                    <button className="reponse2_button" onClick={item.reponse2_method}>{item.reponse2}</button>
+                  }
+                </div>
+              
+              </div>
+              {
+                item.link_url &&
+                <a className="lien" href={item.link_url} target="_blank">{item.link_name}</a>
+              }
             </div>
           ))}
           buttonsDisabled

@@ -31,7 +31,7 @@ const NavLinks = styled.ul`
     margin-top: 20px;
   }
 
-  & .navbar__link {
+  & .navbar-link {
     display: block;
     font-size: 1.7rem;
     line-height: 2.5;

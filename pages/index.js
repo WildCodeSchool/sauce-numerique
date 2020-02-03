@@ -20,7 +20,7 @@ const Home = ({ partners, events, ressources }) => (
         </h1>
         <hr className="blue-break" />
         <Events events={events} />
-        <a className="event-href" href="/EventsPage">VOIR TOUS LES ÉVÉNEMENTS ></a>
+        <a className="event-href" href="/EventsPage">VOIR TOUS LES ÉVÉNEMENTS </a>
       </div>
       <div className="ressource-container">
         <h1 className="title2">
@@ -116,7 +116,7 @@ Home.getInitialProps = async () => {
   const [partnersRes, eventsRes, ressourcesRes] = await Promise.all([
     fetch(`${API_URL}/api/v1/partners`),
     fetch('https://www.eventbriteapi.com/v3/users/me/events/?token=EQCXFCP563PTYQ5DE2TD&page_size=4&order_by=start_desc'),
-    fetch(`${API_URL}/api/v1/ressources?limit=8`),
+    fetch(`${API_URL}/api/v1/ressourcesFront?limit=8`),
   ]);
   const partnersData = await partnersRes.json();
   const eventsData = await eventsRes.json();

@@ -11,17 +11,15 @@ const EventsPage = ({ events }) => (
       Le numérique est aujourd’hui omniprésent dans nos vies,
       {' '}
       il impact fortement nos modes de vies, nos
-      <br />
       sociétés, nos politiques, nos relations sociales professionnelles ou privées.
       {' '}
        Pour autant, il ne profite pas à
-      <br />
       tous, nombreux sont celles et ceux qui le comprennent mal ou bien pire, en sont exclus !
     </p>
     <Layout>
-      <article>
+      <div className="eventspage-block">
         <Events events={events} />
-      </article>
+      </div>
     </Layout>
     <style jsx>
       {`
@@ -51,6 +49,11 @@ const EventsPage = ({ events }) => (
         padding: 5rem;
         text-align: justify;
       }
+
+      @media screen and (min-width: 1024px) {
+        .text-ressources{
+          padding: 5rem 15rem 5rem 15rem;
+        }
     `}
     </style>
   </div>

@@ -5,30 +5,30 @@ const Ressources = ({ ressources }) => (
   <div>
     <p className="text-ressources">
           Le numérique est aujourd’hui omniprésent dans nos vies,
-          {' '}
+      {' '}
           il impact fortement nos modes de vies, nos
-          <br />
+      <br />
           sociétés, nos politiques, nos relations sociales professionnelles ou privées.
-          {' '}
+      {' '}
           Pour autant, il ne profite pas à
-          <br />
+      <br />
           tous, nombreux sont celles et ceux qui le comprennent mal ou bien pire, en sont exclus !
-        </p>
-  <div className="ressources-container">   
-    {ressources.map((y) => {
-      const flag = y.theme.substring(0, 1);
-      return (
-        <div className="ressources" key={y.id}>
-          <p className="icon-ressources">{flag}</p>
-          <h1 className="ressources-title-container">{y.title}</h1>
-          <p className="ressources-theme-container">{y.theme}</p>
-          <div className="description-container">
-            <p className="ressources-description-container">{y.description}</p>
+    </p>
+    <div className="ressources-container">
+      {ressources.map((y) => {
+        const flag = y.theme.substring(0, 1);
+        return (
+          <div className="ressources" key={y.id}>
+            <p>{flag}</p>
+            <h1 className="ressources-title-container">{y.title}</h1>
+            <p className="ressources-theme-container">{y.theme}</p>
+            <div className="description-container">
+              <p className="ressources-description-container">{y.description}</p>
+            </div>
           </div>
-        </div>
- 
-      );
-    })}
+
+        );
+      })}
     </div>
     <style jsx>
       {`
@@ -85,9 +85,15 @@ const Ressources = ({ ressources }) => (
           width: 38vw;
           font-size: 12px;
         }
+
+        @media screen and (min-width: 768px) {
+          .text-ressources {
+            padding: 8rem 15rem 8rem 15rem;
+          }        
+
     `}
     </style>
-  
+
   </div>
 );
 

@@ -35,9 +35,14 @@ const NavBar = styled(animated.nav)`
   width: 100%;
   top: 0;
   left: 0;
-  background: transparent;
+  background: ${props => props.isHome ? "transparent" : "#3e53ce"};
   z-index: 1;
   font-size: 1.4rem;
+
+  @media screen and (max-width: 768px) {
+    background: ${props => props.isHome && props.navbarState ? "#3e53ce" : "transparent"};
+    position: ${props => props.navbarState ? "fixed" : ""};
+  }
 `;
 
 const FlexContainer = styled.div`
@@ -56,22 +61,11 @@ const BurgerWrapper = styled.div`
   }
 `;
 
-const Navbar = (props) => {
-  const barAnimation = useSpring({
-    from: { transform: 'translate3d(0, -10rem, 0)' },
-    transform: 'translate3d(0, 0, 0)',
-  });
-
-  const linkAnimation = useSpring({
-    from: { transform: 'translate3d(0, 30px, 0)', opacity: 0 },
-    to: { transform: 'translate3d(0, 0, 0)', opacity: 1 },
-    delay: 800,
-    config: config.wobbly,
-  });
+const Navbar = ({ isHome, navbarState, handleNavbar} ) => {
 
   return (
     <>
-      <NavBar>
+      <NavBar isHome={isHome} navbarState={navbarState}>
         <FlexContainer>
           <Brand />
           <NavLinks>
@@ -79,15 +73,15 @@ const Navbar = (props) => {
           </NavLinks>
           <BurgerWrapper>
             <Burgermenu
-              navbarState={props.navbarState}
-              handleNavbar={props.handleNavbar}
+              navbarState={navbarState}
+              handleNavbar={handleNavbar}
             />
           </BurgerWrapper>
         </FlexContainer>
       </NavBar>
       <CollapseMenu
-        navbarState={props.navbarState}
-        handleNavbar={props.handleNavbar}
+        navbarState={navbarState}
+        handleNavbar={handleNavbar}
       />
     </>
   );
