@@ -115,10 +115,24 @@ const AboutUs = ({ partners, props }) => (
               Co-fondateur et trésorier
             </h3>
             <p className="aboutus-member-description">
-              Ingénieur web indépendant et auteur du livre 
-              “Fortnite-a-t’il transformé nos enfants en zombies”, 
-              Nicolas est passionné par la compréhension des biais psychologiques exploités 
-              par les outils numérique dans notre quotidien.
+              <strong>
+                Ingénieur web indépendant 
+              </strong>
+              { " " }
+              et auteur du livre
+              { " " }
+              <strong>
+                “Fortnite-a-t’il transformé nos enfants en zombies”, 
+              </strong>
+              { " " }
+              Nicolas est passionné par
+              { " " }
+              <strong>
+                la compréhension des biais psychologiques exploités 
+                par les outils numérique 
+              </strong>
+              { " " }
+              dans notre quotidien.
             </p>
           </div>
         </div>
@@ -131,10 +145,20 @@ const AboutUs = ({ partners, props }) => (
             <h3 className="aboutus-member-role">
               Co-fondateur
             </h3>
-            <p className="aboutus-member-description">
-            Vidéaste indépendant et passionné 
-            par la vulgarisation de 
-            l’espace et des sciences en général.
+            <p className="aboutus-member-description">          
+            <strong>
+              Vidéaste indépendant 
+            </strong>
+            { " " } 
+            et
+            { " " }
+            <strong>
+              passionné 
+              par la vulgarisation de 
+              l’espace et des sciences 
+            </strong>
+            { " " }
+            en général.
             </p>
           </div>
         </div>
@@ -191,9 +215,8 @@ const AboutUs = ({ partners, props }) => (
           .aboutus-member-text {
             text-align: justify;
             margin: 2rem;
-            border: 5px solid black;
-            font-size: 1.5rem;
-            width: 40rem;
+            font-size: 1.7rem;
+            width: 30rem;
           }
 
           .aboutus-pic {
@@ -210,6 +233,7 @@ const AboutUs = ({ partners, props }) => (
 
           .aboutus-member-role {
             font-size: 2rem;
+            margin-bottom: 1rem;
           }
 
         @media screen and (min-width: 1023px) {
