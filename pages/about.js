@@ -3,7 +3,7 @@ import React from 'react';
 import Layout from '../components/Layout';
 import Support from '../components/Support';
 import Partners from '../components/partners/Partners';
-{/*import API_URL from '../api.config';*/}
+import API_URL from '../api.config';
 
 const AboutUs = ({ partners, props }) => (
   <div>
@@ -258,7 +258,7 @@ const AboutUs = ({ partners, props }) => (
 
 AboutUs.getInitialProps = async () => {
   const partnersRes = await fetch(
-    `https://sauce-num-back.herokuapp.com/api/v1/partners`,
+    `${API_URL}/api/v1/partners`,
     );
     const partnersData = await partnersRes.json();
     
