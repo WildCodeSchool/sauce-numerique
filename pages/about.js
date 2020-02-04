@@ -5,7 +5,7 @@ import Support from '../components/Support';
 import Partners from '../components/partners/Partners';
 {/*import API_URL from '../api.config';*/}
 
-const AboutUs = ({ partners }) => (
+const AboutUs = ({ partners, props }) => (
   <div>
     <Layout>
       <div className="aboutus-presentation">
@@ -42,118 +42,123 @@ const AboutUs = ({ partners }) => (
       </div>
       <div className="aboutus-container">
         <div className="aboutus-member">
-          <img className="aboutus-pic" src="https://via.placeholder.com/150" alt="aboutus-pis" />
+          <img className="aboutus-pic" src="https://imgur.com/IKjRF10.jpg" alt="aboutus-pis" />
           <div className="aboutus-member-text">
             <h2 className="aboutus-member-name">
-              Luke Skywalker
+              Marine Brondin-Bernard
             </h2>
             <h3 className="aboutus-member-role">
-              Jedi Master
+              Présidente et Co-fondatrice
             </h3>
             <p className="aboutus-member-description">
-              La Sauce Numérique souhaite par ses actions sur le terrain
-              {' '}
+              Ancienne 
+              { " " }
               <strong>
-                promouvoir l'accompagnement, l'apprentissage, l'accès et
-                l'appropriation du numérique à destination du grand public
+                déléguée médicale
               </strong>
-              {' '}
-              avec pas ou peu de connaissance de ce vaste univers. La Sauce
-              Numérique souhaite par ses actions sur le terrain
-              {' '}
+              { " " }
+              dans l’optique et 
+              { " " }
               <strong>
-                promouvoir l'accompagnement, l'apprentissage, l'accès et
-                l'appropriation du numérique à destination du grand public
+                spécialiste de la lumière bleue
               </strong>
-              {' '}
-              avec pas ou peu de connaissance de ce vaste univers. La Sauce
+              , Marina s’est spécialisée dans
+              { " " }
+              <strong>
+                l’effet des écrans sur notre santé
+              </strong> 
+              { " " }
+              avant de se passionner pour 
+              { " " }
+              <strong>
+                la pédagogie et la transmission de connaissances.
+              </strong>
             </p>
           </div>
         </div>
         <div className="aboutus-member">
-          <img className="aboutus-pic" src="https://via.placeholder.com/150" alt="aboutus-pics" />
+          <img className="aboutus-pic" src="https://imgur.com/fYNVuHt.jpg" alt="aboutus-pics" />
           <div className="aboutus-member-text">
             <h2 className="aboutus-member-name">
-              Luke Skywalker
+              Manyssin Thin
             </h2>
             <h3 className="aboutus-member-role">
-              Jedi Master
+              Co-fondateur
             </h3>
             <p className="aboutus-member-description">
-                La Sauce Numérique souhaite par ses actions sur le terrain
-              {' '}
               <strong>
-                promouvoir l'accompagnement, l'apprentissage, l'accès et
-                l'appropriation du numérique à destination du grand public
+                Serial entrepreneur
               </strong>
-              {' '}
-                avec pas ou peu de connaissance de ce vaste univers. La Sauce
-                Numérique souhaite par ses actions sur le terrain
-              {' '}
+              { " " }
+              et
+              { " " }
               <strong>
-                promouvoir l'accompagnement, l'apprentissage, l'accès et
-                l'appropriation du numérique à destination du grand public
+                spécialiste en expérience utilisateur
               </strong>
-              {' '}
-              avec pas ou peu de connaissance de ce vaste univers. La Sauce
+              , 
+              Manyssin est passionné par 
+              { " " }
+              <strong>
+                l’être humain et son rapport aux autres, 
+                dans le monde réel et numérique
+              </strong>
             </p>
           </div>
         </div>
         <div className="aboutus-member">
-          <img className="aboutus-pic" src="https://via.placeholder.com/150" alt="aboutus-pic" />
+          <img className="aboutus-pic" src="https://imgur.com/PY2NT9I.jpg" alt="aboutus-pic" />
           <div className="aboutus-member-text">
             <h2 className="aboutus-member-name">
-              Luke Skywalker
+              Nicolas Brondin-Bernard
             </h2>
             <h3 className="aboutus-member-role">
-              Jedi Master
+              Co-fondateur et trésorier
             </h3>
             <p className="aboutus-member-description">
-              La Sauce Numérique souhaite par ses actions sur le terrain
-              {' '}
               <strong>
-                promouvoir l'accompagnement, l'apprentissage, l'accès et
-                l'appropriation du numérique à destination du grand public
+                Ingénieur web indépendant 
               </strong>
-              {' '}
-              avec pas ou peu de connaissance de ce vaste univers. La Sauce
-              Numérique souhaite par ses actions sur le terrain
-              {' '}
+              { " " }
+              et auteur du livre
+              { " " }
               <strong>
-                promouvoir l'accompagnement, l'apprentissage, l'accès et
-                l'appropriation du numérique à destination du grand public
+                “Fortnite-a-t’il transformé nos enfants en zombies”, 
               </strong>
-              {' '}
-              avec pas ou peu de connaissance de ce vaste univers. La Sauce
+              { " " }
+              Nicolas est passionné par
+              { " " }
+              <strong>
+                la compréhension des biais psychologiques exploités 
+                par les outils numérique 
+              </strong>
+              { " " }
+              dans notre quotidien.
             </p>
           </div>
         </div>
         <div className="aboutus-member">
-          <img className="aboutus-pic" src="https://via.placeholder.com/150" alt="aboutus-pic" />
+          <img className="aboutus-pic" src="https://imgur.com/WAWAWRi.jpg" alt="aboutus-pic" />
           <div className="aboutus-member-text">
             <h2 className="aboutus-member-name">
-              Luke Skywalker
+              Victor Delaleu
             </h2>
             <h3 className="aboutus-member-role">
-              Jedi Master
+              Co-fondateur
             </h3>
-            <p className="aboutus-member-description">
-              La Sauce Numérique souhaite par ses actions sur le terrain
-              {' '}
-              <strong>
-                promouvoir l'accompagnement, l'apprentissage, l'accès et
-                l'appropriation du numérique à destination du grand public
-              </strong>
-              {' '}
-              avec pas ou peu de connaissance de ce vaste univers. La Sauce
-              Numérique souhaite par ses actions sur le terrain
-              {' '}
-              <strong>
-                promouvoir l'accompagnement, l'apprentissage, l'accès et
-                l'appropriation du numérique à destination du grand public
-              </strong>
-              {' '}
-              avec pas ou peu de connaissance de ce vaste univers. La Sauce
+            <p className="aboutus-member-description">          
+            <strong>
+              Vidéaste indépendant 
+            </strong>
+            { " " } 
+            et
+            { " " }
+            <strong>
+              passionné 
+              par la vulgarisation de 
+              l’espace et des sciences 
+            </strong>
+            { " " }
+            en général.
             </p>
           </div>
         </div>
@@ -162,8 +167,7 @@ const AboutUs = ({ partners }) => (
       <Support />
     </Layout>
     <style jsx>
-      {`
-        @media screen and (max-width: 767px) {    
+      {`   
           .title2 {
             margin: 8rem auto;
             text-align: center;
@@ -203,170 +207,51 @@ const AboutUs = ({ partners }) => (
           .aboutus-member {
             width: 100%;
             display: flex;
+            flex-flow: column;
             align-items: center;
+            padding: 1rem;
           }
   
           .aboutus-member-text {
             text-align: justify;
-            margin: 2rem 2rem 0 1rem;
-
+            margin: 2rem;
+            font-size: 1.7rem;
+            width: 30rem;
           }
-          
+
           .aboutus-pic {
             border-radius: 50%;
             float: left;
             margin: 0 0 0 2rem;
-            width: 40%;
+            max-width: 40%;
             
           }
   
           .aboutus-member-name {
-            font-size: 170%;
-          }
-        };
-
-        @media screen and (min-width: 768px) and (max-width: 1023px) {
-  
-          .title2 {
-            margin: 8rem auto;
-            text-align: center;
-            font-size: 6em;
-            margin-bottom: 10px;
-            font-family: "Dosis", sans-serif;
-            font-weight: bold;
-            color: #1f2040;
-            text-shadow: 0 1px 2px rgba(black, 0.15);
-          }
-  
-          hr.blue-break {
-            width: 3rem;
-            height: 4px;
-            background-color: #1f2040;
-            border-style: none;
-            border-radius: 2px;
-            margin: auto;
-          }
-  
-          p.aboutus-text {
-            font-size: 2rem;
-            margin: auto;
-            padding: 3rem;
-            width: 86vw;
-            text-align: justify;
-            color: #1f2040;
-          }
-  
-          .aboutus-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;        
-            padding: 6rem;
-            width: 100%;
-          }
-  
-          .aboutus-member {
-            width: 50%;
-            display: block;
-          }
-  
-          .aboutus-member-text {
-            margin: 1rem 1rem 1rem 1rem;
-          }
-          
-          .aboutus-pic {
-            display: block;
-            border-radius: 50%;
-            width: 50%;
-            margin: auto;
-          }
-  
-          .aboutus-member-name {
-            font-size: 200%;
+            font-size: 2.5rem;
           }
 
           .aboutus-member-role {
-            font-size: 160%;
+            font-size: 2rem;
+            margin-bottom: 1rem;
           }
 
-          .aboutus-member-description {
-            font-size: 140%;
-            text-align: justify;
+        @media screen and (min-width: 1023px) {
+          .aboutus-member {
+            padding: 3rem;
+            width: 50%;
+            display:flex;
+          }
+
+          .aboutus-pic {
+            max-width: 60%;
             margin: auto;
-
           }
+
+          
         }
-       
-        @media screen and (min-width: 1024px) {
-  
-          .title2 {
-            margin: 8rem auto;
-            text-align: center;
-            font-size: 6em;
-            margin-bottom: 10px;
-            font-family: "Dosis", sans-serif;
-            font-weight: bold;
-            color: #1f2040;
-            text-shadow: 0 1px 2px rgba(black, 0.15);
-          }
-  
-          hr.blue-break {
-            width: 3rem;
-            height: 4px;
-            background-color: #1f2040;
-            border-style: none;
-            border-radius: 2px;
-            margin: auto;
-          }
-  
-          p.aboutus-text {
-            font-size: 2rem;
-            margin: auto;
-            padding: 3rem;
-            width: 86vw;
-            text-align: justify;
-            color: #1f2040;
-          }
 
-          .aboutus-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;        
-            padding: 5rem;
-            width: 100%;
-          }
-  
-          .aboutus-member {
-            width: 50%;
-            display: flex;
-            align-items: center;
-          }
-  
-          .aboutus-member-text {
-            text-align: left;
-          }
-          
-          .aboutus-pic {
-            border-radius: 50%;
-            width: 70%;
-            float: left;
-            margin: 2rem;
-          }
-  
-          .aboutus-member-name {
-            font-size: 200%;
-          }
-
-          .aboutus-member-role {
-            font-size: 160%;
-          }
-
-          .aboutus-member-description {
-            font-size: 140%;
-            text-align: justify;
-            margin-bottom: 3rem;
-          }
-      }
-      `}
+        `}
     </style>
   </div>
 );
@@ -374,12 +259,12 @@ const AboutUs = ({ partners }) => (
 AboutUs.getInitialProps = async () => {
   const partnersRes = await fetch(
     `https://sauce-num-back.herokuapp.com/api/v1/partners`,
-  );
-  const partnersData = await partnersRes.json();
-
-  return {
-    partners: partnersData,
+    );
+    const partnersData = await partnersRes.json();
+    
+    return {
+      partners: partnersData,
+    };
   };
-};
-
-export default AboutUs;
+  
+  export default AboutUs;
