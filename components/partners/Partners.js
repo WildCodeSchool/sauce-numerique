@@ -70,7 +70,6 @@ function Partners({ partners }) {
               margin-bottom: 10px;
               font-weight: bold;
               color: #fff;
-              text-shadow: 0 1px 2px rgba(black, 0.15);
             }
             
             hr.white-break {
@@ -84,8 +83,10 @@ function Partners({ partners }) {
     
             .partners-link {
               color: #fff;
-              font-size: 20px;
-              margin-bottom: 50px;
+              font-size: 2rem;
+              font-weight: 700;
+              margin: auto;
+              padding: 3rem;
               display: block;
               text-align: -webkit-center;
             }
@@ -94,7 +95,7 @@ function Partners({ partners }) {
               color: #fff;
               font-size: 2rem;
               margin: auto;
-              padding: 5rem;
+              padding: 3rem;
               text-align: justify;
             }
 
