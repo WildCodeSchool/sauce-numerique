@@ -11,38 +11,131 @@ class Carousel extends React.Component {
       galleryItems: [
         {
           id: 1,
-          title: 'En moyenne et par jour, combien de temps passons-nous devant des écrans ?',
-          background: 'https://i.imgur.com/uIVo5Ie.png',
-          reponse1: 'Oh bah grand max 3h…',
+					title: 'Passez-vous plus de trois heures par jour devant un écran ?',
+					question: 'Question 1/10',
+          background: 'https://i.imgur.com/GqfznhP.jpg',
+          reponse1: 'Non',
           reponse1_method: ()=>{
             this.Carousel.current.slideTo(2)
           },
-          reponse2: '8h! Et c’est bien trop!',
+          reponse2: 'Oui',
           reponse2_method: ()=>{
-            this.Carousel.current.slideNext()
+            this.Carousel.current.slideTo(3)
           }
         },
         {
           id: 2,
-          title: 'Eh oui… 8h d’écrans par jour avec 7 écrans par famille en moyenne.',
-          background: 'https://i.imgur.com/uIVo5Ie.png',
+					title: 'En moyenne les français passent 5h07 devant un écran tous les jours.',
+					question: 'Question 2/10',
+          background: 'https://i.imgur.com/GqfznhP.jpg',
           link_name: 'Je veux voir l’étude à ce sujet>',
-          link_url: 'https://www.inspq.qc.ca/pdf/publications/2154_temps_ecran_habitudes_vie.pdf',
-          reponse1: 'Pas étonnant…',
-          reponse1_method: ()=>{
-            this.Carousel.current.slideNext()
+          link_url: 'https://www.francetvinfo.fr/internet/objets-connectes/sante-nous-passons-deux-heures-de-plus-devant-nos-ecrans-qu-il-y-a-dix-ans_2592848.html',
+          reponse2: 'Découvrir d’autres informations.',
+          reponse2_method: ()=>{
+            this.Carousel.current.slideTo(3)
           },
         },
         {
           id: 3,
-          title: 'Coucou',
-          background: 'https://i.imgur.com/uIVo5Ie.png',
-          link_name: 'Je veux voir l’étude à ce sujet>',
-          link_url: 'https://www.inspq.qc.ca/pdf/publications/2154_temps_ecran_habitudes_vie.pdf',
-          reponse1: 'Pas étonnant…',
+          title: '18% des adultes n’utilisent jamais d’outils numériques.',
+          question: 'Question 3/10',
+          background: 'https://i.imgur.com/i8VtfFM.jpg',
+          reponse1: 'Faux',
           reponse1_method: ()=>{
-            this.Carousel.current.slideNext()
+            this.Carousel.current.slideTo(4)
+          },         
+          reponse2: 'Vrai',
+          reponse2_method: ()=>{
+            this.Carousel.current.slideTo(5)
           },
+        },
+        {
+          id: 4,
+          title: " Vrai. Cela représente quasiment un adulte sur cinq qui n'a pas accès ou ne sait pas utiliser un ordinateur ou un smartphone.",
+          question: 'Question 4/10',
+          background: 'https://i.imgur.com/i8VtfFM.jpg',
+          link_name: 'Je veux voir l’étude à ce sujet>',
+          link_url: 'https://www.insee.fr/fr/statistiques/4175696',
+          reponse2: 'Découvrir d’autres informations',
+          reponse2_method: ()=>{
+            this.Carousel.current.slideTo(5)
+          },
+        },
+        {
+          id: 5,
+          title: '1 jeune sur 5 serait victime de cyber-harcèlement.',
+          question: 'Question 5/10',
+          background: 'https://i.imgur.com/taE9ZNC.jpg',
+          reponse1: 'Faux',
+          reponse1_method: ()=>{
+            this.Carousel.current.slideTo(6)
+          },         
+          reponse2: 'Vrai',
+          reponse2_method: ()=>{
+            this.Carousel.current.slideTo(7)
+          },
+        },
+        {
+          id: 6,
+          title: 'Cyber-harcèlement: 22% des jeunes assurent en avoir déjà été victimes.',
+          question: 'Question 6/10',
+          background: 'https://i.imgur.com/taE9ZNC.jpg',
+          link_name: 'Je veux voir l’étude à ce sujet>',
+          link_url: 'https://www.20minutes.fr/high-tech/2451923-20190215-cyber-harcelement-22-jeunes-assurent-avoir-deja-victimes',
+          reponse2: 'Découvrir d’autres informations',
+          reponse2_method: ()=>{
+            this.Carousel.current.slideTo(7)
+          },
+        },
+        {
+          id: 7,
+          title: 'La moitié des français sont inquiétés par l’intelligence artificielle.',
+          question: 'Question 7/10',
+          background: 'https://i.imgur.com/Ii2nNF0.jpg',
+          reponse1: 'Faux',
+          reponse1_method: ()=>{
+            this.Carousel.current.slideTo(8)
+          },         
+          reponse2: 'Vrai',
+          reponse2_method: ()=>{
+            this.Carousel.current.slideTo(9)
+          },
+        },
+        {
+          id: 8,
+          title: '56% de français ont peur de l’IA.',
+          question: 'Question 8/10',
+          background: 'https://i.imgur.com/Ii2nNF0.jpg',
+          link_name: 'Découvrir d’autres informations',
+          link_url: 'https://livre.fnac.com/a12970716/Luc-Julia-L-intelligence-artificielle-n-existe-pas',
+          link_name: 'Je veux voir l’étude à ce sujet>',
+          link_url: 'https://fr.statista.com/statistiques/950599/peur-ressentie-face-a-l-intelligence-artificielle-france/ ',
+          reponse2: 'Découvrir d’autres informations',
+          reponse2_method: ()=>{
+            this.Carousel.current.slideTo(9)
+          },
+        },
+        {
+          id: 9,
+          title: 'L’addiction aux jeux vidéo existe-t-elle ?',
+          question: 'Question 9/10',
+          background: 'https://i.imgur.com/gvooGc4.jpg',
+          reponse1: 'Non',
+          reponse1_method: ()=>{
+            this.Carousel.current.slideTo(10)
+          },         
+          reponse2: 'Oui',
+          reponse2_method: ()=>{
+            this.Carousel.current.slideTo(10)
+          },
+        },
+        {
+          id: 10,
+          title: 'Oui cela existe, c’est une addiction comportementale, entre 2% et 5% de joueurs sont touchés.',
+          question: 'Question 10/10',
+          background: 'https://i.imgur.com/gvooGc4.jpg',
+          link_name: 'Je veux voir l’étude à ce sujet>',
+          link_url: 'https://www.ifac-addictions.fr/accro-au-jeu-video.html',
         },
       ],
     };
@@ -58,235 +151,98 @@ class Carousel extends React.Component {
           items={galleryItems.map((item) => (
             <div className="carousel" key={item.id}>
               <img className="picture" src={item.background} alt="people" />
+							  <h2 className="question">{item.question}</h2>
+							  <hr className="white-break" />
               <h2 className="title_carousel">{item.title}</h2>
-              <div className="button_container">
-              
-                <div className="button_slide1">
+              <div className="button_container">              
+                <div>
                   {
                   item.reponse1 &&
                     <button className="reponse1_button" onClick={item.reponse1_method}>{item.reponse1}</button>
-                  }
+                  }                  
                   {
                   item.reponse2 &&
                     <button className="reponse2_button" onClick={item.reponse2_method}>{item.reponse2}</button>
                   }
-                </div>
-              
+                </div>              
               </div>
-              {
-                item.link_url &&
-                <a className="lien" href={item.link_url} target="_blank">{item.link_name}</a>
-              }
+                {
+                  item.link_url &&
+                  <a className="lien" href={item.link_url} target="_blank">{item.link_name}</a>
+                }
             </div>
           ))}
           buttonsDisabled
           dotsDisabled
         />
+				{/* CSS */}
         <style jsx>
           {`
-.carousel{
-display: flex;
-align-items: flex-start;
-flex-wrap: wrap;
-}
-img.picture {
-width: 100%;
-object-fit: cover;
-height: 78vh;
-}
-h2.title_carousel {
-color: #fff;
-font-size: 360%;
-height: 100%;
-text-align: center;
-margin: -129% 5%;
-padding-top: 4rem;
-}
-.button_slide1 {
-display: flex;
-align-items: center;
-}
-button.reponse1_button {
-color: #000;
-font-size: 160%;
-border-radius: 10px;
-margin: -94% -73% 8% 31%;
-}
-button.reponse2_button {
-color: #000;
-font-size: 160%;
-border-radius: 10px;
-margin: -75% -71% 2% 23%;
-}
-.button_slide2 {
-display: flex;
-align-items: center;
-}
-button.reponse3_button {
-color: #000;
-font-size: 160%;
-border-radius: 10px;
-margin: -283% -155% 22% 128%;
-}
-a.lien {
-margin: -66% -1%;
-font-size: 150%;
-color: #fff;
-}
-
-@media screen and (min-width: 768px) and (max-width: 1023px){
-.carousel{
-display: flex;
-align-items: flex-start;
-flex-wrap: wrap;
-}
-img.picture {
-width: 100%;
-object-fit: cover;
-height: 62vh;
-}
-h2.title_carousel {
-color: #fff;
-font-size: 418%;
-height: 100%;
-text-align: center;
-margin: -60% 5%;
-}
-.button_slide1 {
-display: flex;
-align-items: center;
-}
-button.reponse1_button {
-color: #000;
-font-size: 219%;
-border-radius: 10px;
-margin: -107% -81% 8% 33%;
-}
-button.reponse2_button {
-color: #000;
-font-size: 219%;
-border-radius: 10px;
-margin: -112% -71% 2% 90%;
-}
-.button_slide2 {
-display: flex;
-align-items: center;
-}
-button.reponse3_button {
-color: #000;
-font-size: 219%;
-border-radius: 10px;
-margin: -283% -230% 22% 213%;
-}
-a.lien {
-margin: -38% 16%;
-font-size: 219%;
-color: #fff;
-}
-}
-
-@media screen and (min-width: 1024px) and (max-width: 1356px){
-.carousel{
-display: flex;
-align-items: flex-start;
-flex-wrap: wrap;
-}
-img.picture {
-width: 100%;
-object-fit: cover;
-height: 38vh;
-}
-h2.title_carousel {
-color: #fff;
-font-size: 418%;
-height: 100%;
-text-align: center;
-margin: -36% 5%;
-}
-.button_slide1 {
-display: flex;
-align-items: center;
-}
-button.reponse1_button {
-color: #000;
-font-size: 219%;
-border-radius: 10px;
-margin: -72% -82% 8% 61%;
-}
-button.reponse2_button {
-color: #000;
-font-size: 219%;
-border-radius: 10px;
-margin: -77% -71% 2% 90%;
-}
-.button_slide2 {
-display: flex;
-align-items: center;
-}
-button.reponse3_button {
-color: #000;
-font-size: 219%;
-border-radius: 10px;
-margin: -150% -382% 22% 305%;
-}
-a.lien {
-margin: -21% 24%;
-font-size: 219%;
-color: #fff;
-}
-}
-
-@media screen and (min-width: 1357px){
-.carousel{
-display: flex;
-align-items: flex-start;
-flex-wrap: wrap;
-}
-img.picture {
-width: 100%;
-object-fit: cover;
-height: 73vh;
-}
-h2.title_carousel {
-color: #fff;
-font-size: 681%;
-height: 100%;
-text-align: center;
-margin: -32% 9%;
-}
-.button_slide1 {
-display: flex;
-align-items: center;
-}
-button.reponse1_button {
-color: #000;
-font-size: 219%;
-border-radius: 10px;
-margin: -71% -80% 8% 93%;
-}
-button.reponse2_button {
-color: #000;
-font-size: 219%;
-border-radius: 10px;
-margin: -77% -169% 2% 90%;
-}
-.button_slide2 {
-display: flex;
-align-items: center;
-}
-button.reponse3_button {
-color: #000;
-font-size: 219%;
-border-radius: 10px;
-margin: -150% -442% 22% 416%;
-}
-a.lien {
-margin: -16% 30%;
-font-size: 219%;
-color: #fff;
-}
-}
-`}
+							.carousel{
+    						display: flex;
+    						align-items: flex-start;
+    						flex-wrap: wrap;
+							}
+							img.picture {
+    						width: 100vw;
+    						object-fit: cover;
+    						height: 73vh;
+    						margin-top: 0;
+							}
+              .text_container{
+                text-align: center;
+              }
+							h2.question {
+                display: block;
+                margin: -106% -48% 30% 33%;
+                color: #fff;
+                font-size: 180%;
+              }
+							hr.white-break {
+                display: block;
+                color: #000;
+                margin: -95% -45% 2% 28%;
+                width: 3rem;
+                height: 4px;
+                background-color: #fff;
+                border-style: none;
+                border-radius: 2px;
+							}
+							h2.title_carousel {
+                color: #fff;
+                font-size: 268%;
+                height: 100%;
+                text-align: center;
+                margin: -92% 18%;
+                max-width: 64%;
+                min-width: 30%;
+							}
+              .button_container {
+                margin: -26% 27%;
+              }
+							button.reponse1_button {
+    						font-size: 128%;
+                margin: 16px;
+                border: none;
+                border-radius: 6px;
+                min-width: 36vw;
+                max-width: 48vw;
+							}            
+							button.reponse2_button {
+    						font-size: 128%;
+                border: none;
+                border-radius: 6px;
+                margin: 0 0 0 11%;
+                min-width: 36vw;
+                max-width: 48vw;
+							}
+              a.lien {
+                color: #FFF;
+                font-size: 118%;
+                line-height: 11vh;
+                margin: -42% 2% 2% 32%;
+              }  							
+        	`}
         </style>
       </div>
     );
