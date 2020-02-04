@@ -1,21 +1,21 @@
-const ContactSponsor = () => {
-    return (
-        <div className="contact-container">
-            <h1 className="contact-title">
+const ContactSponsor = () => (
+  <div className="contact-container">
+    <h1 className="contact-title">
                 DEVENIR SPONSOR
-            </h1>
-            <p className="contact-text">
+    </h1>
+    <p className="contact-text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ipsum orci, tristique ut tortor ut, mollis commodo ex. Nullam fringilla sagittis euismod. Nunc euismod dui justo, quis porta eros venenatis gravida. Fusce ut mauris velit. Morbi ac eros sagittis, placerat ante pellentesque, consequat erat. Maecenas at erat augue. Donec ullamcorper nunc id ipsum ultrices rutrum. Donec molestie, erat vel sodales vehicula, mauris augue malesuada eros, at rutrum nisi erat sed leo. Sed vestibulum elit quis vehicula feugiat. Donec id felis eget augue fringilla congue vel ac libero. Morbi pulvinar tempor metus ut gravida. Etiam ante augue, posuere ut nulla at, placerat pulvinar quam.
-            </p>
-            <div className="button-container">
-                <button className="contact-button">
+    </p>
+    <div className="button-container">
+      <button className="contact-button">
                     TÉLÉCHARGER PDF
-                </button>
-                <button className="contact-button">
+      </button>
+      <button className="contact-button">
                     CONTACT
-                </button>
-            </div>
-            <style jsx>{`
+      </button>
+    </div>
+    <style jsx>
+      {`
                 .contact-container {
                     margin-top: 80px;
                 }
@@ -93,9 +93,8 @@ const ContactSponsor = () => {
                     transition: right 0.2s;
                 }
             `}
-            </style>
-        </div>
-    )
-}
+    </style>
+  </div>
+);
 
 export default ContactSponsor;

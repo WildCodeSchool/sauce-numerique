@@ -7,7 +7,7 @@ class Home extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      isHome: true, 
+      isHome: true,
     }
   }
   render () {
@@ -46,8 +46,6 @@ const Home = ({ router }) => {
         </div>
   )
 }
-
-
 
 
 class Layout extends Component {
@@ -92,4 +90,4 @@ class Layout extends Component {
 }
 
 export default withRouter(Layout);
-/*/
+/ */

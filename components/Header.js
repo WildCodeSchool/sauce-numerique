@@ -20,10 +20,6 @@ const Header = () => (
         <Link href="/contact">
           <a className="navbar-link">Contact</a>
         </Link>
-      <style jsx>{`
-       
-
-      `}</style>
       </div>
     </nav>
   </header>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { animated, useSpring, config } from 'react-spring';
+import { animated } from 'react-spring';
 import styled from 'styled-components';
 import Header from '../Header';
 import Brand from './Brand';
@@ -35,13 +35,13 @@ const NavBar = styled(animated.nav)`
   width: 100%;
   top: 0;
   left: 0;
-  background: ${props => props.isHome ? "transparent" : "#3e53ce"};
+  background: ${(props) => (props.isHome ? 'transparent' : '#3e53ce')};
   z-index: 1;
   font-size: 1.4rem;
 
   @media screen and (max-width: 768px) {
-    background: ${props => props.isHome && props.navbarState ? "#3e53ce" : "transparent"};
-    position: ${props => props.navbarState ? "fixed" : ""};
+    background: ${(props) => (props.navbarState && props.isHome ? '#3e53ce' : '')};
+    position: ${(props) => (props.navbarState ? 'fixed' : '')};
   }
 `;
 
@@ -61,30 +61,27 @@ const BurgerWrapper = styled.div`
   }
 `;
 
-const Navbar = ({ isHome, navbarState, handleNavbar} ) => {
-
-  return (
-    <>
-      <NavBar isHome={isHome} navbarState={navbarState}>
-        <FlexContainer>
-          <Brand />
-          <NavLinks>
+const Navbar = ({ isHome, navbarState, handleNavbar }) => (
+  <>
+    <NavBar isHome={isHome} navbarState={navbarState}>
+      <FlexContainer>
+        <Brand />
+        <NavLinks>
           <Header />
-          </NavLinks>
-          <BurgerWrapper>
-            <Burgermenu
-              navbarState={navbarState}
-              handleNavbar={handleNavbar}
-            />
-          </BurgerWrapper>
-        </FlexContainer>
-      </NavBar>
-      <CollapseMenu
-        navbarState={navbarState}
-        handleNavbar={handleNavbar}
-      />
-    </>
-  );
-};
+        </NavLinks>
+        <BurgerWrapper>
+          <Burgermenu
+            navbarState={navbarState}
+            handleNavbar={handleNavbar}
+          />
+        </BurgerWrapper>
+      </FlexContainer>
+    </NavBar>
+    <CollapseMenu
+      navbarState={navbarState}
+      handleNavbar={handleNavbar}
+    />
+  </>
+);
 
 export default Navbar;

@@ -97,34 +97,35 @@ const CollapseMenu = (props) => {
           <Header />
           <Container>
             <a href="https://www.facebook.com" target="_blank">
-              <Image src={'https://i.imgur.com/HOLM9VN.png'} alt="Facebook" />
+              <Image src="https://i.imgur.com/HOLM9VN.png" alt="Facebook" />
             </a>
             <a href="https://www.eventbrite.com/o/nicolas-brondin-bernard-20254074974" target="_blank">
-              <Image src={'https://i.imgur.com/8pSf4Kh.png'} alt="Eventbrite" />
+              <Image src="https://i.imgur.com/8pSf4Kh.png" alt="Eventbrite" />
             </a>
             <a href="https://www.helloasso.com/associations/la-sauce-numerique" target="_blank">
-              <Image src={'https://i.imgur.com/SvjyzIR.png'} alt="Helloasso" />
+              <Image src="https://i.imgur.com/SvjyzIR.png" alt="Helloasso" />
             </a>
-            <p>Crédits :
-                  <a href="https://www.wildcodeschool.com/fr-FR" target="_blank">
+            <p>
+Crédits :
+              <a href="https://www.wildcodeschool.com/fr-FR" target="_blank">
                 Wild Code School
-                  </a>
+              </a>
               -
-                  <a href="https://www.linkedin.com/in/alex-le-coq-a7b695101/" target="_blank">
+              <a href="https://www.linkedin.com/in/alex-le-coq-a7b695101/" target="_blank">
                 Alex' LE COQ
-                  </a>
+              </a>
               -
-                  <a href="https://www.linkedin.com/in/stanislas-vega-807b89163/" target="_blank">
+              <a href="https://www.linkedin.com/in/stanislas-vega-807b89163/" target="_blank">
                 Stan VEGA
-                  </a>
+              </a>
               -
-                  <a href="https://www.linkedin.com/in/bruno-hoarau-dev-full-stack-javascript-893066137/" target="_blank">
+              <a href="https://www.linkedin.com/in/bruno-hoarau-dev-full-stack-javascript-893066137/" target="_blank">
                 Bruno HOARAU
-                  </a>
+              </a>
               -
-                  <a href="https://www.linkedin.com/in/jean-marmain-2967a5168/" target="_blank">
+              <a href="https://www.linkedin.com/in/jean-marmain-2967a5168/" target="_blank">
                 Jean MARMAIN
-                  </a>
+              </a>
             </p>
           </Container>
         </NavLinks>

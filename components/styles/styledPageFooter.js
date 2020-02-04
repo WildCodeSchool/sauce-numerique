@@ -6,4 +6,3 @@ export const styledPageFooter = styled.div`
     padding: '0 20px 0 20px',
     
 `;
-
