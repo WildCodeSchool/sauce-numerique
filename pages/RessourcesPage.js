@@ -1,7 +1,6 @@
 import React from 'react';
 import fetch from 'isomorphic-unfetch';
 import Layout from '../components/Layout';
-{/*import API_URL from '../api.config';*/}
 import Ressources from '../components/ressources/Ressources';
 
 
