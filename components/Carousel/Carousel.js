@@ -147,10 +147,12 @@ class Carousel extends React.Component {
     return (
       <div>
         <AliceCarousel
+          keysControlDisabled={true}
           ref={this.Carousel}
           items={galleryItems.map((item) => (
             <div className="carousel" key={item.id}>
               <img className="picture" src={item.background} alt="people" />
+              <div className="carousel-text">
 							  <h2 className="question">{item.question}</h2>
 							  <hr className="white-break" />
               <h2 className="title_carousel">{item.title}</h2>
@@ -170,6 +172,7 @@ class Carousel extends React.Component {
                   item.link_url &&
                   <a className="lien" href={item.link_url} target="_blank">{item.link_name}</a>
                 }
+              </div>  
             </div>
           ))}
           buttonsDisabled
@@ -178,7 +181,35 @@ class Carousel extends React.Component {
 				{/* CSS */}
         <style jsx>
           {`
-							.carousel{
+							.carousel {
+                position: relative;
+                text-align: center;
+              }
+
+              .picture {
+                object-fit: cover;
+              }
+
+              .carousel-text {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                border: 5px solid black;
+                color: #fff;
+              }
+
+              
+        	`}
+        </style>
+      </div>
+    );
+  }
+}
+
+export default Carousel;
+
+{/* 		.carousel{
     						display: flex;
     						align-items: flex-start;
     						flex-wrap: wrap;
@@ -242,11 +273,4 @@ class Carousel extends React.Component {
                 line-height: 11vh;
                 margin: -42% 2% 2% 32%;
               }  							
-        	`}
-        </style>
-      </div>
-    );
-  }
-}
-
-export default Carousel;
+        	`} */}
