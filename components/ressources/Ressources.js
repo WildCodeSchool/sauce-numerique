@@ -24,6 +24,7 @@ const Ressources = ({ ressources }) => (
             <p className="ressources-theme-container">{y.theme}</p>
             <div className="description-container">
               <p className="ressources-description-container">{y.description}</p>
+              <a href={y.lien}>Clique pour en savoir plus</a>
             </div>
           </div>
 

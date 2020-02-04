@@ -6,17 +6,17 @@ import Events from '../components/events/Events';
 const EventsPage = ({ events }) => (
   <div>
     <Layout>
-    <h1 className="title2">Événements</h1>
-    <hr className="blue_break" />
-    <p className="text-ressources">
+      <h1 className="title2">Événements</h1>
+      <hr className="blue_break" />
+      <p className="text-ressources">
       Le numérique est aujourd’hui omniprésent dans nos vies,
-      {' '}
+        {' '}
       il impact fortement nos modes de vies, nos
       sociétés, nos politiques, nos relations sociales professionnelles ou privées.
-      {' '}
+        {' '}
        Pour autant, il ne profite pas à
       tous, nombreux sont celles et ceux qui le comprennent mal ou bien pire, en sont exclus !
-    </p>
+      </p>
       <div className="eventspage-block">
         <Events events={events} />
       </div>
