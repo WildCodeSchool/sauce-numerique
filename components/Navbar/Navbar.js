@@ -40,7 +40,7 @@ const NavBar = styled(animated.nav)`
   font-size: 1.4rem;
 
   @media screen and (max-width: 768px) {
-    background: ${props => props.isHome && props.navbarState ? "#3e53ce" : "transparent"};
+    background: ${props => props.navbarState && props.isHome  ? "#3e53ce" : ""};
     position: ${props => props.navbarState ? "fixed" : ""};
   }
 `;
