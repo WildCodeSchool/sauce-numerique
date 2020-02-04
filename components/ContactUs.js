@@ -72,7 +72,7 @@ const ContactUs = () => (
             .lien-mail{
                 border: 2px solid #fff;
                 border-radius: 5px;
-                background-color: #e5e3e8;
+                background-color: #fff;
                 color: #1F2040;
                 text-decoration: none;
                 font-weight: 800;
