@@ -14,46 +14,46 @@ const EventsDisplay = styled.div`
 
 const Events = ({ events }) => (
   <div className="events-display">
-    <EventsDisplay>  
-    {events.events.map((y) => {
-      const start = moment(y.start.local);
-      return (
-        <div className="events-container" key={y.id}>
-          <a className="url" target="_blank" href={y.url}>
-            <div className="events" key={y.id}>
-              <div className="event">
-                {/* {y.logo ? <img className="events-logo" src={y.logo.original.url} /> : <img className="events-logo" src="https://i.imgur.com/eSTiexo.jpg" />} */}
-                <RandomImage />
-                <div className="free-container">
-                  {y.is_free ? <p className="events-is_free">GRATUIT</p> : <p className="events-is_free">PAYANT</p>}
+    <EventsDisplay>
+      {events.events.map((y) => {
+        const start = moment(y.start.local);
+        return (
+          <div className="events-container" key={y.id}>
+            <a className="url" target="_blank" href={y.url}>
+              <div className="events" key={y.id}>
+                <div className="event">
+                  {/* {y.logo ? <img className="events-logo" src={y.logo.original.url} /> : <img className="events-logo" src="https://i.imgur.com/eSTiexo.jpg" />} */}
+                  <RandomImage />
+                  <div className="free-container">
+                    {y.is_free ? <p className="events-is_free">GRATUIT</p> : <p className="events-is_free">PAYANT</p>}
+                  </div>
                 </div>
-              </div>
-              <div className="events-text">
-                <div className="date">
-                  <p className="events-date">
-                    {start.format('DD MMMM')}
-                  </p>
-                  <p className="events-time">
+                <div className="events-text">
+                  <div className="date">
+                    <p className="events-date">
+                      {start.format('DD MMMM')}
+                    </p>
+                    <p className="events-time">
                     de
-                    {' '}
-                    {start.format('LT')}
-                    {' '}
+                      {' '}
+                      {start.format('LT')}
+                      {' '}
                     à
-                    {' '}
-                    {moment(y.end.local).format(' HH:mm')}
+                      {' '}
+                      {moment(y.end.local).format(' HH:mm')}
+                    </p>
+                  </div>
+                  <h2 className="events-title">
+                    {y.name.text}
+                  </h2>
+                  <p className="events-description">
+                    {y.description.text}
                   </p>
                 </div>
-                <h2 className="events-title">
-                  {y.name.text}
-                </h2>
-                <p className="events-description">
-                  {y.description.text}
-                </p>
               </div>
-            </div>
-          </a>
-          <style jsx>
-            {`
+            </a>
+            <style jsx>
+              {`
           a {
             text-decoration: none;
             color: #fff;
@@ -127,10 +127,10 @@ const Events = ({ events }) => (
             bottom: 0.6rem;
           };
           `}
-          </style>
-        </div>
-      );
-    })}
+            </style>
+          </div>
+        );
+      })}
     </EventsDisplay>
   </div>
 );
