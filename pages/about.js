@@ -216,7 +216,8 @@ const AboutUs = ({ partners, props }) => (
             text-align: justify;
             margin: 2rem;
             font-size: 1.7rem;
-            width: 30rem;
+            max-width: 30rem;
+            margin: 0 2rem 0 2rem;
           }
 
           .aboutus-pic {
