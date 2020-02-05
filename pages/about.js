@@ -247,11 +247,8 @@ const AboutUs = ({ partners, props }) => (
           .aboutus-pic {
             max-width: 60%;
             margin: auto;
-          }
-
-          
+          } 
         }
-
         `}
     </style>
   </div>
