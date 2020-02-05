@@ -28,7 +28,7 @@ class Carousel extends React.Component {
 					title: 'En moyenne les français passent 5h07 devant un écran tous les jours.',
 					question: 'Question 2/10',
           background: 'https://i.imgur.com/GqfznhP.jpg',
-          link_name: 'Je veux voir l’étude à ce sujet>',
+          link_name: 'Je veux voir l’étude à ce sujet >',
           link_url: 'https://www.francetvinfo.fr/internet/objets-connectes/sante-nous-passons-deux-heures-de-plus-devant-nos-ecrans-qu-il-y-a-dix-ans_2592848.html',
           reponse2: 'Découvrir d’autres informations.',
           reponse2_method: ()=>{
@@ -54,7 +54,7 @@ class Carousel extends React.Component {
           title: " Vrai. Cela représente quasiment un adulte sur cinq qui n'a pas accès ou ne sait pas utiliser un ordinateur ou un smartphone.",
           question: 'Question 4/10',
           background: 'https://i.imgur.com/i8VtfFM.jpg',
-          link_name: 'Je veux voir l’étude à ce sujet>',
+          link_name: 'Je veux voir l’étude à ce sujet >',
           link_url: 'https://www.insee.fr/fr/statistiques/4175696',
           reponse2: 'Découvrir d’autres informations',
           reponse2_method: ()=>{
@@ -80,7 +80,7 @@ class Carousel extends React.Component {
           title: 'Cyber-harcèlement: 22% des jeunes assurent en avoir déjà été victimes.',
           question: 'Question 6/10',
           background: 'https://i.imgur.com/taE9ZNC.jpg',
-          link_name: 'Je veux voir l’étude à ce sujet>',
+          link_name: 'Je veux voir l’étude à ce sujet >',
           link_url: 'https://www.20minutes.fr/high-tech/2451923-20190215-cyber-harcelement-22-jeunes-assurent-avoir-deja-victimes',
           reponse2: 'Découvrir d’autres informations',
           reponse2_method: ()=>{
@@ -108,7 +108,7 @@ class Carousel extends React.Component {
           background: 'https://i.imgur.com/Ii2nNF0.jpg',
           link_name: 'Découvrir d’autres informations',
           link_url: 'https://livre.fnac.com/a12970716/Luc-Julia-L-intelligence-artificielle-n-existe-pas',
-          link_name: 'Je veux voir l’étude à ce sujet>',
+          link_name: 'Je veux voir l’étude à ce sujet >',
           link_url: 'https://fr.statista.com/statistiques/950599/peur-ressentie-face-a-l-intelligence-artificielle-france/ ',
           reponse2: 'Découvrir d’autres informations',
           reponse2_method: ()=>{
@@ -147,10 +147,12 @@ class Carousel extends React.Component {
     return (
       <div>
         <AliceCarousel
+          keysControlDisabled={true}
           ref={this.Carousel}
           items={galleryItems.map((item) => (
             <div className="carousel" key={item.id}>
               <img className="picture" src={item.background} alt="people" />
+              <div className="carousel-text">
 							  <h2 className="question">{item.question}</h2>
 							  <hr className="white-break" />
               <h2 className="title_carousel">{item.title}</h2>
@@ -170,6 +172,7 @@ class Carousel extends React.Component {
                   item.link_url &&
                   <a className="lien" href={item.link_url} target="_blank">{item.link_name}</a>
                 }
+              </div>  
             </div>
           ))}
           buttonsDisabled
@@ -178,7 +181,103 @@ class Carousel extends React.Component {
 				{/* CSS */}
         <style jsx>
           {`
-							.carousel{
+							.carousel {
+                position: relative;
+                text-align: -webkit-center;
+              }
+              
+              .picture {
+                object-fit: cover;
+                height: 50rem;
+              }
+
+              .carousel-text {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: #fff;
+                width: 50vh;
+                margin-top: 2rem;
+              }
+
+              .question {
+                font-size: 120%;
+                padding: 0.5rem;
+              }
+              
+              .white-break {
+                color: #000;
+                width: 2rem;
+                height: 5px;
+                background-color: #fff;
+                border-style: none;
+                margin-bottom: 2rem;
+							}
+              
+              .title_carousel {
+                font-size: 4.7vh;
+                text-align: center;
+                margin: 1rem;
+              }
+
+              .button_container {
+                margin-top: 3rem;
+                margin-bottom: 1.5rem;
+              }
+
+              .reponse1_button {
+                font-family: 'Dosis', sans-serif;
+                background-color: #ffffff;
+                font-size: 1.5rem;
+                font-weight: 800;
+                border: none;
+                border-radius: 6px;
+                margin-right: 1rem;
+                padding: 1rem;
+              } 
+                         
+							.reponse2_button {
+                font-family: 'Dosis', sans-serif;
+                background-color: #ffffff;
+                font-size: 1.5rem;
+                font-weight: 800;
+                border: none;
+                border-radius: 6px;
+                margin-left: 1rem;
+                padding: 1rem;
+              }
+              
+              .lien {
+                color: #ffffff;
+                font-size: 1.3rem;
+                margin-top: 1.5rem;
+                
+              }
+
+              .lien:visited {
+                color: #ffffff;
+              }
+
+            @media screen and (min-width: 1023px) {
+              .carousel-text {
+                width:70vh;
+              }
+
+              .title_carousel {
+                font-size: 5vh;
+              }
+            }
+        	`}
+        </style>
+      </div>
+    );
+  }
+}
+
+export default Carousel;
+
+{/* 		.carousel{
     						display: flex;
     						align-items: flex-start;
     						flex-wrap: wrap;
@@ -242,11 +341,4 @@ class Carousel extends React.Component {
                 line-height: 11vh;
                 margin: -42% 2% 2% 32%;
               }  							
-        	`}
-        </style>
-      </div>
-    );
-  }
-}
-
-export default Carousel;
+        	`} */}
