@@ -3,6 +3,9 @@ const withCSS = require('@zeit/next-css');
 require('dotenv').config();
 
 module.exports = {
+  env: {
+    API_HOST: process.env.API_HOST,
+  },
   webpack: (config) => {
     // Fixes npm packages that depend on `fs` module
     config.node = {
