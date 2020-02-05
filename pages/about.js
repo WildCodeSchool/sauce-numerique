@@ -51,25 +51,25 @@ const AboutUs = ({ partners, props }) => (
               Présidente et Co-fondatrice
             </h3>
             <p className="aboutus-member-description">
-              Ancienne 
-              { " " }
+              Ancienne
+              { ' ' }
               <strong>
                 déléguée médicale
               </strong>
-              { " " }
-              dans l’optique et 
-              { " " }
+              { ' ' }
+              dans l’optique et
+              { ' ' }
               <strong>
                 spécialiste de la lumière bleue
               </strong>
               , Marina s’est spécialisée dans
-              { " " }
+              { ' ' }
               <strong>
                 l’effet des écrans sur notre santé
-              </strong> 
-              { " " }
-              avant de se passionner pour 
-              { " " }
+              </strong>
+              { ' ' }
+              avant de se passionner pour
+              { ' ' }
               <strong>
                 la pédagogie et la transmission de connaissances.
               </strong>
@@ -89,17 +89,17 @@ const AboutUs = ({ partners, props }) => (
               <strong>
                 Serial entrepreneur
               </strong>
-              { " " }
+              { ' ' }
               et
-              { " " }
+              { ' ' }
               <strong>
                 spécialiste en expérience utilisateur
               </strong>
-              , 
-              Manyssin est passionné par 
-              { " " }
+              ,
+              Manyssin est passionné par
+              { ' ' }
               <strong>
-                l’être humain et son rapport aux autres, 
+                l’être humain et son rapport aux autres,
                 dans le monde réel et numérique
               </strong>
             </p>
@@ -116,22 +116,22 @@ const AboutUs = ({ partners, props }) => (
             </h3>
             <p className="aboutus-member-description">
               <strong>
-                Ingénieur web indépendant 
+                Ingénieur web indépendant
               </strong>
-              { " " }
+              { ' ' }
               et auteur du livre
-              { " " }
+              { ' ' }
               <strong>
-                “Fortnite-a-t’il transformé nos enfants en zombies”, 
+                “Fortnite-a-t’il transformé nos enfants en zombies”,
               </strong>
-              { " " }
+              { ' ' }
               Nicolas est passionné par
-              { " " }
+              { ' ' }
               <strong>
-                la compréhension des biais psychologiques exploités 
-                par les outils numérique 
+                la compréhension des biais psychologiques exploités
+                par les outils numérique
               </strong>
-              { " " }
+              { ' ' }
               dans notre quotidien.
             </p>
           </div>
@@ -145,19 +145,19 @@ const AboutUs = ({ partners, props }) => (
             <h3 className="aboutus-member-role">
               Co-fondateur
             </h3>
-            <p className="aboutus-member-description">          
-            <strong>
-              Vidéaste indépendant 
-            </strong>
-            { " " } 
+            <p className="aboutus-member-description">
+              <strong>
+              Vidéaste indépendant
+              </strong>
+              { ' ' }
             et
-            { " " }
-            <strong>
-              passionné 
-              par la vulgarisation de 
-              l’espace et des sciences 
-            </strong>
-            { " " }
+              { ' ' }
+              <strong>
+              passionné
+              par la vulgarisation de
+              l’espace et des sciences
+              </strong>
+              { ' ' }
             en général.
             </p>
           </div>
@@ -259,12 +259,12 @@ const AboutUs = ({ partners, props }) => (
 AboutUs.getInitialProps = async () => {
   const partnersRes = await fetch(
     `${API_URL}/api/v1/partners`,
-    );
-    const partnersData = await partnersRes.json();
-    
-    return {
-      partners: partnersData,
-    };
+  );
+  const partnersData = await partnersRes.json();
+
+  return {
+    partners: partnersData,
   };
-  
-  export default AboutUs;
+};
+
+export default AboutUs;
