@@ -185,9 +185,10 @@ class Carousel extends React.Component {
                 position: relative;
                 text-align: -webkit-center;
               }
-
+              
               .picture {
                 object-fit: cover;
+                height: 40rem;
               }
 
               .carousel-text {
@@ -211,7 +212,8 @@ class Carousel extends React.Component {
                 border-style: none;
                 border-radius: 2px;
 							}
-
+              
+              .title-
 
 
               
