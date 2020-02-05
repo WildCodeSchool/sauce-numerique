@@ -183,7 +183,7 @@ class Carousel extends React.Component {
           {`
 							.carousel {
                 position: relative;
-                text-align: center;
+                text-align: -webkit-center;
               }
 
               .picture {
@@ -198,6 +198,21 @@ class Carousel extends React.Component {
                 border: 5px solid black;
                 color: #fff;
               }
+
+              .question {
+                font-size: 180%;
+              }
+
+              .white-break {
+                color: #000;
+                width: 3rem;
+                height: 4px;
+                background-color: #fff;
+                border-style: none;
+                border-radius: 2px;
+							}
+
+
 
               
         	`}
