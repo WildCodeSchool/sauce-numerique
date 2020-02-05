@@ -67,7 +67,7 @@ const Navbar = ({ isHome, navbarState, handleNavbar} ) => {
     <>
       <NavBar isHome={isHome} navbarState={navbarState}>
         <FlexContainer>
-          <Brand />
+          <Brand navbarState={navbarState}/>
           <NavLinks>
           <Header />
           </NavLinks>

@@ -11,7 +11,6 @@ class Layout extends Component {
     this.state = {
       isHome: false,
     }
-    const { router } = this.props;
  }
 
   componentDidMount = () => {
