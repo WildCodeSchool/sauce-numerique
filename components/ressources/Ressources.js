@@ -112,6 +112,7 @@ const Ressources = ({ ressources }) => (
           display: block;
           margin-left: 7rem;
           margin-top: 1rem;
+          font-size: 2rem
         }
         
         p.ressources-description-container {
@@ -131,6 +132,7 @@ const Ressources = ({ ressources }) => (
           margin-left: 7rem;
           margin-top: 4rem;
           margin-right: -11rem;
+          font-size: 2rem;
         }
 
         a.ressources_lien {

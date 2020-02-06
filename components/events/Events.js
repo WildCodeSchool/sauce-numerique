@@ -10,6 +10,7 @@ const EventsDisplay = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin: 2rem 0;
 `;
 
 const Events = ({ events }) => (
