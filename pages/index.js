@@ -28,7 +28,9 @@ const Home = ({ partners, events, ressources }) => (
         </h1>
         <hr className="blue-break" />
         <Ressources ressources={ressources} />
-        <a className="ressources-href" href="/RessourcesPages">VOIR TOUTE LA BIBLIO ></a>
+        <div className="ressources-href-container">
+          <a className="ressources-href" href="/RessourcesPages">VOIR TOUTE LA BIBLIO ></a>
+        </div>
       </div>
     </Layout>
     <style jsx>
@@ -101,12 +103,12 @@ const Home = ({ partners, events, ressources }) => (
         margin: auto;
         display: block;
       }
+      .ressources-href-container {
+        text-align: center;
+      }
       a.ressources-href{
         color: #1F2040;
         font-weight: 700;
-        position: relative;
-        left: 65rem;
-        top: 11rem;
       }
     `}
     </style>
