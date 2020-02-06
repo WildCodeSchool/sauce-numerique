@@ -65,10 +65,6 @@ const Ressources = ({ ressources }) => (
           min-width: 26rem;
         }
 
-        p.flag {
-          margin: 2% 2% 2% 10%;
-        }
-
         .rectangle {
           font-weight: bold;
           margin-left: 2rem;
@@ -88,8 +84,7 @@ const Ressources = ({ ressources }) => (
           left: 13px;
           border-top: 11px solid #fff;
           border-left: 14px solid transparent;
-        }
-        
+        }   
 
         p.ressources-is_free {
           color: #000;
@@ -103,10 +98,6 @@ const Ressources = ({ ressources }) => (
           top: 3rem;
           border-top: 11px solid #fff;
           border-right: 14px solid transparent;
-        }
-
-        p.icon-ressources {
-          margin: 3% -7% 0 30px;
         }
 
         .ressources-title-container {
@@ -124,7 +115,7 @@ const Ressources = ({ ressources }) => (
         }
         
         p.ressources-description-container {
-          width: 52vw;
+          width: 15vw;
           height: 5vh;
           margin-left: 2rem;
           font-size: 1.6rem;
@@ -132,7 +123,7 @@ const Ressources = ({ ressources }) => (
         }
 
         .description-container {
-          width: 38vw;
+          width: 39rem;
           font-size: 12px;
         }
 

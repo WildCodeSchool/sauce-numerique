@@ -11,16 +11,8 @@ const Brand = () => {
 const Image = styled.img`
     height: 50%;
     margin: auto;
-    position: relative;
-    left: 15%;
-
-    @media (max-width: 1000px) {
-      left: -10%;
-    }
-
-    @media (max-width: 768px) {
-      left: 0%;
-    }
+    width: 20rem;
+    margin-top: 1rem;
 `;
 
 export default Brand;

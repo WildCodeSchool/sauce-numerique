@@ -24,7 +24,7 @@ const NavLinks = styled(animated.ul)`
       border-bottom: 2px solid;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 1100px) {
       display: none;
     }
   }
@@ -39,7 +39,7 @@ const NavBar = styled(animated.nav)`
   z-index: 1;
   font-size: 1.4rem;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1100px) {
     background: ${props => props.navbarState && props.isHome  ? "#3e53ce" : ""};
     position: ${props => props.navbarState ? "fixed" : ""};
   }
@@ -50,13 +50,20 @@ const FlexContainer = styled.div`
   margin: auto;
   padding: 0 2rem;;
   justify-content: space-between;
-  height: 5rem;
+  float: right;
+  position: relative;
+  bottom: 2.7rem;
 `;
+
+const LogoContainer = styled.div`
+  display: flex;
+  margin: auto 0;
+`
 
 const BurgerWrapper = styled.div`
   margin: auto 0;
 
-  @media (min-width: 769px) {
+  @media (min-width: 1101px) {
     display: none;
   }
 `;
@@ -66,8 +73,11 @@ const Navbar = ({ isHome, navbarState, handleNavbar} ) => {
   return (
     <>
       <NavBar isHome={isHome} navbarState={navbarState}>
-        <FlexContainer>
+          <LogoContainer>
+
           <Brand />
+          </LogoContainer>
+        <FlexContainer>
           <NavLinks>
           <Header />
           </NavLinks>
