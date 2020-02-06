@@ -202,7 +202,7 @@ class Carousel extends React.Component {
               }
 
               .question {
-                font-size: 120%;
+                font-size: 1.8rem;
                 padding: 0.5rem;
                 text-align: center;
               }
@@ -253,8 +253,8 @@ class Carousel extends React.Component {
               
               .lien {
                 color: #ffffff;
-                font-size: 1.3rem;
-                margin-top: 1.5rem;
+                font-size: 1.8rem;
+                margin-top: 1.5rem auto;
                 
               }
 
