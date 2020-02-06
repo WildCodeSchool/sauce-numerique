@@ -96,12 +96,13 @@ function Partners({ partners }) {
               font-size: 2rem;
               margin: auto;
               padding: 3rem;
+              width: 86vw;
               text-align: justify;
             }
 
-            @media screen and (min-width: 768px) {
-              .partners-text {
-                padding: 8rem 15rem 8rem 15rem;
+            @media screen and (min-width: 1000px) {
+              .partners-text{
+                width: 100rem;
               }
             }
     `}

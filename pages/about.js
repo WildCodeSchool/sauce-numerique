@@ -216,7 +216,8 @@ const AboutUs = ({ partners, props }) => (
             text-align: justify;
             margin: 2rem;
             font-size: 1.7rem;
-            width: 30rem;
+            max-width: 30rem;
+            margin: 0 2rem 0 2rem;
           }
 
           .aboutus-pic {
@@ -236,7 +237,7 @@ const AboutUs = ({ partners, props }) => (
             margin-bottom: 1rem;
           }
 
-        @media screen and (min-width: 1023px) {
+        @media screen and (min-width: 1000px) {
           .aboutus-member {
             padding: 3rem;
             width: 50%;
@@ -246,11 +247,11 @@ const AboutUs = ({ partners, props }) => (
           .aboutus-pic {
             max-width: 60%;
             margin: auto;
+          } 
+          p.aboutus-text{
+            width: 100rem;
           }
-
-          
         }
-
         `}
     </style>
   </div>

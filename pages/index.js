@@ -20,7 +20,7 @@ const Home = ({ partners, events, ressources }) => (
         </h1>
         <hr className="blue-break" />
         <Events events={events} />
-        <a className="event-href" href="/EventsPage">VOIR TOUS LES ÉVÉNEMENTS </a>
+        <a className="event-href" href="/EventsPage">VOIR TOUS LES ÉVÉNEMENTS ></a>
       </div>
       <div className="ressource-container">
         <h1 className="title2">
@@ -29,7 +29,7 @@ const Home = ({ partners, events, ressources }) => (
         <hr className="blue-break" />
         <Ressources ressources={ressources} />
         <div className="ressources-href-container">
-        <a className="ressources-href" href="/RessourcesPages">VOIR TOUTE LA BIBLIO</a>
+          <a className="ressources-href" href="/RessourcesPages">VOIR TOUTE LA BIBLIO ></a>
         </div>
       </div>
     </Layout>

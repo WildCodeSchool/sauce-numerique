@@ -71,6 +71,10 @@ const Support = () => (
               text-decoration: none;
             }
 
+            @media screen and (min-width: 1000px) {
+              .support-text{
+                width: 100rem;
+              }
             
         `}
     </style>

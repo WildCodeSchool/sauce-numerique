@@ -40,7 +40,7 @@ const Manifest = () => (
         Des questions ? Consultez notre
         {' '}
         <a className="faq-link" href="/faq">
-          Foire Aux Questions
+          Foire Aux Questions >
         </a>
       </p>
     </div>
@@ -77,6 +77,7 @@ const Manifest = () => (
         .manifeste-text {
           font-size: 2em;
           margin: auto;
+          width: 86vw;
           padding: 5rem;
           color: #1F2040;
           text-align: justify;
@@ -94,9 +95,9 @@ const Manifest = () => (
           color: #1F2040;
         }
 
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: 1000px) {
           .manifeste-text{
-            padding: 5rem 15rem 5rem 15rem;
+            width: 100rem;
           }
         }
       `}

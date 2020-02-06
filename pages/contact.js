@@ -68,6 +68,11 @@ const Contact = () => (
                   border-radius: 2px;
                   margin: auto;
                 }
+
+                @media screen and (min-width: 1000px) {
+                  .p-contact{
+                    width: 100rem;
+                  }
             `}
     </style>
   </div>
