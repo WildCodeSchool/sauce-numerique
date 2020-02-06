@@ -10,6 +10,8 @@ const NavLinks = styled(animated.ul)`
   justify-self: end;
   list-style-type: none;
   margin: auto 0;
+  position: relative;
+  top: 1rem;
 
   & a {
     color: #ffffff;
@@ -38,6 +40,7 @@ const NavBar = styled(animated.nav)`
   background: ${props => props.isHome ? "transparent" : "#3e53ce"};
   z-index: 1;
   font-size: 1.4rem;
+  height: 5.2rem;
 
   @media screen and (max-width: 1100px) {
     background: ${props => props.navbarState && props.isHome  ? "#3e53ce" : ""};
@@ -52,7 +55,7 @@ const FlexContainer = styled.div`
   justify-content: space-between;
   float: right;
   position: relative;
-  bottom: 2.7rem;
+  bottom: 3rem;
 `;
 
 const LogoContainer = styled.div`
