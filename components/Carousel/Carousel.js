@@ -204,6 +204,7 @@ class Carousel extends React.Component {
               .question {
                 font-size: 120%;
                 padding: 0.5rem;
+                text-align: center;
               }
               
               .white-break {
@@ -213,6 +214,7 @@ class Carousel extends React.Component {
                 background-color: #fff;
                 border-style: none;
                 margin-bottom: 2rem;
+                margin: auto;
 							}
               
               .title_carousel {
@@ -224,6 +226,7 @@ class Carousel extends React.Component {
               .button_container {
                 margin-top: 3rem;
                 margin-bottom: 1.5rem;
+                text-align: center;
               }
 
               .reponse1_button {

@@ -88,7 +88,7 @@ function Partners({ partners }) {
               margin: auto;
               padding: 3rem;
               display: block;
-              text-align: -webkit-center;
+              text-align: center;
             }
             
             .partners-text {
