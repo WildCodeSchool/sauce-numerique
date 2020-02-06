@@ -10,21 +10,21 @@ class Carousel extends React.Component {
     this.state = {
       galleryItems: [
         {
-          id: 1,
+          id: 0,
 					title: 'Passez-vous plus de trois heures par jour devant un écran ?',
 					question: 'Question 1/10',
           background: 'https://i.imgur.com/GqfznhP.jpg',
           reponse1: 'Non',
           reponse1_method: ()=>{
-            this.Carousel.current.slideTo(2)
+            this.Carousel.current.slideTo(1)
           },
           reponse2: 'Oui',
           reponse2_method: ()=>{
-            this.Carousel.current.slideTo(3)
+            this.Carousel.current.slideTo(2)
           }
         },
         {
-          id: 2,
+          id: 1,
 					title: 'En moyenne les français passent 5h07 devant un écran tous les jours.',
 					question: 'Question 2/10',
           background: 'https://i.imgur.com/GqfznhP.jpg',
@@ -32,25 +32,25 @@ class Carousel extends React.Component {
           link_url: 'https://www.francetvinfo.fr/internet/objets-connectes/sante-nous-passons-deux-heures-de-plus-devant-nos-ecrans-qu-il-y-a-dix-ans_2592848.html',
           reponse2: 'Découvrir d’autres informations.',
           reponse2_method: ()=>{
-            this.Carousel.current.slideTo(3)
+            this.Carousel.current.slideTo(2)
           },
         },
         {
-          id: 3,
+          id: 2,
           title: '18% des adultes n’utilisent jamais d’outils numériques.',
           question: 'Question 3/10',
           background: 'https://i.imgur.com/i8VtfFM.jpg',
           reponse1: 'Faux',
           reponse1_method: ()=>{
-            this.Carousel.current.slideTo(4)
+            this.Carousel.current.slideTo(3)
           },         
           reponse2: 'Vrai',
           reponse2_method: ()=>{
-            this.Carousel.current.slideTo(5)
+            this.Carousel.current.slideTo(4)
           },
         },
         {
-          id: 4,
+          id: 3,
           title: " Vrai. Cela représente quasiment un adulte sur cinq qui n'a pas accès ou ne sait pas utiliser un ordinateur ou un smartphone.",
           question: 'Question 4/10',
           background: 'https://i.imgur.com/i8VtfFM.jpg',
@@ -58,25 +58,25 @@ class Carousel extends React.Component {
           link_url: 'https://www.insee.fr/fr/statistiques/4175696',
           reponse2: 'Découvrir d’autres informations',
           reponse2_method: ()=>{
-            this.Carousel.current.slideTo(5)
+            this.Carousel.current.slideTo(4)
           },
         },
         {
-          id: 5,
+          id: 4,
           title: '1 jeune sur 5 serait victime de cyber-harcèlement.',
           question: 'Question 5/10',
           background: 'https://i.imgur.com/taE9ZNC.jpg',
           reponse1: 'Faux',
           reponse1_method: ()=>{
-            this.Carousel.current.slideTo(6)
+            this.Carousel.current.slideTo(5)
           },         
           reponse2: 'Vrai',
           reponse2_method: ()=>{
-            this.Carousel.current.slideTo(7)
+            this.Carousel.current.slideTo(6)
           },
         },
         {
-          id: 6,
+          id: 5,
           title: 'Cyber-harcèlement: 22% des jeunes assurent en avoir déjà été victimes.',
           question: 'Question 6/10',
           background: 'https://i.imgur.com/taE9ZNC.jpg',
@@ -84,25 +84,25 @@ class Carousel extends React.Component {
           link_url: 'https://www.20minutes.fr/high-tech/2451923-20190215-cyber-harcelement-22-jeunes-assurent-avoir-deja-victimes',
           reponse2: 'Découvrir d’autres informations',
           reponse2_method: ()=>{
-            this.Carousel.current.slideTo(7)
+            this.Carousel.current.slideTo(6)
           },
         },
         {
-          id: 7,
+          id: 6,
           title: 'La moitié des français sont inquiétés par l’intelligence artificielle.',
           question: 'Question 7/10',
           background: 'https://i.imgur.com/Ii2nNF0.jpg',
           reponse1: 'Faux',
           reponse1_method: ()=>{
-            this.Carousel.current.slideTo(8)
+            this.Carousel.current.slideTo(7)
           },         
           reponse2: 'Vrai',
           reponse2_method: ()=>{
-            this.Carousel.current.slideTo(9)
+            this.Carousel.current.slideTo(8)
           },
         },
         {
-          id: 8,
+          id: 7,
           title: '56% de français ont peur de l’IA.',
           question: 'Question 8/10',
           background: 'https://i.imgur.com/Ii2nNF0.jpg',
@@ -112,25 +112,25 @@ class Carousel extends React.Component {
           link_url: 'https://fr.statista.com/statistiques/950599/peur-ressentie-face-a-l-intelligence-artificielle-france/ ',
           reponse2: 'Découvrir d’autres informations',
           reponse2_method: ()=>{
-            this.Carousel.current.slideTo(9)
+            this.Carousel.current.slideTo(8)
           },
         },
         {
-          id: 9,
+          id: 8,
           title: 'L’addiction aux jeux vidéo existe-t-elle ?',
           question: 'Question 9/10',
           background: 'https://i.imgur.com/gvooGc4.jpg',
           reponse1: 'Non',
           reponse1_method: ()=>{
-            this.Carousel.current.slideTo(10)
+            this.Carousel.current.slideTo(9)
           },         
           reponse2: 'Oui',
           reponse2_method: ()=>{
-            this.Carousel.current.slideTo(10)
+            this.Carousel.current.slideTo(9)
           },
         },
         {
-          id: 10,
+          id: 9,
           title: 'Oui cela existe, c’est une addiction comportementale, entre 2% et 5% de joueurs sont touchés.',
           question: 'Question 10/10',
           background: 'https://i.imgur.com/gvooGc4.jpg',
