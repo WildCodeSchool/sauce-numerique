@@ -14,28 +14,36 @@ const Ressources = ({ ressources }) => (
       <br />
           tous, nombreux sont celles et ceux qui le comprennent mal ou bien pire, en sont exclus !
     </p>
-    <div className="ressources-container">
-      {ressources.map((y) => {
-        const flag = y.theme.substring(0, 1);
-        return (
-          <div className="ressources" key={y.id}>
-              <div className="free-container">
-                <div className="rectangle">
-                <p className="ressources-is_free">{flag}</p>
+    <div className="ressources-parent">
+      <div className="ressources-container">
+        {ressources.map((y) => {
+          const flag = y.theme.substring(0, 1);
+          return (
+            <div className="ressources" key={y.id}>
+                <div className="free-container">
+                  <div className="rectangle">
+                  <p className="ressources-is_free">{flag}</p>
+                  </div>
+                </div>          
+                <p className="ressources-theme-container">{y.theme}</p>
+                <h1 className="ressources-title-container">{y.title}</h1>
+                <div className="description-container">
+                  <p className="ressources-description-container">{y.description}</p>
+                  <div className="ressources-lien-container"><a className="ressources_lien" href={y.lien}>Voir l’étude à ce sujet></a></div>            
                 </div>
-              </div>          
-              <p className="ressources-theme-container">{y.theme}</p>
-              <h1 className="ressources-title-container">{y.title}</h1>
-              <div className="description-container">
-                <p className="ressources-description-container">{y.description}</p>
-                <div className="ressources-lien-container"><a className="ressources_lien" href={y.lien}>Voir l’étude à ce sujet></a></div>            
-              </div>
-          </div>
-        );
-      })}
+            </div>
+          );
+        })}
+      </div>
     </div>
+
     <style jsx>
       {`
+      .ressources-parent{
+        justify-content: center;
+        margin: 0 auto;
+      }
+
         .text-ressources{
           color: #1F2040;
           font-size: 2rem;
@@ -47,6 +55,7 @@ const Ressources = ({ ressources }) => (
         .ressources-container {
           display: flex;
           flex-wrap: wrap;
+          justify-content: center;
           border-radius: 10px;
         }
 
@@ -142,8 +151,6 @@ const Ressources = ({ ressources }) => (
         }
 
         @media screen and (min-width: 768px){
-          .ressources-container{
-          }
           .ressources-lien-container{
             margin-right: -5rem;
           }
@@ -153,6 +160,7 @@ const Ressources = ({ ressources }) => (
           .ressources{
             width: 34rem;
             height: 36rem;
+            min-width: 40rem;
           }
           p.ressources-theme-container.jsx-367270696 {
             font-size: 2rem;
@@ -163,9 +171,6 @@ const Ressources = ({ ressources }) => (
           .ressources-lien-container{
             margin-right: 4rem;
             margin-top: 2rem;
-          }
-          .ressources-container{
-          
           }
         }
      `}
