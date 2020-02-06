@@ -6,11 +6,8 @@ const Manifest = () => (
     <hr className="blue-break" />
     <p className="manifeste-text">
         Le numérique est aujourd’hui omniprésent dans nos vies, il impact fortement nos modes
-      {' '}
         de vies, nos sociétés, nos politiques, nos relations sociales professionnelles ou privées.
-      {' '}
         Pour autant, il ne profite pas à tous, nombreux sont celles et ceux qui le comprennent
-      {' '}
         mal ou bien pire, en sont exclus !
       <br />
       <br />
@@ -18,21 +15,14 @@ const Manifest = () => (
       {' '}
       <strong>
         promouvoir l’accompagnement, l’apprentissage, l’accès et l’appropriation du
-        {' '}
         numérique à destination du grand public
-
       </strong>
       {' '}
         avec pas ou peu de connaissance de ce vaste univers. La Sauce Numérique
-      {' '}
         est une association régie par la loi du 1er juillet 1901.
-      {' '}
         Ses membres sont issus du numérique et d’autres horizons,
-      {' '}
         formant un groupe riche et éclectique dont l’objectif
-      {' '}
        est d’organiser des actions les plus accessibles et adaptées possibles
-      {' '}
        aux problèmes liées au numérique.
     </p>
     <div className="faq-container">

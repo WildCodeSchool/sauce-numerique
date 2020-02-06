@@ -116,23 +116,16 @@ const Ressources = ({ ressources }) => (
         }
         
         p.ressources-description-container {
-          width: 15vw;
-          height: 5vh;
           margin-left: 2rem;
+          width: 20rem;
           font-size: 1.6rem;
           text-align: left;
-        }
-
-        .description-container {
-          width: 39rem;
-          font-size: 12px;
         }
 
         .ressources-lien-container {
           margin-left: 7rem;
           margin-top: 4rem;
-          margin-right: -11rem;
-          font-size: 2rem;
+          font-size: 1.8rem;
         }
 
         a.ressources_lien {
