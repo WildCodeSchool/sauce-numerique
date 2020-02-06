@@ -29,7 +29,7 @@ const Home = ({ partners, events, ressources }) => (
         <hr className="blue-break" />
         <Ressources ressources={ressources} />
         <div className="ressources-href-container">
-          <a className="ressources-href" href="/RessourcesPages">VOIR TOUTE LA BIBLIO ></a>
+          <a className="ressources-href" href="/RessourcesPage">VOIR TOUTE LA BIBLIO ></a>
         </div>
       </div>
     </Layout>
