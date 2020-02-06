@@ -124,7 +124,7 @@ const Ressources = ({ ressources }) => (
         }
         
         p.ressources-description-container {
-          width: 52vw;
+          width: 15vw;
           height: 5vh;
           margin-left: 2rem;
           font-size: 1.6rem;
