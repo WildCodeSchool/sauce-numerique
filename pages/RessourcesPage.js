@@ -16,7 +16,7 @@ const RessourcesPage = ({ ressources }) => (
     <style jsx>
       {`
       .title-ressources{
-        margin: auto;
+        margin: 8rem auto;
         text-align: center;
         font-size: 6em;
         margin-bottom: 10px;
@@ -31,13 +31,6 @@ const RessourcesPage = ({ ressources }) => (
         border-style: none;
         border-radius: 2px;
         margin: auto;
-      }
-      .text-ressources{
-        color: #fff;
-        font-size: 2rem;
-        margin: auto;
-        padding: 5rem;
-        text-align: center;
       }
     `}
     </style>

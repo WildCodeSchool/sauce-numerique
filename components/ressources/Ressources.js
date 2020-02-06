@@ -44,20 +44,20 @@ const Ressources = ({ ressources }) => (
         margin: 0 auto;
       }
 
-        .text-ressources{
-          color: #1F2040;
-          font-size: 2rem;
-          margin: auto;
-          padding: 5rem;
-          text-align: center;
-        }
-
-        .ressources-container {
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: center;
-          border-radius: 10px;
-        }
+      p.text-ressources{
+        font-size: 2rem;
+        margin: auto;
+        padding: 5rem;
+        text-align: justify;
+        color: #1F2040;
+      }
+      
+      .ressources-container {
+        flex-wrap: wrap;
+        justify-content: center;
+        border-radius: 10px;
+        display: flex;
+      }
 
         .ressources{
           background-color: #1F2040;
@@ -150,9 +150,16 @@ const Ressources = ({ ressources }) => (
           color: #fff;
         }
 
+        
         @media screen and (min-width: 768px){
           .ressources-lien-container{
             margin-right: -5rem;
+          }
+        }
+        
+        @media screen and (min-width: 1000px) {
+          .text-ressources{
+            width: 100rem;
           }
         }
 
