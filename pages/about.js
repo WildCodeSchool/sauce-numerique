@@ -19,13 +19,11 @@ const AboutUs = ({ partners, props }) => (
             profite pas à tous, nombreux sont celles et ceux qui le comprennent
             mal ou bien pire, en sont exclus ! La Sauce Numérique souhaite par
             ses actions sur le terrain
-            &nbsp;
             {' '}
             <strong>
             promouvoir l'accompagnement, l'apprentissage, l'accès et
             l'appropriation du numérique à destination du grand public
-            &nbsp;
-              {' '}
+            {' '}
             </strong>
             avec pas ou peu de connaissance de ce vaste univers. La Sauce
             Numérique est une association régie par la loi du 1 juillet 1901.
