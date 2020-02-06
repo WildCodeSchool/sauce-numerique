@@ -78,7 +78,6 @@ const Events = ({ events }) => (
             margin-bottom: 2rem;
             display: inline-block;
             text-align: left;
-            font-size: 2rem;
           }
           
           .events-description {

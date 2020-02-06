@@ -1,5 +1,4 @@
 import React from 'react';
-import Link from 'next/link';
 import PageFooter from './PageFooter';
 
 const ContactUs = () => (
@@ -8,7 +7,7 @@ const ContactUs = () => (
 
     <h2 className="title">Nous contacter</h2>
     <hr className="white-break" />
-    <p className="p-contact-component">
+    <p className="contact-text">
     Le numérique est aujourd'hui omniprésent dans nos vies, il impact fortement nos mode de vies,
       {' '}
     nos société, nos politiques,
@@ -17,7 +16,6 @@ const ContactUs = () => (
     Pour autant, il ne profite pas à tous, nombreux sont celles et ceux
       {' '}
     qui le comprennent mal ou bien pire, en sont exclus!
-
     </p>
     <br />
     <a className="lien-mail" href="/contact">CONTACTER PAR EMAIL</a>
@@ -34,13 +32,13 @@ const ContactUs = () => (
             // General rules
             
             .contact-us{
-                margin-top: 17%;
+                margin-top: 5rem;
                 background: #1F2040;
                 color: #e5e3e8;
                 width: 100%;
                 display: flex;
                 flex-direction: column;
-                padding: 20px 10px 10px 10px;
+                padding: 10px 10px 10px 10px;
             }
             
             .title{
@@ -61,12 +59,12 @@ const ContactUs = () => (
                 margin: auto;
               }
             
-            .p-contact-component{
+            p.contact-text {
                 font-size: 2rem;
                 margin: auto;
                 padding: 3rem;
-                width: 86vw;
                 text-align: justify;
+                width: 86vw;
             }
             
             .lien-mail{
@@ -98,6 +96,11 @@ const ContactUs = () => (
             .logo-tweeter {
                 width: 40px;
             }
+
+            @media screen and (min-width: 1000px) {
+              p.contact-text{
+                width: 100rem;
+              }
             
             `}
 

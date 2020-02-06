@@ -8,7 +8,7 @@ const EventsPage = ({ events }) => (
     <Layout>
     <h1 className="title2">Événements</h1>
     <hr className="blue_break" />
-    <p className="text-ressources">
+    <p className="events-text">
       Le numérique est aujourd’hui omniprésent dans nos vies,
       {' '}
       il impact fortement nos modes de vies, nos
@@ -42,7 +42,7 @@ const EventsPage = ({ events }) => (
         margin: auto;
       }
 
-      .text-ressources{
+      .events-text{
         color: #1F2040;
         font-size: 2rem;
         margin: auto;
@@ -50,9 +50,9 @@ const EventsPage = ({ events }) => (
         text-align: justify;
       }
 
-      @media screen and (min-width: 1024px) {
-        .text-ressources{
-          padding: 5rem 15rem 5rem 15rem;
+      @media screen and (min-width: 1000px) {
+        .events-text{
+          width: 100rem;
         }
     `}
     </style>
